@@ -1,0 +1,126 @@
+{
+  "Variants": {
+        "A": {
+          "setting": [["Component.dist_src"], ["!Component.modified"]]
+        },
+        "B": {
+          "setting": [["Component.dist_src"], ["Component.modified"]]
+        },
+        "C": {
+          "setting": [["Component.dist_obj"], ["!Component.modified"]]
+        },
+        "D": {
+          "setting": [["Component.dist_obj"], ["Component.modified"]]
+        }
+  },
+
+  "Rights": {
+    "R1" :	{
+      "name" : "Use",
+      "description": "The licensor grants the licensee a right to 'use'."
+    },
+    "R2" :	{
+      "name" : "Reproduce",
+      "description": "The licensor grants the licensee a right to 'reproduce'."
+    },
+    "R3" :	{
+      "name" : "Modify/Create derivative works",
+      "description": "The licensor grants the licensee a right to 'modify'."
+    },
+    "R4" :	{
+      "name" : "Distribution",
+      "description": "The licensor grants the licensee a right to 'distribute'."
+    },
+    "R5" :	{
+      "name" : "Sublicense",
+      "description": "The licensor grants the licensee a right to 'sublicense'."
+    },
+    "R6" :	{
+      "name" : "PatentLicense",
+      "description": "The licensor grants the licensee - as the case may be - a patent license."
+    },
+    "R7" :	{
+      "name" : "Trademarks",
+      "description": "The licensee may not use the trademark/name of the licensor."
+    },
+    "R8" :	{
+      "name" : "CommercialUtilization",
+      "description": "You may use the licensed Software for commercial purposes."
+    },
+    "R9" :	{
+      "name" : "CommercialUse:LicenseFee",
+      "description": "You may charge a license fee for the licensed Software."
+    }
+  },
+
+
+  "Obligations": {
+    "O1": {
+      "name": "RetainCopyRightNotice",
+      "description": "You must ensure, the Copyright Notice will be retained."
+    },
+    "O2": {
+      "name": "RetainListOfConditions",
+      "description": "You must retain the list of conditions (license) unchanged. "
+    },
+    "O3": {
+      "name": "RetainWarrantyDisclaimer",
+      "description": "Please ensure that you retained the Warranty Disclaimer!"
+    },
+    "O4": {
+      "name": "ProvideCopyOfLicenseText",
+      "description": "You are obliged to provide a copy of the license text."
+    },
+    "O5": {
+      "name": "ReproduceCopyrightNotice",
+      "description": "Ensure that the Copyright notice will be reproced."
+    },
+    "O6": {
+      "name": "ReproduceListOfConditions",
+      "description": "Ensure the license will be reproduced."
+    },
+    "O7": {
+      "name": "ReproduceWarrantyDisclaimer",
+      "description": "Ensure the Warranty Disclaimer will be reproduced."
+    },
+    "O8": {
+      "name": "ProvideSourceCode",
+      "description": "You must provide access to the source code."
+    },
+    "O9": {
+      "name": "ProvideSourceCode (SaaS)",
+      "description": "This license requires you to provide your source code even when operated as SaaS.",
+      "setting" : [["Module.OM_SaaS"]]
+    },
+    "O10": {
+      "name": "Provide Written Offer",
+      "description": "You must accompany any distribution with the written offer to supply the source code free of charge."
+    },
+    "O11": {
+      "name": "Attribute Authors",
+      "description" : "This license requires you under these circumstances to attribute the authors."
+    },
+    "O20": {
+      "name": "Copyleft",
+      "description": "This license infects linked sources, so that all directly linked code must be released under this license. "
+    },
+    "O21": {
+      "name": "IndicateChanges",
+      "description": "The license requires you to indicate that you changed the original code."
+    },
+    "O22": {
+      "name": "TechnicalRestriction",
+      "description": "You are not allowed to prevent the user from executing the rights granted by this license by any means."
+    },
+    "O23": {
+      "name": "DescribeChanges",
+      "description": "The license requires you to describe the changes you have made."
+    },
+    "O24": {
+      "name": "ProvideChanges",
+      "description": "The license requires you to publish the sources of the changes you made."
+    }
+
+
+  }
+}

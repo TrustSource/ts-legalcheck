@@ -1,0 +1,361 @@
+{
+  "Variants": {
+    "A": {
+      "setting": [["Component.dist_src"], ["!Component.modified"]]
+    },
+    "B": {
+      "setting": [["Component.dist_src"], ["Component.modified"]]
+    },
+    "C": {
+      "setting": [["Component.dist_obj"], ["!Component.modified"]]
+    },
+    "D": {
+      "setting": [["Component.dist_obj"], ["Component.modified"]]
+    }
+  },
+
+  "Rights": {
+    "R1" :	{
+      "name" : "Use",
+      "description": "The licensor grants the licensee a right to 'use'."
+    },
+    "R2" :	{
+      "name" : "Reproduce",
+      "description": "The licensor grants the licensee a right to 'reproduce'."
+    },
+    "R3" :	{
+      "name" : "Modify/Create derivative works",
+      "description": "The licensor grants the licensee a right to 'modify'."
+    },
+    "R4" :	{
+      "name" : "Distribution",
+      "description": "The licensor grants the licensee a right to 'distribute'."
+    },
+    "R5" :	{
+      "name" : "Sublicense",
+      "description": "The licensor grants the licensee a right to 'sublicense'."
+    },
+    "R6" :	{
+      "name" : "PatentLicense",
+      "description": "The licensor grants the licensee - as the case may be - a patent license."
+    },
+    "R7" :	{
+      "name" : "Trademarks",
+      "description": "The licensee may not use the trademark/name of the licensor."
+    },
+    "R8" :	{
+      "name" : "CommercialUtilization",
+      "description": "You may use the licensed Software for commercial purposes."
+    },
+    "R9" :	{
+      "name" : "CommercialUse:LicenseFee",
+      "description": "You may charge a license fee for the licensed Software."
+    },
+    "R10" :  {
+      "name" : "CommercialUse:Warranty",
+      "description": "You may charge a fee for granting warranty."
+    },
+    "R11" :  {
+      "name" : "DownloadOption4SourceCode",
+      "description": "You are allowed to distribute the source code by providing a download option only."
+    },
+    "R12" :  {
+      "name" : "Operate as SaaS",
+      "description": "You are allowed to operate the solution as a SaaS."
+    }
+  },
+
+  "Terms": {
+    "T01": {
+      "name": "Limited Liability",
+      "description": "The licensee does not grant any liability."
+    },
+    "T02": {
+      "name": "EffectOfLicenseViolation",
+      "description": "This license will terminate, given you do not respect any of the obligations."
+    },
+    "T03": {
+      "name": "EffectOfPatentLitigation",
+      "description": "This license will terminate, given you will enforce your rights aigainst third parties."
+    },
+    "T04": {
+      "name": "GPL-3.0 compatibility",
+      "description": "The license grants compatibility with GPL-2.0"
+    },
+    "T05": {
+      "name": "GPL-2.0 compatibility",
+      "description": "The license grants compatibility with GPL-2.0"
+    },
+    "T06": {
+      "name": "Copyleft termination",
+      "description": "The copyleft effect of this license will terminate after a mentioned period of time."
+    },
+    "T07": {
+      "name": "NoSurrenderOfFreedoms",
+      "description": "This license will terminate, if the licensee cannot guarantee the freedoms granted by the license."
+    }
+  },
+
+  "Obligations": {
+    "O1": {
+      "name": "RetainCopyRightNotice",
+      "description": "You must ensure, the Copyright Notice will be retained."
+    },
+    "O2": {
+      "name": "RetainListOfConditions",
+      "description": "You must retain the list of conditions (license) unchanged. "
+    },
+    "O3": {
+      "name": "RetainWarrantyDisclaimer",
+      "description": "Please ensure that you retained the Warranty Disclaimer!"
+    },
+    "O4": {
+      "name": "ProvideCopyOfLicenseText",
+      "description": "You are obliged to provide a copy of the license text."
+    },
+    "O5": {
+      "name": "ReproduceCopyrightNotice",
+      "description": "Ensure that the Copyright notice will be reproced."
+    },
+    "O6": {
+      "name": "ReproduceListOfConditions",
+      "description": "Ensure the license will be reproduced."
+    },
+    "O7": {
+      "name": "ReproduceWarrantyDisclaimer",
+      "description": "Ensure the Warranty Disclaimer will be reproduced."
+    },
+    "O8": {
+      "name": "ProvideSourceCode",
+      "description": "You must provide access to the source code."
+    },
+    "O9": {
+      "name": "ProvideSourceCode (SaaS)",
+      "description": "This license requires you to provide your source code even when operated as SaaS.",
+      "setting" : [["Module.OM_SaaS"]]
+    },
+    "O10": {
+      "name": "Provide Written Offer",
+      "description": "You must accompany any distribution with the written offer to supply the source code free of charge."
+    },
+    "O11": {
+      "name": "Attribute Authors",
+      "description" : "This license requires you under these circumstances to attribute the authors."
+    },
+    "O20": {
+      "name": "Copyleft",
+      "description": "This license infects linked sources, so that all directly linked code must be released under this license. "
+    },
+    "O21": {
+      "name": "IndicateChanges (general)",
+      "description": "The license requires you to indicate that you changed the original code."
+    },
+    "O22": {
+      "name": "TechnicalRestriction",
+      "description": "You are not allowed to prevent the user from executing the rights granted by this license by any means."
+    },
+    "O23": {
+      "name": "DescribeChanges",
+      "description": "The license requires you to describe the changes you have made."
+    },
+    "O25": {
+      "name": "IndicateChanges (filelevel)",
+      "description": "The license requires you to indicate within the files you have changed, that you changed them."
+    },
+    "O26": {
+      "name": "ProvideCopyrightDisclaimer",
+      "description": "The license requires you to provide a Disclaimer, in which you waive your copyrights."
+    },
+    "O27": {
+      "name": "ProvideCompileInstructions",
+      "description": "The license requires you to provide compile instructions, so that a 3rd party will be able to re-build the solution."
+    },
+    "O28": {
+      "name": "ContributionsUnderSameLicense",
+      "description": "The license requires you to provide your contributions under the same license."
+    }
+  },
+  "Rules": [
+    {
+      "setting" : [["O1__A", "O1__B", "O1__C", "O1__D"]],
+      "require" : [["O1"]]
+    },
+    {
+      "setting" : [["O1"]],
+      "require" : [["O1__A", "O1__B", "O1__C", "O1__D"]]
+    },
+
+    {
+      "setting" : [["O2__A", "O2__B", "O2__C", "O2__D"]],
+      "require" : [["O2"]]
+    },
+    {
+      "setting" : [["O2"]],
+      "require" : [["O2__A", "O2__B", "O2__C", "O2__D"]]
+    },
+
+    {
+      "setting" : [["O3__A", "O3__B", "O3__C", "O3__D"]],
+      "require" : [["O3"]]
+    },
+    {
+      "setting" : [["O3"]],
+      "require" : [["O3__A", "O3__B", "O3__C", "O3__D"]]
+    },
+
+    {
+      "setting" : [["O4__A", "O4__B", "O4__C", "O4__D"]],
+      "require" : [["O4"]]
+    },
+    {
+      "setting" : [["O4"]],
+      "require" : [["O4__A", "O4__B", "O4__C", "O4__D"]]
+    },
+
+    {
+      "setting" : [["O5__A", "O5__B", "O5__C", "O5__D"]],
+      "require" : [["O5"]]
+    },
+    {
+      "setting" : [["O5"]],
+      "require" : [["O5__A", "O5__B", "O5__C", "O5__D"]]
+    },
+
+    {
+      "setting" : [["O6__A", "O6__B", "O6__C", "O6__D"]],
+      "require" : [["O6"]]
+    },
+    {
+      "setting" : [["O6"]],
+      "require" : [["O6__A", "O6__B", "O6__C", "O6__D"]]
+    },
+
+    {
+      "setting" : [["O7__A", "O7__B", "O7__C", "O7__D"]],
+      "require" : [["O7"]]
+    },
+    {
+      "setting" : [["O7"]],
+      "require" : [["O7__A", "O7__B", "O7__C", "O7__D"]]
+    },
+
+    {
+      "setting" : [["O8__A", "O8__B", "O8__C", "O8__D"]],
+      "require" : [["O8"]]
+    },
+    {
+      "setting" : [["O8"]],
+      "require" : [["O8__A", "O8__B", "O8__C", "O8__D"]]
+    },
+
+    {
+      "setting" : [["O9__A", "O9__B", "O9__C", "O9__D"]],
+      "require" : [["O9"]]
+    },
+    {
+      "setting" : [["O9"]],
+      "require" : [["O9__A", "O9__B", "O9__C", "O9__D"]]
+    },
+
+    {
+      "setting" : [["O10__A", "O10__B", "O10__C", "O10__D"]],
+      "require" : [["O10"]]
+    },
+    {
+      "setting" : [["O10"]],
+      "require" : [["O10__A", "O10__B", "O10__C", "O10__D"]]
+    },
+
+    {
+      "setting" : [["O11__A", "O11__B", "O11__C", "O11__D"]],
+      "require" : [["O11"]]
+    },
+    {
+      "setting" : [["O11"]],
+      "require" : [["O11__A", "O11__B", "O11__C", "O11__D"]]
+    },
+
+
+
+    {
+      "setting" : [["O20__A", "O20__B", "O20__C", "O20__D"]],
+      "require" : [["O20"]]
+    },
+    {
+      "setting" : [["O20"]],
+      "require" : [["O20__A", "O20__B", "O20__C", "O20__D"]]
+    },
+
+    {
+      "setting" : [["O21__A", "O21__B", "O21__C", "O21__D"]],
+      "require" : [["O21"]]
+    },
+    {
+      "setting" : [["O21"]],
+      "require" : [["O21__A", "O21__B", "O21__C", "O21__D"]]
+    },
+
+    {
+      "setting" : [["O22__A", "O22__B", "O22__C", "O22__D"]],
+      "require" : [["O22"]]
+    },
+    {
+      "setting" : [["O22"]],
+      "require" : [["O22__A", "O22__B", "O22__C", "O22__D"]]
+    },
+
+    {
+      "setting" : [["O23__A", "O23__B", "O23__C", "O23__D"]],
+      "require" : [["O23"]]
+    },
+    {
+      "setting" : [["O23"]],
+      "require" : [["O23__A", "O23__B", "O23__C", "O23__D"]]
+    },
+
+    {
+      "setting" : [["O24__A", "O24__B", "O24__C", "O24__D"]],
+      "require" : [["O24"]]
+    },
+    {
+      "setting" : [["O24"]],
+      "require" : [["O24__A", "O24__B", "O24__C", "O24__D"]]
+    },
+
+    {
+      "setting" : [["O25__A", "O25__B", "O25__C", "O25__D"]],
+      "require" : [["O25"]]
+    },
+    {
+      "setting" : [["O25"]],
+      "require" : [["O25__A", "O25__B", "O25__C", "O25__D"]]
+    },
+
+    {
+      "setting" : [["O26__A", "O26__B", "O26__C", "O26__D"]],
+      "require" : [["O26"]]
+    },
+    {
+      "setting" : [["O26"]],
+      "require" : [["O26__A", "O26__B", "O26__C", "O26__D"]]
+    },
+
+    {
+      "setting" : [["O27__A", "O27__B", "O27__C", "O27__D"]],
+      "require" : [["O27"]]
+    },
+    {
+      "setting" : [["O27"]],
+      "require" : [["O27__A", "O27__B", "O27__C", "O27__D"]]
+    },
+
+    {
+      "setting" : [["O28__A", "O28__B", "O28__C", "O28__D"]],
+      "require" : [["O28"]]
+    },
+    {
+      "setting" : [["O28"]],
+      "require" : [["O28__A", "O28__B", "O28__C", "O28__D"]]
+    }
+  ]
+}

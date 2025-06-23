@@ -1,0 +1,116 @@
+{
+  "Rules": [
+  {
+    "key"     : "CA_1",
+    "setting" : [["Module.CA_usage"]],
+    "require" : [["R8"]],
+    "type"    : "violation",
+    "message" : "This license does not allow commercial use. HINT: Either drop component or provide as free solution."
+  },
+  {
+    "key"     : "CA_2",
+    "setting" : [["Module.CA_license"]],
+    "require" : [["R8"], ["R9"]],
+    "type"    : "violation",
+    "message" : "This license does not allow commercialisation under a license. HINT Drop the component or choose another compensation model"
+  },
+  {
+    "key"      : "CA_3",
+    "setting" : [["Module.CA_support"]],
+    "require" : [["R8"]],
+    "type"    : "violation",
+    "message" : "This license does not allow charging support fees. HINT Either drop component or change commercial model"
+  },
+  {
+    "key"      : "CA_4",
+    "setting" : [["Module.CA_other"]],
+    "require" : [["R8"]],
+    "type"    : "violation",
+    "message" : "This license does not allow the desired way of commercialisation. HINT Either drop component or change commercial model."
+  },
+  {
+    "key"      : "IP_1",
+    "setting" : [["Module.IP_protect_y"]],
+    "require" : [["R6"]],
+    "type"    : "warning",
+    "message" : "Please note, this license does not eliminate the risk of patent claims by contributors. HINT Either accept/ignore or select alternative component with more suitable regulations"
+  },
+  {
+    "key"      : "IP_2",
+    "setting" : [["Module.IP_enforce_2"]],
+    "require" : [["!T02"]],
+    "type"    : "warning",
+    "message" : "Please note, this license bears the risk of termination, if you will be enforcing your rights against third parties. HINT: Try to substitute the component or unbundle it"
+  },
+  {
+    "key"      : "IP_3",
+    "setting" : [["Module.IP_enforce_3"]],
+    "require" : [["!T02"]],
+    "type"    : "violation",
+    "message" : "Please note, this license will terminate in case you are enforcing your rights against third parties. HINT: Either substitute component or try to unbundle it"
+  },
+  {
+    "key"      : "TS_1",
+    "setting" : [["Module.TS_y"], ["!Module.OM_SaaS"]],
+    "require" : [["!O41"]],
+    "type"    : "violation",
+    "message" : "This license requires you to make your changes public. This exposes a threat to your aim to protect your trade secrets"
+  },
+  {
+    "key"      : "TS_2",
+    "setting" : [["Module.TS_y"], ["Module.OM_SaaS"]],
+    "require" : [["!O60"]],
+    "type"    : "warning",
+    "message" : "Please note, that this license might require you to publish changes you have made even with derivative works. HINT Probably you might want to watch for another component"
+  },
+  {
+    "key"      : "TS_3",
+    "setting" : [["Module.TS_y"]],
+    "require" : [["!O40"]],
+    "type"    : "deadly obligation",
+    "message" : "This license requires you to open source your source code"
+  },
+  {
+    "key"      : "LS_1",
+    "setting" : [["Module.LS_pl"]],
+    "require" : [["R5"], ["!O40"]],
+    "type"    : "violation",
+    "message" : "This license requires you to retain the original license. HINT: resolution is possible by dropping or unbinding (use as infrastructure module) the component and a proper definition of your terms and conditions"
+  },
+  {
+    "key"      : "LS_2",
+    "setting" : [["Module.LS_os"]],
+    "require" : [[]],
+    "type"    : "warning",
+    "message" : "Applicable license must be selected and verified that licensee has all required rights for release under selected license"
+  },
+  {
+    "key"      : "OM_1",
+    "setting" : [["!Module.OM_SaaS"]],
+    "require" : [[]],
+    "type"    : "warning",
+    "message" : "Depending on components modification status, obligations from O10-O15 or O20-O26 apply"
+  },
+  {
+    "key"      : "MOD_1",
+    "setting" : [["Component.modified"]],
+    "require" : [["R1"]],
+    "type"    : "violation",
+    "message" : "This license does not allow you to modify the components. HINT: Either undo your changes or drop the component"
+  },
+  {
+    "key"      : "DIST_1",
+    "setting" : [["Component.dist_src"]],
+    "require" : [["!T02"]],
+    "type"    : "warning",
+    "message" : "The grant of rights (use, modification, reproduction, etc.) under the license is condition upon compliance with the license obligations"
+  },
+  {
+    "key"      : "DIST_2",
+    "setting" : [["Component.dist_obj"]],
+    "require" : [["!T02"]],
+    "type"    : "warning",
+    "message" : "The grant of rights (use, modification, reproduction, etc.) under the license is condition upon compliance with the license obligations"
+  }
+]
+}

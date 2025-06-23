@@ -1,2 +1,15 @@
 # ts-legalcheck
-A solver allowing to evaluate licenses for obligations based on existing circumstances 
+
+A legal check tool.
+
+## Installation
+
+```bash
+pip install .
+```
+
+## Usage
+
+```python
+import ts_legalcheck
+```

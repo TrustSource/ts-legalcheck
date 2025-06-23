@@ -1,0 +1,32 @@
+[project]
+name = "ts-legalcheck"
+version = "1.0.0"
+description = "TrustSource Legal Check tool."
+authors = [
+    { name="Grigory Markin", email="gmn@eacg.de" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = 'AGPL-3.0-only'
+
+dependencies = [
+	"click==8.1.7",
+	"z3-solver==4.15.1.0",
+	"setuptools>=61.0",
+]
+
+[project.urls]
+Homepage = 'https://github.com/trustsource/ts-legalcheck.git'
+
+[project.scripts]
+ts-scan = "ts_legalcheck.cli:start"
+
+[build-system]
+requires = [
+	"setuptools>=61.0",
+	"setuptools-scm>=8.0"
+	]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ['src']

@@ -1,0 +1,7 @@
+{
+  "Includes": [
+    "defs-4.4.json",
+    "rules-4.4.json",
+    "licenses/v4.4/*.json"
+  ]
+}

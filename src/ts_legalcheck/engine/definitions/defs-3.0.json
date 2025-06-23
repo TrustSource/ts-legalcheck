@@ -1,0 +1,145 @@
+{
+  "Rights": {
+    "R1" :	{
+      "name" : "Use",
+      "description": "The licensor grants the licensee a right to 'use'."
+    },
+    "R2" :	{
+      "name" : "Reproduce",
+      "description": "The licensor grants the licensee a right to 'reproduce'."
+    },
+    "R3" :	{
+      "name" : "Modify/Create derivative works",
+      "description": "The licensor grants the licensee a right to 'modify'."
+    },
+    "R4" :	{
+      "name" : "Distribution",
+      "description": "The licensor grants the licensee a right to 'distribute'."
+    },
+    "R5" :	{
+      "name" : "Sublicense",
+      "description": "The licensor grants the licensee a right to 'sublicense'."
+    },
+    "R6" :	{
+      "name" : "PatentLicense",
+      "description": "The licensor grants the licensee - as the case may be - a patent license."
+    },
+    "R7" :	{
+      "name" : "Trademarks",
+      "description": "The licensee may not use the trademark/name of the licensor."
+    },
+    "R8" :	{
+      "name" : "CommercialUtilization",
+      "description": "You may use the licensed Software for commercial purposes."
+    },
+    "R9" :	{
+      "name" : "CommercialUse:LicenseFee",
+      "description": "You may charge a license fee for the licensed Software."
+    }
+  },
+
+
+
+
+  "Obligations" : {
+    "O00": {
+      "name" : "Retain Copyright Notice",
+      "description" : "You must retain the Copyright Notice (e.g. Copyright ©, Year, Copyright Holder).",
+      "setting": [["Component.modified"]]
+    },
+
+
+
+
+    "O01" : {
+      "name" : "Provide a copy of the License Text",
+      "description" : "You must provide a copy of the license text."
+    },
+    "O02" : {
+      "name" : "TechnicalRestriction",
+      "description" : "You may not apply technological measures that restrict exercise of the granted rights."
+    },
+
+
+
+
+    "O10" : {
+      "name" : "Retain Copyright Notice",
+      "description" : "You must reproduce the Copyright Notice.",
+      "setting" : [["Component.dist_src", "O20"]]
+    },
+    "O11" : {
+      "name" : "Retain Warranty Disclaimer",
+      "description" : "You must reproduce the warranty disclaimer.",
+      "setting" : [["Component.dist_src", "O20"]]
+    },
+
+
+
+
+    "O20" : {
+      "name" : "Obligations Distribution in Source Form",
+      "description" : "Obligations applying for the Distribution in Source Form must also be satisfied.",
+      "setting" : [["Component.dist_obj"]]
+    },
+    "O21" : {
+      "name" : "Reproduce Copyright Notice",
+      "description" : "You must reproduce the Copyright Notice.",
+      "setting" : [["Component.dist_obj"]]
+    },
+    "O22" : {
+      "name" : "Reproduce Warranty Disclaimer",
+      "description" : "You must reproduce the warranty disclaimer.",
+      "setting" : [["Component.dist_obj"]]
+    },
+    "O23" : {
+      "name" : "Provide Source Code",
+      "description" : "You must provide the Source Code.",
+      "setting" : [["Component.dist_obj"]]
+    },
+
+
+
+    "O40" : {
+      "name" : "Copyleft Effect",
+      "description" : "Modified software/derivative works must be licensed under the license.",
+      "setting" : [["Component.modified"]]
+    },
+    "O41" : {
+      "name" : "Provide Source Code of the modified Software",
+      "description" : "Source code of the modified software/derivative works must be made available to the recipients  of the software and/or - as the case may be - to other third parties. ",
+      "setting" : [["Component.modified"]]
+    },
+    "O42" : {
+      "name" : "ShowChanges",
+      "description" : "You must indicate changes made to the code.",
+      "setting" : [["Component.modified"]]
+    },
+
+
+
+    "O60" : {
+      "name" : "SaaS Trigger",
+      "description" : "A usage of the Software in a ASP/SaaS scenario may - under certain conditions - trigger obligations such as making the source code available to the user.",
+      "setting" : [["Component.as_service"]]
+    }
+  },
+
+
+
+
+  "Terms" : {
+     "T01" : {
+       "name" : "Limited Liability",
+       "description" : "Licensor has excluded and/or limited its liability."
+     },
+    "T02" : {
+       "name" : "EffectOfLicenseViolation",
+       "description" : "License violation will terminate all rights granted under the license. "
+     },
+    "T03" : {
+       "name" : "EffectOfPatentLitigation",
+       "description" : "Initiating a patent litigation will terminate all rights and/or - as the case may be - any patent rights granted unter the license."
+     }
+  }
+}

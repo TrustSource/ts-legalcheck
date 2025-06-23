@@ -1,0 +1,4 @@
+click==8.1.7
+# z3-solver==4.11.1.0
+z3-solver==4.15.1.0
+setuptools>=61.0

@@ -1,0 +1,39 @@
+{
+  "module": {
+    
+    "CA_license": true,
+    "CA_usage": false,
+    "CA_support": false,
+    "CA_other": false,
+    "CA_none": false, 
+
+    "OM_SaaS": false,
+    "OM_mop": false,
+    "OM_sw": true,
+    "OM_dis": false, 
+    "OM_did": false, 
+
+    "IP_protect_y": true,
+    "IP_enforce_1": false,    
+    "IP_enforce_2": true,
+    "IP_enforce_3": false,    
+
+    "TS_y": true,
+
+    "LS_os": false, 
+    "LS_pl": true,
+    "LS_both": false,   
+
+    "D_op" : true,
+    "D_ipoa": false,
+    "D_xa": false,
+    "D_sslib": false,
+    "D_cslib": false,
+    "D_never": false
+
+  },
+  "component": {
+    "modified": true,
+    "tightCoupled": false
+  }
+}
