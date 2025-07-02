@@ -175,8 +175,16 @@
       "description": "The license requires you to provide your contributions under the same license."
     }
   },
-  "Rules": [
+  "Rules": [        
     {
+      "setting" : [["Module.D_op", "Module.D_ipoa", "Module.D_xa", "Module.D_sslib"], ["!Module.OM_SaaS"]],
+      "require" : [["Component.dist_obj"]]
+    },
+    {
+      "setting" : [["Module.D_cslib"]],
+      "require" : [["Component.dist_src"]]
+    },    
+    {      
       "setting" : [["O1__A", "O1__B", "O1__C", "O1__D"]],
       "require" : [["O1"]]
     },
@@ -184,7 +192,6 @@
       "setting" : [["O1"]],
       "require" : [["O1__A", "O1__B", "O1__C", "O1__D"]]
     },
-
     {
       "setting" : [["O2__A", "O2__B", "O2__C", "O2__D"]],
       "require" : [["O2"]]
@@ -353,6 +360,7 @@
       "setting" : [["O28__A", "O28__B", "O28__C", "O28__D"]],
       "require" : [["O28"]]
     },
+    
     {
       "setting" : [["O28"]],
       "require" : [["O28__A", "O28__B", "O28__C", "O28__D"]]

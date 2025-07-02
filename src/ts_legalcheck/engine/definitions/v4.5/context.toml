@@ -1,0 +1,10 @@
+# The following rules are used to extend the engine context provided by the user. 
+
+# The following rules specify how the distribution form is infered from the context provided by the user as input.
+[[Rules]]
+setting = [["Module.D_op", "Module.D_ipoa", "Module.D_xa", "Module.D_sslib"], ["!Module.OM_SaaS"]]
+require = [["Component.dist_obj"]]
+
+[[Rules]]
+setting = [["Module.D_cslib"]]
+require = [["Component.dist_src"]]

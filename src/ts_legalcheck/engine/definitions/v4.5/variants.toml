@@ -1,0 +1,102 @@
+# Variants are used to define different configurations of obligations 
+# in order to make them hold depending on the context of the component.
+
+# Every license should specify if an obligation holds or not for every configuration. 
+# Hence, instead of a single value for an obligation O[n] it should provide values for all variants: 
+# O[n]__A, O[n]__B, O[n]__C, O[n]__D.
+
+[Variants.A]
+setting = [["Component.dist_src"], ["!Component.modified"]]
+
+[Variants.B]
+setting = [["Component.dist_src"], ["Component.modified"]]
+
+[Variants.C]
+setting = [["Component.dist_obj"], ["!Component.modified"]]
+
+[Variants.D]
+setting = [["Component.dist_obj"], ["Component.modified"]]
+
+
+# The following rules are used to simplify the representation of active obligations. 
+# If any of the variants of an obligation is active, that obligation is assumed to be active as well.
+
+[[Rules]] 
+setting = [["O1"]]
+equal = [["O1__A", "O1__B", "O1__C", "O1__D"]]
+
+[[Rules]]
+setting = [["O2__A", "O2__B", "O2__C", "O2__D"]]
+equal = [["O2"]]
+
+[[Rules]]
+setting = [["O3__A", "O3__B", "O3__C", "O3__D"]]
+equal = [["O3"]]
+
+[[Rules]]
+setting = [["O4__A", "O4__B", "O4__C", "O4__D"]]
+equal = [["O4"]]
+
+[[Rules]]
+setting = [["O5__A", "O5__B", "O5__C", "O5__D"]]
+equal = [["O5"]]
+
+[[Rules]]
+setting = [["O6__A", "O6__B", "O6__C", "O6__D"]]
+equal = [["O6"]]
+
+[[Rules]]
+setting = [["O7__A", "O7__B", "O7__C", "O7__D"]]
+equal = [["O7"]]
+
+[[Rules]]
+setting = [["O8__A", "O8__B", "O8__C", "O8__D"]]
+equal = [["O8"]]
+
+[[Rules]]
+setting = [["O9__A", "O9__B", "O9__C", "O9__D"]]
+equal = [["O9"]]
+
+[[Rules]]
+setting = [["O10__A", "O10__B", "O10__C", "O10__D"]]
+equal = [["O10"]]
+
+[[Rules]]
+setting = [["O11__A", "O11__B", "O11__C", "O11__D"]]
+equal = [["O11"]]
+
+[[Rules]]
+setting = [["O20__A", "O20__B", "O20__C", "O20__D"]]
+equal = [["O20"]]
+
+[[Rules]]
+setting = [["O21__A", "O21__B", "O21__C", "O21__D"]]
+equal = [["O21"]]
+
+[[Rules]]
+setting = [["O22__A", "O22__B", "O22__C", "O22__D"]]
+equal = [["O22"]]
+
+[[Rules]]
+setting = [["O23__A", "O23__B", "O23__C", "O23__D"]]
+equal = [["O23"]]
+
+[[Rules]]
+setting = [["O24__A", "O24__B", "O24__C", "O24__D"]]
+equal = [["O24"]]
+
+[[Rules]]
+setting = [["O25__A", "O25__B", "O25__C", "O25__D"]]
+equal = [["O25"]]
+
+[[Rules]]
+setting = [["O26__A", "O26__B", "O26__C", "O26__D"]]
+equal = [["O26"]]
+
+[[Rules]]
+setting = [["O27__A", "O27__B", "O27__C", "O27__D"]]
+equal = [["O27"]]
+
+[[Rules]]
+setting = [["O28__A", "O28__B", "O28__C", "O28__D"]]
+equal = [["O28"]]

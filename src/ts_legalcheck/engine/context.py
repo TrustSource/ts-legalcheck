@@ -3,6 +3,8 @@ import typing as t
 
 from pathlib import Path
 
+from ..utils import logger, load_file
+
 class TSObject(object):
     def __init__(self, key):
         self.__key = key
@@ -73,35 +75,29 @@ class Module(TSTargetObject):
         return self.__components.get(key)
 
 
-def resolveComponentsProperties(module):
-    # TODO: Move to the engine rules after reviewing rules and constraints
-    m_props = module.properties
-    for c in module.components:
-        c.properties["dist_obj"] = \
-            m_props.get("D_op", False) or \
-            m_props.get("D_ipoa", False) or \
-            m_props.get("D_xa", False) or \
-            (m_props.get("D_sslib", False) and not m_props.get("OM_SaaS", False))
-
-        c.properties["dist_src"] = m_props.get("D_cslib", False)
-
-
-def loadModule(data: t.Union[str, bytes]) -> Module:
+def loadModule(src: t.Union[str, bytes, Path]) -> t.Optional[Module]:
     def loadComponent(c_key, c):
         c_props = {k:v for k, v in c.items() if k != 'licenses'}
         comp = Component(c_key, c_props, c['licenses'])
         comp.validate()
         return comp
 
-    m = json.loads(data)
+    if isinstance(src, Path):
+        m = load_file(src)
+
+    elif isinstance(src, (str, bytes)):
+        m = json.loads(src)
+
+    else:
+        logger.error(f'Unsupported source type: {type(src)}. Expected str, bytes or Path.')
+        return None
+    
+    if not m:
+        return None
+    
     m_key = m['key']
     m_props = {k:v for k, v in m.items() if k not in ['key', 'components']}
     module = Module(m_key, m_props, [loadComponent(k, v) for k, v in m['components'].items()])
-    resolveComponentsProperties(module)
+
     module.validate()
     return module
-
-
-def loadModuleFromFile(path: Path) -> Module:
-    with path.open('r') as fp:
-        return loadModule(fp.read())

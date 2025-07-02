@@ -5,7 +5,7 @@ import typing as t
 
 
 from .engine import createEngineWithDefinitions, loadDefinitions
-from .engine.context import Component, Module, loadModuleFromFile
+from .engine.context import Component, Module, loadModule
 from .utils import setup_logging
 
 def _createEngine(paths: t.List[pathlib.Path]):
@@ -27,14 +27,13 @@ def check(defs, verbose, path):
     if verbose:
         setup_logging()
 
-    mod = loadModuleFromFile(path)
+    if mod := loadModule(path):
+        engine = _createEngine(list(defs))
 
-    engine = _createEngine(list(defs))
+        result = engine.checkModule(mod)
+        result = json.dumps(result, indent=2)
 
-    result = engine.checkModule(mod)
-    result = json.dumps(result, indent=2)
-
-    print(result)
+        print(result)
 
 
 @cli.command()
@@ -51,5 +50,9 @@ def test(defs, lic, verbose, path):
     
     engine = _createEngine(list(defs))
 
-    result = test_license(engine, lic, path)
-    print(json.dumps(result.to_dict(), indent=2))
+    if result := test_license(engine, lic, path):
+        print(json.dumps(result.to_dict(), indent=2))
+
+
+if __name__ == '__main__':
+    cli()

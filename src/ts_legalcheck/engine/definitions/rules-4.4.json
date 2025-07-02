@@ -141,14 +141,14 @@
   },
   {
     "key"      : "ALW_1",
-    "setting" : [[]],
+    "setting" : [],
     "require" : [["R7"]],
     "type"    : "warning",
     "message" : "Ensure, you will not use the trademark of this component to promote your work."
   },
   {
     "key"      : "ALW_2",
-    "setting" : [[]],
+    "setting" : [],
     "require" : [["R1"]],
     "type"    : "violation",
     "message" : "This license does not grant you the right to use the component. The only way to heal this, is to drop the component."

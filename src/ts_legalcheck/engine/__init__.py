@@ -45,23 +45,18 @@ class Rule(TSObject):
 
 class Constraint(TSConstObject):
     def __init__(self, key):
-        super(Constraint, self).__init__(key)
+        super().__init__(key)
 
-        key_parts = self.key.split('.')
-
-        self.scope = key_parts[0] if len(key_parts) > 1 else ''
-        self.property = key_parts[1] if len(key_parts) > 1 else key
-
-    def const(self, dt):
-        return super(Constraint, self).const(dt.Constraint)
+    def const(self, dt):        
+        return super().const(dt.Constraint)
 
 
 class License(TSConstObject):
     def __init__(self, key):
-        super(License, self).__init__(key)
+        super().__init__(key)
 
     def const(self, dt):
-        return super(License, self).const(dt.License)
+        return super().const(dt.License)
 
 
 
@@ -145,17 +140,17 @@ class Engine:
     def __eval(self, cnstr):
         return is_true(self.__solver.model().eval(cnstr, model_completion=True))
 
-    def __addFact(self, fact, tag=''):
-        if tag != '':
+    def __addFact(self, fact, tag:t.Optional[str]=None):
+        if tag:
             fact = Implies(Bool(tag, self.__ctx), fact)
-
+        
         self.__solver.add(fact)
 
-    def __getCnstr(self, cnstrId):
+    def __getCnstr(self, cnstrId: str) -> Constraint:
         c_id = cnstrId.strip('!')
         cnstr = self.__constraints.get(c_id, None)
 
-        if cnstr is None:
+        if not cnstr:
             cnstr = Constraint(c_id)
             self.__constraints[c_id] = cnstr
 
@@ -163,36 +158,52 @@ class Engine:
 
 
     @staticmethod
-    def __makeCnstrTerm(cnstrId, term):
+    def __makeCnstrTerm(cnstrId: str, term: ExprRef) -> ExprRef:
         if cnstrId[0] == '!':
-            return Not(term)
+            return t.cast(ExprRef, Not(term))
         else:
             return term
 
 
-    def __makeCnstr(self, cnstrId: str):
-        cnstr = self.__getCnstr(cnstrId)
-
-        if cnstr.scope == 'Module':
-            return self.__makeModuleCnstr(cnstrId)
+    def __makeCnstr(self, cnstr: str) -> t.Optional[ExprRef]:        
+        id_parts = cnstr.split('.', 2) # Split by the first dot only, to identify a scope, the rest is the key
+        
+        if len(id_parts) == 1:
+            cnstr = id_parts[0]
+            scope = None
+        elif len(id_parts) == 2:
+            cnstr = id_parts[1]
+            scope = id_parts[0]
         else:
-            return self.__makeComponentCnstr(cnstrId)
+            return None
 
-    def __makeModuleCnstr(self, cnstrId, mConst = None):
+        if scope and scope[0] == '!':
+            cnstr = '!' + cnstr
+            scope = scope[1:]
+
+        if scope == 'Module':
+            return self.__makeModuleCnstr(cnstr)        
+        elif scope == 'License':
+            return self.__makeLicenseCnstr(cnstr)        
+        else:
+            return self.__makeComponentCnstr(cnstr)
+
+
+    def __makeModuleCnstr(self, cnstrId, mConst = None) -> ExprRef:
         if mConst is None:
             mConst = Const('m', self.types.Module)
 
         term = self.types.ModuleConstraint(mConst, self.__getCnstr(cnstrId).const(self.types))
         return self.__makeCnstrTerm(cnstrId, term)
 
-    def __makeComponentCnstr(self, cnstrId, cConst = None):
+    def __makeComponentCnstr(self, cnstrId, cConst = None) -> ExprRef:
         if cConst is None:
             cConst = Const('c', self.types.Component)
 
         term = self.types.ComponentConstraint(cConst, self.__getCnstr(cnstrId).const(self.types))
         return self.__makeCnstrTerm(cnstrId, term)
 
-    def __makeLicenseCnstr(self, cnstrId, lConst = None):
+    def __makeLicenseCnstr(self, cnstrId, lConst = None) -> ExprRef:
         if lConst is None:
             lConst = Const('l', self.types.License)
 
@@ -200,17 +211,24 @@ class Engine:
         return self.__makeCnstrTerm(cnstrId, term)
 
 
-    def __makeCNFCnstr(self, cnstr: t.List[t.List[str]], builder):
+    def __makeCNFCnstr(self, cnstr: t.List[t.List[str]], builder) -> BoolRef:
         """
         Creates a fromula from the list presentation in CNF form
         Example: [[c1, c2], [c3]] is equal to a CNF formula (c1 || c2) && (c3)
         :param cnstr: List of lists of atomic clauses
         :return: Z3 term
         """
-        return And([Or([builder(c) for c in clauses], self.__ctx) for clauses in cnstr], self.__ctx)
+
+        clauses = [Or([builder(c) for c in clauses], self.__ctx) 
+                   for clauses in cnstr if len(clauses) > 0]
+
+        if len(clauses) > 0:
+            return t.cast(BoolRef, And(clauses, self.__ctx))
+        else:
+            return t.cast(BoolRef, True)
 
 
-    def __makeCNFCnstrFromObject(self, obj: dict, key: str, builder):
+    def __makeCNFCnstrFromObject(self, obj: dict, key: str, builder) -> BoolRef:
         value = obj.get(key, [])
         if type(value) is not list or any(type(item) is not list for item in value):
             print(f"WARNING: Wrong type of the '{key}' in a definition. List of lists is expected.")
@@ -334,22 +352,34 @@ class Engine:
 
         m = Const('m', self.types.Module)
         c = Const('c', self.types.Component)
+        l = Const('l', self.types.License)
 
-        for rule in rules:
-            ruleId = rule.get('key', '')
-            if ruleId != '':
+        for rule in rules:            
+            if ruleId := rule.get('key'):
                 self.__rules[ruleId] = Rule(ruleId, rule.get('type', ''))
 
-            cond = self.__makeCNFCnstrFromObject(rule, 'setting', self.__makeCnstr)
-            cond = And(self.types.ModuleComponent(m, c), cond, self.__ctx)
+            cond = And(self.types.ModuleComponent(m, c), 
+                       self.types.ComponentLicense(c, l),                       
+                       self.__ctx)
+            
+            setting = self.__makeCNFCnstrFromObject(rule, 'setting', self.__makeCnstr)
 
-            # If require is empty, consider it as False, i.e. the rule should always trigger
+            # If neither 'require' nor 'equal' are present, consider the setting as a condition that always holds 
             if 'require' in rule:
                 require = self.__makeCNFCnstrFromObject(rule, 'require', self.__makeCnstr)
-            else:
-                require = False
+                fact = Implies(And(cond, setting, self.__ctx), require, self.__ctx)                
 
-            self.__addFact(ForAll([m, c], Implies(cond, require)), ruleId)
+            elif 'equal' in rule:
+                equal = self.__makeCNFCnstrFromObject(rule, 'equal', self.__makeCnstr)
+                fact = And(Implies(And(cond, setting, self.__ctx), equal, self.__ctx), 
+                           Implies(And(cond, equal, self.__ctx), setting, self.__ctx), 
+                           self.__ctx)
+
+            else:
+                fact = cond
+
+
+            self.__addFact(ForAll([m, c, l], fact), ruleId)
 
 
 
@@ -393,16 +423,14 @@ class Engine:
 
         if isinstance(el, Module):
             m_const = self.types.Module.make(0)
-            m_cnstr = [self.__makeModuleCnstr(cnstr.key, m_const) == el.properties.get(cnstr.property, False)
-                       for cnstr in self.__constraints.values() if cnstr.scope == 'Module']
+            m_cnstr = [self.__makeModuleCnstr(key, m_const) == val for key, val in el.properties.items()]
 
             solver.add(m_cnstr)
             self.__modsStack.append(m_const)
 
         elif isinstance(el, Component):
             c_const = self.types.Component.make(0)
-            c_cnstr = [self.__makeComponentCnstr(cnstr.key, c_const) == el.properties.get(cnstr.property, False)
-                       for cnstr in self.__constraints.values() if cnstr.scope == 'Component']
+            c_cnstr = [self.__makeComponentCnstr(key, c_const) == val for key, val in el.properties.items()]
 
             solver.add(c_cnstr)
             if len(self.__modsStack) > 0:
@@ -444,18 +472,30 @@ class Engine:
                     if self.__eval(self.__makeComponentCnstr(_key, c_const)):
                         obligations.append(_key)
 
+                    # elif self.__eval(self.__makeComponentCnstr(f'{_key}__A', c_const)):                        
+                    #     obligations.append(f'{_key}__A')
+                    # elif self.__eval(self.__makeComponentCnstr(f'{_key}__B', c_const)):
+                    #     obligations.append(f'{_key}__B')
+                    # elif self.__eval(self.__makeComponentCnstr(f'{_key}__C', c_const)):
+                    #     obligations.append(f'{_key}__C')
+                    # elif self.__eval(self.__makeComponentCnstr(f'{_key}__D', c_const)):
+                    #     obligations.append(f'{_key}__D')
+
             return obligations
 
         solver = self.__solver
         assumptions = [Bool(key, solver.ctx) for key in self.__rules.keys()]
 
         if solver.check(assumptions) == sat:
+            logging.info(f'License {lic.key} is SAT')
             result = {
                 'status': 'SAT',
                 'obligations': extractObligations()
             }
 
         else:
+            logging.info(f'License {lic.key} is UNSAT')
+
             c_solver = SubsetSolver(assumptions, solver)
             m_solver = MapSolver(n=c_solver.n)
             sets = enumerate_sets(c_solver, m_solver)
@@ -465,7 +505,7 @@ class Engine:
                 if orig == 'MUS':
                     for tag in tags:
                         tn = tag.decl().name()
-                        violations.append(self.__rules[tn].key)
+                        violations.append(self.__rules[tn].key)            
 
             result = {
                 'status': 'UNSAT',
@@ -476,6 +516,7 @@ class Engine:
             assumptions = [Bool(key, solver.ctx) for key in self.__rules.keys() if key not in violations]
             if solver.check(assumptions) == sat:
                 result['obligations'] = extractObligations()
+
 
         self.pop(License)
         return result
@@ -519,21 +560,19 @@ class Engine:
         return result
 
 
+_package_definitions_path=Path(__file__).parent / 'definitions'
 
-def loadDefinitions(paths: t.List[Path]) -> t.Dict[str, t.Dict[str, t.Any]]:    
-    from json import JSONDecodeError
-
-    
+def loadDefinitions(paths: t.List[Path]) -> t.Dict[str, t.Dict[str, t.Any]]:                
     def resolve_path(path: Path, parent: t.Optional[Path] = None) -> t.Optional[Path]:
         if path.exists():
             return path
         
         search_paths = [            
-            Path(__file__).parent / 'definitions'            
+            _package_definitions_path
         ]
 
         if parent:
-            search_paths.append(parent)    
+            search_paths.append(parent)
 
         for sp in search_paths:
             if (_path := sp / path).exists():
@@ -544,35 +583,32 @@ def loadDefinitions(paths: t.List[Path]) -> t.Dict[str, t.Dict[str, t.Any]]:
     result = {}
     
     _paths: t.List[t.Tuple[Path, t.Optional[Path]]] = [(p, None) for p in paths]
+    
     while len(_paths) > 0:
         if p := resolve_path(*_paths.pop()):
             logger.info(f'Loading definitions from {p}...')
-            with p.open('r') as fp:
-                try:
-                    defs = json.load(fp)
-                    
-                    for include in defs.pop('Includes', []):
-                        if "*" in include:
-                            for include_path in glob.glob(os.path.join(p.parent, include)):
-                                _paths.append((Path(include_path), None))
-                        else:            
-                            _paths.append((Path(include), p.parent))
-                    
+            if defs := utils.load_file(p):
+                for include in defs.pop('Includes', []):
+                    if "*" in include:
+                        includes = [(Path(include_path), p.parent) for include_path in glob.glob(include, root_dir=p.parent)]
+                        if not includes:
+                            includes = [(Path(include_path), None) for include_path in glob.glob(include, root_dir=_package_definitions_path)]                        
+                        
+                        _paths.extend(includes)                        
+                    else:            
+                        _paths.append((Path(include), p.parent))
+                
 
-                    for k, _d in defs.items():
-                        if _e := result.get(k, None):
-                            if type(_d) is list and type(_e) is list:
-                                _e.extend(_d)
-                            elif type(_d) is dict and type(_e) is dict:
-                                _e.update(_d)
-                            else:
-                                raise ValueError(f"Cannot merge {k} definitions from {fp.name}. Not compatible types.")
+                for k, _d in defs.items():
+                    if _e := result.get(k, None):
+                        if type(_d) is list and type(_e) is list:
+                            _e.extend(_d)
+                        elif type(_d) is dict and type(_e) is dict:
+                            _e.update(_d)
                         else:
-                            result[k] = _d
-
-                except JSONDecodeError as err:
-                    print(f'Cannot decode {str(p)}')
-                    print(err)
+                            raise ValueError(f"Cannot merge {k} definitions from {p.name}. Not compatible types.")
+                    else:
+                        result[k] = _d
 
     return result
 

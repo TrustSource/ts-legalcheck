@@ -1,0 +1,161 @@
+[Rights]
+
+[Rights.R1]
+name = "Use"
+description = "The licensor grants the licensee a right to 'use'."
+
+[Rights.R2]
+name = "Reproduce"
+description = "The licensor grants the licensee a right to 'reproduce'."
+
+[Rights.R3]
+name = "Modify/Create derivative works"
+description = "The licensor grants the licensee a right to 'modify'."
+
+[Rights.R4]
+name = "Distribution"
+description = "The licensor grants the licensee a right to 'distribute'."
+
+[Rights.R5]
+name = "Sublicense"
+description = "The licensor grants the licensee a right to 'sublicense'."
+
+[Rights.R6]
+name = "PatentLicense"
+description = "The licensor grants the licensee - as the case may be - a patent license."
+
+[Rights.R7]
+name = "Trademarks"
+description = "The licensee may not use the trademark/name of the licensor."
+
+[Rights.R8]
+name = "CommercialUtilization"
+description = "You may use the licensed Software for commercial purposes."
+
+[Rights.R9]
+name = "CommercialUse:LicenseFee"
+description = "You may charge a license fee for the licensed Software."
+
+[Rights.R10]
+name = "CommercialUse:Warranty"
+description = "You may charge a fee for granting warranty."
+
+[Rights.R11]
+name = "DownloadOption4SourceCode"
+description = "You are allowed to distribute the source code by providing a download option only."
+
+[Rights.R12]
+name = "Operate as SaaS"
+description = "You are allowed to operate the solution as a SaaS."
+
+
+[Terms]
+
+
+[Terms.T01]
+name = "Limited Liability"
+description = "The licensee does not grant any liability."
+
+[Terms.T02]
+name = "EffectOfLicenseViolation"
+description = "This license will terminate, given you do not respect any of the obligations."
+
+[Terms.T03]
+name = "EffectOfPatentLitigation"
+description = "This license will terminate, given you will enforce your rights aigainst third parties."
+
+[Terms.T04]
+name = "GPL-3.0 compatibility"
+description = "The license grants compatibility with GPL-2.0"
+
+[Terms.T05]
+name = "GPL-2.0 compatibility"
+description = "The license grants compatibility with GPL-2.0"
+
+[Terms.T06]
+name = "Copyleft termination"
+description = "The copyleft effect of this license will terminate after a mentioned period of time."
+
+[Terms.T07]
+name = "NoSurrenderOfFreedoms"
+description = "This license will terminate, if the licensee cannot guarantee the freedoms granted by the license."
+
+
+[Obligations]
+
+[Obligations.O1]
+name = "RetainCopyRightNotice"
+description = "You must ensure, the Copyright Notice will be retained."
+
+[Obligations.O2]
+name = "RetainListOfConditions"
+description = "You must retain the list of conditions (license) unchanged. "
+
+[Obligations.O3]
+name = "RetainWarrantyDisclaimer"
+description = "Please ensure that you retained the Warranty Disclaimer!"
+
+[Obligations.O4]
+name = "ProvideCopyOfLicenseText"
+description = "You are obliged to provide a copy of the license text."
+
+[Obligations.O5]
+name = "ReproduceCopyrightNotice"
+description = "Ensure that the Copyright notice will be reproced."
+
+[Obligations.O6]
+name = "ReproduceListOfConditions"
+description = "Ensure the license will be reproduced."
+
+[Obligations.O7]
+name = "ReproduceWarrantyDisclaimer"
+description = "Ensure the Warranty Disclaimer will be reproduced."
+
+[Obligations.O8]
+name = "ProvideSourceCode"
+description = "You must provide access to the source code."
+
+[Obligations.O9]
+name = "ProvideSourceCode (SaaS)"
+description = "This license requires you to provide your source code even when operated as SaaS."
+setting = [["Module.OM_SaaS"]]
+
+[Obligations.O10]
+name = "Provide Written Offer"
+description = "You must accompany any distribution with the written offer to supply the source code free of charge."
+
+[Obligations.O11]
+name = "Attribute Authors"
+description = "This license requires you under these circumstances to attribute the authors."
+
+[Obligations.O20]
+name = "Copyleft"
+description = "This license infects linked sources, so that all directly linked code must be released under this license. "
+
+[Obligations.O21]
+name = "IndicateChanges (general)"
+description = "The license requires you to indicate that you changed the original code."
+
+[Obligations.O22]
+name = "TechnicalRestriction"
+description = "You are not allowed to prevent the user from executing the rights granted by this license by any means."
+
+[Obligations.O23]
+name = "DescribeChanges"
+description = "The license requires you to describe the changes you have made."
+
+[Obligations.O25]
+name = "IndicateChanges (filelevel)"
+description = "The license requires you to indicate within the files you have changed, that you changed them."
+
+[Obligations.O26]
+name = "ProvideCopyrightDisclaimer"
+description = "The license requires you to provide a Disclaimer, in which you waive your copyrights."
+
+[Obligations.O27]
+name = "ProvideCompileInstructions"
+description = "The license requires you to provide compile instructions, so that a 3rd party will be able to re-build the solution."
+
+[Obligations.O28]
+name = "ContributionsUnderSameLicense"
+description = "The license requires you to provide your contributions under the same license."

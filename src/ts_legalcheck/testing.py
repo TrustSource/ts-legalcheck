@@ -1,31 +1,33 @@
 import json
+import typing as t
 
-from typing import List, Dict
 from pathlib import Path
 from dataclasses import dataclass, asdict
 
 from .engine import Engine
-from .engine.context import Component, Module, loadModuleFromFile, resolveComponentsProperties
+from .engine.context import Component, Module
+
+from .utils import load_file
 
 @dataclass
 class Result:
-    warnings: List[str]
-    violations: List[str]
-    obligations: List[str]
-    properties: Dict[str, bool]
+    warnings: t.List[str]
+    violations: t.List[str]
+    obligations: t.List[str]
+    properties: t.Dict[str, bool]
 
     def to_dict(self):
         return asdict(self)
 
-def test_license(engine: Engine, lic: str, situation_file: Path) -> Result:
-    with situation_file.open('r') as fp:
-        situation = json.load(fp)
+def test_license(engine: Engine, lic: str, situation_file: Path) -> t.Optional[Result]:
+    situation = load_file(situation_file)
 
+    if not situation:
+        return None
+        
     c = Component('test', situation['component'], [lic])
     m = Module('test', situation['module'], [c])
-
-    resolveComponentsProperties(m)
-
+    
     result = engine.checkModule(m)['test'][lic]
 
     warnings = []
