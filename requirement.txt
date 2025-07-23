@@ -3,3 +3,4 @@ toml~=0.10.2
 pyyaml~=6.0.2
 z3-solver==4.15.1.0
 setuptools>=61.0
+lark~=1.2.2

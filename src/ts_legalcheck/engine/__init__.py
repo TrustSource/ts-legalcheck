@@ -2,126 +2,41 @@ import logging
 import typing as t
 import glob
 
+import ts_legalcheck.utils as utils
 
 from pathlib import Path
 
 from .marco import *
-from .context import *
+from .context import Module, Component
+from .constraints import ConstraintsBuilder, Constraint, License, Rule
+from .constraints.parser import Parser
 
-import ts_legalcheck.utils as utils
 
 logger = logging.getLogger('ts_legalcheck.engine')
-
-
-class TSConstObject(TSObject):
-    """
-    Base class for objects representable by logical constants
-    """
-    __const_counter = 0
-
-    def __init__(self, key):
-        super(TSConstObject, self).__init__(key)
-        self.__const_key = TSConstObject.__const_counter
-        TSConstObject.__const_counter += 1
-
-    def const(self, dt):
-        return dt.make(self.__const_key)
-
-
-
-class Rule(TSObject):
-    """
-    Knowledge base types
-    """
-
-    def __init__(self, key, _type=""):
-        super(Rule, self).__init__(key)
-        self.__type = _type
-
-    @property
-    def type(self):
-        return self.__type
-
-
-class Constraint(TSConstObject):
-    def __init__(self, key):
-        super().__init__(key)
-
-    def const(self, dt):        
-        return super().const(dt.Constraint)
-
-
-class License(TSConstObject):
-    def __init__(self, key):
-        super().__init__(key)
-
-    def const(self, dt):
-        return super().const(dt.License)
-
-
 
 class EngineError(Exception):
     pass
 
 
-class TSDataTypes:
-    """
-    ECS engine data types
-    """
-    def __init__(self, ctx = None):
-        _Module = Datatype('Module', ctx)
-        _Module.declare('make', ('id', IntSort(ctx)))
-
-        _Component = Datatype('Component', ctx)
-        _Component.declare('make', ('id', IntSort(ctx)))
-
-        _License = Datatype('License', ctx)
-        _License.declare('make', ('id', IntSort(ctx)))
-#        _License.declare('None')
-
-        _Constraint = Datatype('Constraint', ctx)
-        _Constraint.declare('make', ('id', IntSort(ctx)))
-
-        self.Module, self.Component = CreateDatatypes(_Module, _Component)
-        self.License, self.Constraint = CreateDatatypes(_License, _Constraint)
-
-        # Structure assignments
-        self.ModuleComponent = Function('ModuleComponent', self.Module, self.Component, BoolSort(ctx))
-        self.ComponentLicense = Function('ComponentLicense', self.Component, self.License, BoolSort(ctx))
-
-        # Constraint assignments
-        self.ModuleConstraint = Function('ModuleConstraint', self.Module, self.Constraint, BoolSort(ctx))
-        self.ComponentConstraint = Function('ComponentConstraint', self.Component, self.Constraint, BoolSort(ctx))
-        self.LicenseConstraint = Function('LicenseConstraint', self.License, self.Constraint, BoolSort(ctx))
-
-
-
-
-class Engine:
+class Engine(ConstraintsBuilder):
     """
     TS Engine
     """
     def __init__(self, solver = None):
-        if not solver:
-            self.__solver = Solver()
-        else:
-            self.__solver = solver
+        self.__solver = solver if solver else Solver()
+        
+        super().__init__(ctx=self.__solver.ctx)
 
-        self.__ctx = self.__solver.ctx
-        self.__dt = TSDataTypes(self.__ctx)
+        self.__parser = Parser(builder=self)
 
         self.__rules = {}
         self.__licenses = {}
-        self.__constraints = {}
         self.__obligations = []
 
         self.__modsStack = []
         self.__compsStack = []
         self.__licsStack = []
 
-    @property
-    def types(self):
-        return self.__dt
 
     @property
     def solver(self):
@@ -142,114 +57,48 @@ class Engine:
 
     def __addFact(self, fact, tag:t.Optional[str]=None):
         if tag:
-            fact = Implies(Bool(tag, self.__ctx), fact)
+            fact = Implies(Bool(tag, self.context), fact)
         
         self.__solver.add(fact)
 
-    def __getCnstr(self, cnstrId: str) -> Constraint:
-        c_id = cnstrId.strip('!')
-        cnstr = self.__constraints.get(c_id, None)
 
-        if not cnstr:
-            cnstr = Constraint(c_id)
-            self.__constraints[c_id] = cnstr
-
-        return cnstr
-
-
-    @staticmethod
-    def __makeCnstrTerm(cnstrId: str, term: ExprRef) -> ExprRef:
-        if cnstrId[0] == '!':
-            return t.cast(ExprRef, Not(term))
-        else:
-            return term
-
-
-    def __makeCnstr(self, cnstr: str) -> t.Optional[ExprRef]:        
-        id_parts = cnstr.split('.', 2) # Split by the first dot only, to identify a scope, the rest is the key
-        
-        if len(id_parts) == 1:
-            cnstr = id_parts[0]
-            scope = None
-        elif len(id_parts) == 2:
-            cnstr = id_parts[1]
-            scope = id_parts[0]
-        else:
+    def __makeCnstrFromObject(self, obj: dict, key: str) -> t.Optional[BoolRef]:
+        value = obj.get(key)
+        if value is None:
             return None
 
-        if scope and scope[0] == '!':
-            cnstr = '!' + cnstr
-            scope = scope[1:]
+        if type(value) is str:
+            """ Parses a single string value as a constraint"""
+            return self.__parser.parse_cnstr(value)
+        
+        elif type(value) is list and all(type(item) is list for item in value):            
+            """ Parses a list of lists as a CNF constraint"""            
+            clauses = [Or([self.__parser.parse_cnstr(c) for c in clauses], self.context) 
+                       for clauses in value if len(clauses) > 0]
 
-        if scope == 'Module':
-            return self.__makeModuleCnstr(cnstr)        
-        elif scope == 'License':
-            return self.__makeLicenseCnstr(cnstr)        
+            if len(clauses) > 0:
+                return t.cast(BoolRef, And(clauses, self.context))
+            else:
+                return t.cast(BoolRef, True)
+        
         else:
-            return self.__makeComponentCnstr(cnstr)
-
-
-    def __makeModuleCnstr(self, cnstrId, mConst = None) -> ExprRef:
-        if mConst is None:
-            mConst = Const('m', self.types.Module)
-
-        term = self.types.ModuleConstraint(mConst, self.__getCnstr(cnstrId).const(self.types))
-        return self.__makeCnstrTerm(cnstrId, term)
-
-    def __makeComponentCnstr(self, cnstrId, cConst = None) -> ExprRef:
-        if cConst is None:
-            cConst = Const('c', self.types.Component)
-
-        term = self.types.ComponentConstraint(cConst, self.__getCnstr(cnstrId).const(self.types))
-        return self.__makeCnstrTerm(cnstrId, term)
-
-    def __makeLicenseCnstr(self, cnstrId, lConst = None) -> ExprRef:
-        if lConst is None:
-            lConst = Const('l', self.types.License)
-
-        term = self.types.LicenseConstraint(lConst, self.__getCnstr(cnstrId).const(self.types))
-        return self.__makeCnstrTerm(cnstrId, term)
-
-
-    def __makeCNFCnstr(self, cnstr: t.List[t.List[str]], builder) -> BoolRef:
-        """
-        Creates a fromula from the list presentation in CNF form
-        Example: [[c1, c2], [c3]] is equal to a CNF formula (c1 || c2) && (c3)
-        :param cnstr: List of lists of atomic clauses
-        :return: Z3 term
-        """
-
-        clauses = [Or([builder(c) for c in clauses], self.__ctx) 
-                   for clauses in cnstr if len(clauses) > 0]
-
-        if len(clauses) > 0:
-            return t.cast(BoolRef, And(clauses, self.__ctx))
-        else:
-            return t.cast(BoolRef, True)
-
-
-    def __makeCNFCnstrFromObject(self, obj: dict, key: str, builder) -> BoolRef:
-        value = obj.get(key, [])
-        if type(value) is not list or any(type(item) is not list for item in value):
-            print(f"WARNING: Wrong type of the '{key}' in a definition. List of lists is expected.")
-            value = []
-
-        return self.__makeCNFCnstr(value, builder)
-
-
-
+            print(f"WARNING: Wrong type of the '{key}' in a definition. String or list of lists is expected.")
+            return None
+    
+    
     # Fork
 
     def fork(self):
         ctx = Context()
-        solver = Solver(ctx=ctx)        
+        solver = Solver(ctx=ctx)
         solver.add([a.translate(ctx) for a in self.__solver.assertions()])  # type: ignore
 
-        newInst = Engine(solver)
+        newInst = Engine(solver=solver)        
+        
         newInst.__rules = self.__rules
-        newInst.__licenses = self.__licenses
-        newInst.__constraints = self.__constraints
+        newInst.__licenses = self.__licenses        
         newInst.__obligations = self.__obligations
+        newInst.__constraints = self.__constraints
 
         return newInst
 
@@ -258,28 +107,34 @@ class Engine:
 
     def loadConstraints(self, constraints: dict):
         def __makeSettingCnstr(obj):
-            return self.__makeCNFCnstrFromObject(obj, 'setting', self.__makeCnstr)
-
+            cnstr = self.__makeCnstrFromObject(obj, 'setting')
+            if cnstr is None:
+                cnstr = z3.BoolVal(True, self.context)
+            return cnstr
+            
         def __makeValueCnstr(obj):
-            return self.__makeCNFCnstrFromObject(obj, 'value', self.__makeCnstr)
+            cnstr = self.__makeCnstrFromObject(obj, 'value')
+            if cnstr is None:
+                cnstr = z3.BoolVal(True, self.context)
+            return cnstr
 
         # Load constraints
-
-        l = Const('l', self.types.License)
-        c = Const('c', self.types.Component)
+        
+        l = self.makeLicenseConst('l')
+        c = self.makeComponentConst('c')
 
         # In contrast to the obligations, there are no additional conditions for rights and terms
         # hence the rights and terms constraints can be enabled by the licenses
 
         for k, _ in constraints.get('Rights', {}).items():
-            cCnstr = self.__makeComponentCnstr(k)
-            lCnstr = self.__makeLicenseCnstr(k)
+            cCnstr = self.makeComponentCnstrExpr(k)
+            lCnstr = self.makeLicenseCnstrExpr(k)
 
             self.__addFact(ForAll([l, c], Implies(self.types.ComponentLicense(c, l), cCnstr == lCnstr)))
 
         for k, _ in constraints.get('Terms', {}).items():
-            cCnstr = self.__makeComponentCnstr(k)
-            lCnstr = self.__makeLicenseCnstr(k)
+            cCnstr = self.makeComponentCnstrExpr(k)
+            lCnstr = self.makeLicenseCnstrExpr(k)
 
             self.__addFact(ForAll([l, c], Implies(self.types.ComponentLicense(c, l), cCnstr == lCnstr)))
 
@@ -319,29 +174,29 @@ class Engine:
                         if 'value' in variant:
                             vCnstr.append(__makeValueCnstr(variant))
 
-                    cCnstr = self.__makeComponentCnstr(key)
-                    lCnstr = self.__makeLicenseCnstr(key)
+                    cCnstr = self.makeComponentCnstrExpr(key)
+                    lCnstr = self.makeLicenseCnstrExpr(key)
 
-                    sCnstr = And(sCnstr, self.__ctx)
-                    vCnstr = Or(lCnstr, And(vCnstr, self.__ctx), self.__ctx) if vCnstr else lCnstr
+                    sCnstr = And(sCnstr, self.context)
+                    vCnstr = Or(lCnstr, And(vCnstr, self.context), self.context) if vCnstr else lCnstr
 
-                    impl = (cCnstr == And(sCnstr, vCnstr, self.__ctx))
+                    impl = (cCnstr == And(sCnstr, vCnstr, self.context))
 
                     self.__addFact(ForAll([l, c], Implies(self.types.ComponentLicense(c, l), impl)))
             else:
-                cCnstr = self.__makeComponentCnstr(k)
-                lCnstr = self.__makeLicenseCnstr(k)
+                cCnstr = self.makeComponentCnstrExpr(k)
+                lCnstr = self.makeLicenseCnstrExpr(k)
 
                 # Setting constraint
                 # Setting is defined in the DNF form as: [[c1, c2], [c3]] == (c1 && c2) || c3
                 sCnstr = []
                 for conj in o.get('setting', []):
-                    sCnstr.append(And([self.__makeComponentCnstr(k) for k in conj], self.__ctx))
+                    sCnstr.append(And([self.makeComponentCnstrExpr(k) for k in conj], self.context))
 
                 if len(sCnstr) == 0:
                     impl = (cCnstr == lCnstr)
                 else:
-                    impl = (cCnstr == And(lCnstr, Or(sCnstr, self.__ctx), self.__ctx))
+                    impl = (cCnstr == And(lCnstr, Or(sCnstr, self.context), self.context))
 
                 self.__addFact(ForAll([l, c], Implies(self.types.ComponentLicense(c, l), impl)))
 
@@ -350,9 +205,9 @@ class Engine:
     def loadRules(self, constraints: dict):
         rules = constraints.get('Rules', [])
 
-        m = Const('m', self.types.Module)
-        c = Const('c', self.types.Component)
-        l = Const('l', self.types.License)
+        m = self.makeModuleConst('m')
+        c = self.makeComponentConst('c')
+        l = self.makeLicenseConst('l')
 
         for rule in rules:            
             if ruleId := rule.get('key'):
@@ -360,20 +215,20 @@ class Engine:
 
             cond = And(self.types.ModuleComponent(m, c), 
                        self.types.ComponentLicense(c, l),                       
-                       self.__ctx)
+                       self.context)
             
-            setting = self.__makeCNFCnstrFromObject(rule, 'setting', self.__makeCnstr)
+            setting = self.__makeCnstrFromObject(rule, 'setting')
 
             # If neither 'require' nor 'equal' are present, consider the setting as a condition that always holds 
             if 'require' in rule:
-                require = self.__makeCNFCnstrFromObject(rule, 'require', self.__makeCnstr)
-                fact = Implies(And(cond, setting, self.__ctx), require, self.__ctx)                
+                require = self.__makeCnstrFromObject(rule, 'require')
+                fact = Implies(And(cond, setting, self.context), require, self.context)                
 
             elif 'equal' in rule:
-                equal = self.__makeCNFCnstrFromObject(rule, 'equal', self.__makeCnstr)
-                fact = And(Implies(And(cond, setting, self.__ctx), equal, self.__ctx), 
-                           Implies(And(cond, equal, self.__ctx), setting, self.__ctx), 
-                           self.__ctx)
+                equal = self.__makeCnstrFromObject(rule, 'equal')
+                fact = And(Implies(And(cond, setting, self.context), equal, self.context), 
+                           Implies(And(cond, equal, self.context), setting, self.context), 
+                           self.context)
 
             else:
                 fact = cond
@@ -390,7 +245,7 @@ class Engine:
 
         for key, cnstrs  in constraints.items():
             facts = []
-            l = License(key)
+            lic = License(key)
 
             for k, c in cnstrs.items():
                 if type(c) is bool:
@@ -401,12 +256,12 @@ class Engine:
                     logger.info('Invalid license {}: invalid set of constraints'.format(key))
                     break
 
-                cnstr = self.__makeLicenseCnstr(k, l.const(self.types))
+                cnstr = self.makeLicenseCnstrExpr(k, lic.const(self.types))
                 facts.append(cnstr == val)
 
 
             if len(facts) == len(cnstrs):
-                self.__licenses[l.key] = l
+                self.__licenses[lic.key] = lic
                 for f in facts:
                     self.__addFact(f)
 
@@ -423,14 +278,14 @@ class Engine:
 
         if isinstance(el, Module):
             m_const = self.types.Module.make(0)
-            m_cnstr = [self.__makeModuleCnstr(key, m_const) == val for key, val in el.properties.items()]
+            m_cnstr = [self.makeModuleCnstrExpr(key, m_const) == val for key, val in el.properties.items()]
 
             solver.add(m_cnstr)
             self.__modsStack.append(m_const)
 
         elif isinstance(el, Component):
             c_const = self.types.Component.make(0)
-            c_cnstr = [self.__makeComponentCnstr(key, c_const) == val for key, val in el.properties.items()]
+            c_cnstr = [self.makeComponentCnstrExpr(key, c_const) == val for key, val in el.properties.items()]
 
             solver.add(c_cnstr)
             if len(self.__modsStack) > 0:
@@ -469,7 +324,7 @@ class Engine:
             if len(self.__compsStack) > 0:
                 c_const = self.__compsStack[len(self.__compsStack) - 1]
                 for _key in self.__obligations:
-                    if self.__eval(self.__makeComponentCnstr(_key, c_const)):
+                    if self.__eval(self.makeComponentCnstrExpr(_key, c_const)):
                         obligations.append(_key)
 
                     # elif self.__eval(self.__makeComponentCnstr(f'{_key}__A', c_const)):                        
@@ -620,7 +475,7 @@ def createEngine(paths: t.List[Path]) -> Engine:
 
 def createEngineWithDefinitions(defs: dict) -> Engine:
     solver = Solver(ctx = Context())
-    engine = Engine(solver)
+    engine = Engine(solver = solver)
     engine.load(defs)
 
     logger.info('ts-legalcheck engine loaded')

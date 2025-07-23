@@ -5,30 +5,23 @@ from pathlib import Path
 
 from ..utils import logger, load_file
 
-class TSObject(object):
-    def __init__(self, key):
+
+class TSTargetObject(object):
+    def __init__(self, key: str, properties:t.Optional[dict]=None):
         self.__key = key
-
-    @property
-    def key(self):
-        return self.__key
-
-
-
-class TSTargetObject(TSObject):
-    def __init__(self, key, properties:t.Optional[dict]=None):
-        super(TSTargetObject, self).__init__(key)
-
         self.__properties = properties if properties else {}
 
     # properties
-
     @property
-    def properties(self):
+    def key(self) -> str:
+        return self.__key
+    
+    @property
+    def properties(self) -> dict:
         return self.__properties
 
     @properties.setter
-    def properties(self, value):
+    def properties(self, value: dict):
         self.__properties = value
 
     def validate(self):
@@ -37,8 +30,12 @@ class TSTargetObject(TSObject):
 
 
 class Component(TSTargetObject):
-    def __init__(self, key, properties=None, licenses=None):
-        super(Component, self).__init__(key, properties)
+    def __init__(self, 
+                 key: str, 
+                 properties:t.Optional[dict]=None, 
+                 licenses:t.Optional[t.Iterable[str]]=None):
+        
+        super().__init__(key, properties)
         self.__licenses = licenses if licenses else []
 
     @property
@@ -57,8 +54,12 @@ class Component(TSTargetObject):
 
 
 class Module(TSTargetObject):
-    def __init__(self, key, properties=None, components=None):
-        super(Module, self).__init__(key, properties)
+    def __init__(self, 
+                 key: str, 
+                 properties: t.Optional[dict] = None, 
+                 components: t.Optional[t.Iterable[Component]] = None):
+        
+        super().__init__(key, properties)
         self.__components = {c.key:c for c in components} if components else {}
 
 

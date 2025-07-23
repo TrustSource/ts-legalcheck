@@ -1,0 +1,31 @@
+?start: expr       
+
+?expr: "(" op  ")"
+    | symbol
+    | "!" symbol -> neg_symbol
+
+?op: "and" expr expr+ -> and_op
+    | "or" expr expr+ -> or_op
+    | "not" expr -> not_op
+    | "ite" expr expr expr -> ite_op
+
+?symbol: CONST | prop | truth_value
+
+?prop: MODULE_PROP
+    | COMPONENT_PROP
+    | LICENSE_PROP
+
+MODULE_PROP: /Module\.[A-Za-z0-9_]+/
+COMPONENT_PROP: /Component\.[A-Za-z0-9_]+/
+LICENSE_PROP: /License\.[A-Za-z0-9_]+/
+
+CONST: /[A-Za-z0-9_]+/
+
+truth_value: "true" -> true_val
+            | "false" -> false_val
+
+
+%import common.WORD
+%import common.WS
+
+%ignore WS
