@@ -1,7 +1,7 @@
 import z3
 import typing as t
 
-from lark import Lark, Transformer
+from lark import Lark, Transformer, Token
 from pathlib import Path
 
 from .. import ConstraintsBuilder
@@ -23,9 +23,9 @@ class Parser(Transformer):
 			self.__parser = Lark(grammar=fp)
 
 	@staticmethod
-	def __mk_cnstr(builder: t.Callable[[str], z3.ExprRef], token: str) -> z3.BoolRef:
+	def __mk_cnstr(builder: t.Callable[[str], z3.BoolRef], token: str) -> z3.BoolRef:
 		cnstr = token.split('.', 2)
-		return t.cast(z3.BoolRef, builder(cnstr[1]))
+		return builder(cnstr[1])
 
 	def __mk_bool_expr(self, ctor, *args) -> z3.BoolRef:
 		return t.cast(z3.BoolRef, ctor(*args, self.__builder.context)) 
@@ -55,7 +55,10 @@ class Parser(Transformer):
 
 	def not_(self, items) -> z3.BoolRef:
 			return self.__mk_bool_expr(z3.Not, items[0])
-
+	
+	def implies_op(self, items) -> z3.BoolRef:			
+			return self.__mk_bool_expr(z3.Implies, items[0], items[1])						
+	
 	def ite_op(self, items) -> z3.BoolRef:
 			# items: [cond, true_branch, false_branch]
 			return self.__mk_bool_expr(z3.If, items[0], items[1], items[2])						
@@ -66,16 +69,24 @@ class Parser(Transformer):
 	def false_val(self, _) -> z3.BoolRef:
 			return self.__mk_bool_expr(z3.BoolVal, False)
 
-	def CONST(self, token: str) -> z3.BoolRef:
+	def license_op(self, items) -> z3.BoolRef:
+		return self.__builder.makeLicenseNameExpr(items[0])
+
+
+	def ESCAPED_STRING(self, token: Token) -> str:
+			# Return the token as a string, removing the quotes
+			return token[1:-1]
+
+	def CONST(self, token: Token) -> z3.BoolRef:
 			# TODO: Handle constants properly
 			return t.cast(z3.BoolRef, self.__builder.makeComponentCnstrExpr(token))
-			# return t.cast(z3.BoolRef, z3.Const(token, z3.BoolSort(self.__builder.context))) 			
-	
-	def MODULE_PROP(self, token: str) -> z3.BoolRef:
+			# return t.cast(z3.BoolRef, z3.Const(token, z3.BoolSort(self.__builder.context))) 		
+
+	def MODULE_PROP(self, token: Token) -> z3.BoolRef:
 			return self.__mk_cnstr(self.__builder.makeModuleCnstrExpr, token)
 
-	def COMPONENT_PROP(self, token: str) -> z3.BoolRef:
+	def COMPONENT_PROP(self, token: Token) -> z3.BoolRef:
 			return self.__mk_cnstr(self.__builder.makeComponentCnstrExpr, token)
 
-	def LICENSE_PROP(self, token: str) -> z3.BoolRef:
+	def LICENSE_PROP(self, token: Token) -> z3.BoolRef:
 			return self.__mk_cnstr(self.__builder.makeLicenseCnstrExpr, token)

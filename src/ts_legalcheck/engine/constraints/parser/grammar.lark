@@ -8,6 +8,12 @@
     | "or" expr expr+ -> or_op
     | "not" expr -> not_op
     | "ite" expr expr expr -> ite_op
+    | "implies" expr expr -> implies_op
+    | command_op
+
+?command_op: "license" ESCAPED_STRING -> license_op
+
+ESCAPED_STRING: "\"" /([^"\\]|\\.)*/ "\""
 
 ?symbol: CONST | prop | truth_value
 

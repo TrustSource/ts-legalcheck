@@ -31,8 +31,8 @@ class TSDataTypes:
         self.ModuleConstraint = z3.Function('ModuleConstraint', self.Module, self.Constraint, z3.BoolSort(ctx))
         self.ComponentConstraint = z3.Function('ComponentConstraint', self.Component, self.Constraint, z3.BoolSort(ctx))
         self.LicenseConstraint = z3.Function('LicenseConstraint', self.License, self.Constraint, z3.BoolSort(ctx))
+        self.LicenseName = z3.Function('LicenseName', self.License, z3.StringSort(ctx), z3.BoolSort(ctx))
 
-    
 
 
 class TSObject(object):
@@ -120,20 +120,26 @@ class ConstraintsBuilder(object):
         return self.makeCnstr(cnstrId).const(self.__dt)
 
 
-    def makeModuleCnstrExpr(self, cnstrId: str, mConst = None) -> z3.ExprRef:
+    def makeModuleCnstrExpr(self, cnstrId: str, mConst = None) -> z3.BoolRef:
         if mConst is None:
             mConst = self.makeModuleConst('m')
 
-        return self.__dt.ModuleConstraint(mConst, self.makeCnstrConst(cnstrId))
+        return t.cast(z3.BoolRef, self.__dt.ModuleConstraint(mConst, self.makeCnstrConst(cnstrId)))
 
-    def makeComponentCnstrExpr(self, cnstrId, cConst = None) -> z3.ExprRef:
+    def makeComponentCnstrExpr(self, cnstrId, cConst = None) -> z3.BoolRef:
         if cConst is None:
             cConst = self.makeComponentConst('c')
 
-        return self.__dt.ComponentConstraint(cConst, self.makeCnstrConst(cnstrId))
+        return t.cast(z3.BoolRef, self.__dt.ComponentConstraint(cConst, self.makeCnstrConst(cnstrId)))
 
-    def makeLicenseCnstrExpr(self, cnstrId, lConst = None) -> z3.ExprRef:
+    def makeLicenseCnstrExpr(self, cnstrId, lConst = None) -> z3.BoolRef:
         if lConst is None:
             lConst = self.makeLicenseConst('l')
 
-        return self.__dt.LicenseConstraint(lConst, self.makeCnstrConst(cnstrId))
+        return t.cast(z3.BoolRef, self.__dt.LicenseConstraint(lConst, self.makeCnstrConst(cnstrId)))
+
+    def makeLicenseNameExpr(self, name: str, lConst = None) -> z3.BoolRef:
+        if lConst is None:
+            lConst = self.makeLicenseConst('l')
+
+        return t.cast(z3.BoolRef, self.__dt.LicenseName(lConst, z3.StringVal(name, self.__ctx)))

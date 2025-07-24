@@ -218,6 +218,8 @@ class Engine(ConstraintsBuilder):
                        self.context)
             
             setting = self.__makeCnstrFromObject(rule, 'setting')
+            if setting is None:
+                setting = z3.BoolVal(True, self.context)
 
             # If neither 'require' nor 'equal' are present, consider the setting as a condition that always holds 
             if 'require' in rule:
@@ -231,7 +233,7 @@ class Engine(ConstraintsBuilder):
                            self.context)
 
             else:
-                fact = cond
+                fact = And(cond, setting, self.context)
 
 
             self.__addFact(ForAll([m, c, l], fact), ruleId)
@@ -246,7 +248,7 @@ class Engine(ConstraintsBuilder):
         for key, cnstrs  in constraints.items():
             facts = []
             lic = License(key)
-
+            
             for k, c in cnstrs.items():
                 if type(c) is bool:
                     val = c
@@ -262,6 +264,8 @@ class Engine(ConstraintsBuilder):
 
             if len(facts) == len(cnstrs):
                 self.__licenses[lic.key] = lic
+                self.__addFact(self.makeLicenseNameExpr(lic.key, lic.const(self.types)))
+                
                 for f in facts:
                     self.__addFact(f)
 
@@ -389,6 +393,7 @@ class Engine(ConstraintsBuilder):
         for l in lics:
             lic = self.__licenses.get(l, None)
             if lic is None:
+                logging.warning(f'License {l} is not defined in the engine. Skipping...')
                 result[l] = {
                     'status': 'UNKNOWN',
                     'reason': 'License could not be matched correctly'
