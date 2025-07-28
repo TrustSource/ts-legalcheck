@@ -1,5 +1,5 @@
 permissions:
-  content: read
+  contents: read
 
 name: Build and Push Docker Image
 on:
