@@ -52,7 +52,10 @@ class Parser(Transformer):
 
 	def or_op(self, items) -> z3.BoolRef:
 			return self.__mk_bool_expr(z3.Or, items)
-
+	
+	def xor_op(self, items) -> z3.BoolRef:
+			return self.__mk_bool_expr(z3.Xor, items)
+	
 	def not_(self, items) -> z3.BoolRef:
 			return self.__mk_bool_expr(z3.Not, items[0])
 	

@@ -6,6 +6,7 @@
 
 ?op: "and" expr expr+ -> and_op
     | "or" expr expr+ -> or_op
+    | "xor" expr expr+ -> xor_op
     | "not" expr -> not_op
     | "ite" expr expr expr -> ite_op
     | "implies" expr expr -> implies_op
