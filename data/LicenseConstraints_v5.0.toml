@@ -1,0 +1,25 @@
+[Constraints]
+
+[Constraints."Apache-2.0"]
+[Constraints."MIT"]
+
+
+[Obligations]
+
+[Obligations.O1]
+name = "RetainCopyRightNotice"
+description = "You must ensure, the Copyright Notice will be retained."
+
+[Obligations.O2]
+name = "RetainListOfConditions"
+description = "You must retain the list of conditions (license) unchanged."
+
+
+
+[[Rules]]
+key = "Apache-2.0"
+require = "(implies (or (license \"GPL\") (license \"Apache-2.0\")) O1)"
+
+[[Rules]]
+key = "MIT"
+require = "(implies (license \"MIT\") O2)"
