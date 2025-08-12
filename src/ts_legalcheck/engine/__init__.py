@@ -31,7 +31,7 @@ class Engine(ConstraintsBuilder):
 
         self.__rules = {}
         self.__licenses = {}
-        self.__obligations = []
+        self.__obligations = {}
 
         self.__modsStack = []
         self.__compsStack = []
@@ -146,7 +146,7 @@ class Engine(ConstraintsBuilder):
         vCnstrs = {k: __makeSettingCnstr(variant) for k, variant in variants.items()}
 
         for k, o in constraints.get('Obligations', {}).items():
-            self.__obligations.append(k)
+            self.__obligations[k] = o.get('name', '')
 
             o_variants = o.get('variants', {})
             o_variants.update({ vk: {} for vk in variants.keys() if vk not in o_variants })
@@ -327,18 +327,10 @@ class Engine(ConstraintsBuilder):
             obligations = []
             if len(self.__compsStack) > 0:
                 c_const = self.__compsStack[len(self.__compsStack) - 1]
-                for _key in self.__obligations:
+                for _key, _name in self.__obligations.items():
                     if self.__eval(self.makeComponentCnstrExpr(_key, c_const)):
-                        obligations.append(_key)
-
-                    # elif self.__eval(self.__makeComponentCnstr(f'{_key}__A', c_const)):                        
-                    #     obligations.append(f'{_key}__A')
-                    # elif self.__eval(self.__makeComponentCnstr(f'{_key}__B', c_const)):
-                    #     obligations.append(f'{_key}__B')
-                    # elif self.__eval(self.__makeComponentCnstr(f'{_key}__C', c_const)):
-                    #     obligations.append(f'{_key}__C')
-                    # elif self.__eval(self.__makeComponentCnstr(f'{_key}__D', c_const)):
-                    #     obligations.append(f'{_key}__D')
+                        name = f"{_name if _name else 'Unknown'} ({_key})" 
+                        obligations.append(name)
 
             return obligations
 
