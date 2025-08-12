@@ -1,0 +1,71 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Test License",
+      "type": "debugpy",
+      "request": "launch",      
+      "module": "ts_legalcheck.cli",
+      "args": [
+        "test",
+        "-l",
+        "Apache-2.0",
+        //"MIT",
+        "-d",
+        "data/LicenseConstraints_v4.5.toml",
+        //"data/LicenseConstraints_v5.0.toml",
+        "--verbose",
+        "examples/sc01_ProprietarySoftware.toml"
+      ],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Test OSADL License",
+      "type": "debugpy",
+      "request": "launch",      
+      "module": "ts_legalcheck.cli",
+      "args": [
+        "test",
+        "-l",
+        "Apache-2.0",        
+        "-d",        
+        "data/osadl/LicenseConstraints_v1.0.toml",
+        "--verbose",
+        "examples/osadl/uc01.toml"
+      ],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },    
+    {
+      "name": "Parse Constraint",
+      "type": "debugpy",
+      "request": "launch",      
+      "module": "ts_legalcheck.engine.constraints.parser",
+      "args": ["(ite Component.modified O1__A O1__B)"],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Transform OSADL",
+      "type": "debugpy",
+      "request": "launch",      
+      "module": "ts_legalcheck.osadl",
+      "args": ["./data/osadl/jsonlicenses", "./data/osadl/defs", "./data/osadl/processed"],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    }    
+  ]
+}
