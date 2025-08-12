@@ -1,0 +1,5 @@
+[[Rules]]
+key = "Python-2.0"
+require = "(implies (license \"Python-2.0\") (implies P6 (and (implies P2 O50) (and O10 O26 O11 O27) !O23)))"
+
+[Constraints."Python-2.0"]

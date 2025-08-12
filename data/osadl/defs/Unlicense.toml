@@ -1,0 +1,5 @@
+[[Rules]]
+key = "Unlicense"
+require = "(implies (license \"Unlicense\") (implies P6 None))"
+
+[Constraints.Unlicense]

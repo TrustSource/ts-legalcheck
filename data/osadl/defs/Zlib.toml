@@ -1,0 +1,5 @@
+[[Rules]]
+key = "Zlib"
+require = "(implies (license \"Zlib\") (and (implies P3 !O16) (implies P4 (and (implies P2 (and O9 !O17)) O18 !O16))))"
+
+[Constraints.Zlib]

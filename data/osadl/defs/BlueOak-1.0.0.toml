@@ -1,0 +1,5 @@
+[[Rules]]
+key = "BlueOak-1.0.0"
+require = "(implies (license \"BlueOak-1.0.0\") (implies P6 (and O6 O11)))"
+
+[Constraints."BlueOak-1.0.0"]

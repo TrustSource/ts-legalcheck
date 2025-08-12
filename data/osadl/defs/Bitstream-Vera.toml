@@ -1,0 +1,5 @@
+[[Rules]]
+key = "Bitstream-Vera"
+require = "(implies (license \"Bitstream-Vera\") (implies P11 (and (implies P10 !O42) (and O10 O11 O43) (and !O23 !O44))))"
+
+[Constraints.Bitstream-Vera]

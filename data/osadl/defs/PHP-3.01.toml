@@ -1,0 +1,5 @@
+[[Rules]]
+key = "PHP-3.01"
+require = "(implies (license \"PHP-3.01\") (and (implies P3 (and (implies P2 (and !O110 !O111 !O112)) (and O113 O20 O21 O22))) (implies P4 (and (implies P2 (and !O110 !O111 !O112)) (and O113 O24 O18 O31)))))"
+
+[Constraints."PHP-3.01"]

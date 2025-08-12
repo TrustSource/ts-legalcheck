@@ -1,0 +1,5 @@
+[[Rules]]
+key = "EPL-2.0"
+require = "(implies (license \"EPL-2.0\") (and (implies P3 (and (and (and O97 O1) O105) (and (implies P36 O91) (implies P33 (and (and O98 O99 O100) !O15))) O161 (and !O162 !O101 !O163 !O107 !O108 !O164))) (implies P4 (and (and (implies P36 O91) (implies P33 (and (and O98 O99 O100) !O15)) (implies P2 O7)) O11 (and !O162 !O101 !O163 !O107 !O108 !O164)))))"
+
+[Constraints."EPL-2.0"]

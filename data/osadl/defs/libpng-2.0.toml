@@ -1,0 +1,5 @@
+[[Rules]]
+key = "libpng-2.0"
+require = "(implies (license \"libpng-2.0\") (and (implies P3 !O16) (implies P4 (and (implies P2 (and O9 !O17)) O18 (and !O16 !O19)))))"
+
+[Constraints."libpng-2.0"]

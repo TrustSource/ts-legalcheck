@@ -1,0 +1,5 @@
+[[Rules]]
+key = "FSFAP"
+require = "(implies (license \"FSFAP\") (implies P6 (and O10 O11)))"
+
+[Constraints.FSFAP]

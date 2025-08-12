@@ -1,0 +1,5 @@
+[[Rules]]
+key = "OFL-1.1"
+require = "(implies (license \"OFL-1.1\") (implies P11 (and (implies P10 (and O7 (and !O23 !O165))) (and O10 O11) !O44)))"
+
+[Constraints."OFL-1.1"]

@@ -1,0 +1,5 @@
+[[Rules]]
+key = "Artistic-1.0-Perl"
+require = "(implies (license \"Artistic-1.0-Perl\") (and (implies P3 (and (and (implies P45 !O16) (implies P2 (and (or O2 (and O169 O171 O34)) (and O172 O171)))) (and !O23 !O55))) (implies P4 (and (implies P2 (and (and (or O49 (and O50 O172 O173)) (and O7 O174)) (and O175 O61 O176))) (and O10 O12) (and !O23 !O55)))))"
+
+[Constraints."Artistic-1.0-Perl"]

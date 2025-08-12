@@ -1,0 +1,5 @@
+[[Rules]]
+key = "LicenseRef-scancode-ppp"
+require = "(implies (license \"LicenseRef-scancode-ppp\") (implies P6 (and O24 O11 O12)))"
+
+[Constraints.LicenseRef-scancode-ppp]

@@ -1,0 +1,5 @@
+[[Rules]]
+key = "FSFULLR"
+require = "(implies (license \"FSFULLR\") (implies P6 O11))"
+
+[Constraints.FSFULLR]

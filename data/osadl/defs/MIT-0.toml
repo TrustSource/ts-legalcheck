@@ -1,0 +1,5 @@
+[[Rules]]
+key = "MIT-0"
+require = "(implies (license \"MIT-0\") (implies P6 None))"
+
+[Constraints.MIT-0]

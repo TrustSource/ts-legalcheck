@@ -1,0 +1,5 @@
+[[Rules]]
+key = "JasPer-2.0"
+require = "(implies (license \"JasPer-2.0\") (implies P6 (and (and O10 O11) !O23)))"
+
+[Constraints."JasPer-2.0"]

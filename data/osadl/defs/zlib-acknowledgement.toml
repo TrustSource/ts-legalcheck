@@ -1,0 +1,5 @@
+[[Rules]]
+key = "zlib-acknowledgement"
+require = "(implies (license \"zlib-acknowledgement\") (and (implies P3 (and (implies P40 O135) !O16)) (implies P4 (and (and (implies P2 (and O9 !O17)) (implies P40 O135)) O18 !O16))))"
+
+[Constraints.zlib-acknowledgement]

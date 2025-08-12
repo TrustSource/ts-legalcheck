@@ -1,0 +1,5 @@
+[[Rules]]
+key = "WTFPL"
+require = "(implies (license \"WTFPL\") (implies P6 None))"
+
+[Constraints.WTFPL]

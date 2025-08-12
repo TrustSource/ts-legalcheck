@@ -1,0 +1,5 @@
+[[Rules]]
+key = "Libpng"
+require = "(implies (license \"Libpng\") (and (implies P3 None) (implies P4 (and (implies P2 (and O9 !O17)) O18 !O16))))"
+
+[Constraints.Libpng]

@@ -1,0 +1,5 @@
+[[Rules]]
+key = "BSL-1.0"
+require = "(implies (license \"BSL-1.0\") (and (implies P3 None) (implies P4 (and O10 O11 O12))))"
+
+[Constraints."BSL-1.0"]

@@ -1,0 +1,5 @@
+[[Rules]]
+key = "IBM-pibs"
+require = "(implies (license \"IBM-pibs\") (implies P6 (and O32 O11)))"
+
+[Constraints.IBM-pibs]

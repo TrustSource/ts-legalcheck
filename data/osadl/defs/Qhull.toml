@@ -1,0 +1,5 @@
+[[Rules]]
+key = "Qhull"
+require = "(implies (license \"Qhull\") (implies P6 (and (implies P2 (and O140 O8 O141 O142)) (and O24 O11))))"
+
+[Constraints.Qhull]

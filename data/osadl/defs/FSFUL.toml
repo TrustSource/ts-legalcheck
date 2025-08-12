@@ -1,0 +1,5 @@
+[[Rules]]
+key = "FSFUL"
+require = "(implies (license \"FSFUL\") (implies P6 None))"
+
+[Constraints.FSFUL]

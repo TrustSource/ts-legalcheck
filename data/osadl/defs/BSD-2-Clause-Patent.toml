@@ -1,0 +1,5 @@
+[[Rules]]
+key = "BSD-2-Clause-Patent"
+require = "(implies (license \"BSD-2-Clause-Patent\") (and (implies P3 (and O20 O21 O22)) (implies P4 (and O24 O18 O31))))"
+
+[Constraints.BSD-2-Clause-Patent]

@@ -1,0 +1,5 @@
+[[Rules]]
+key = "MPL-1.1"
+require = "(implies (license \"MPL-1.1\") (and (implies P3 (and (and (implies P33 (and O86 O87)) (implies P34 O90) (implies P35 O91) (implies P2 (and (implies P31 None) (and O7 O92 O11 O9 O50 O2 O93)))) O95 !O96)) (implies P4 (and (and (implies P9 O11) (implies P34 O90) (implies P35 O91) (implies P2 (and O7 O9 O50))) (and O11 O93) !O15))))"
+
+[Constraints."MPL-1.1"]

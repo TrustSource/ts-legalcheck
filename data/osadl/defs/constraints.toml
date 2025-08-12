@@ -1,0 +1,1023 @@
+[Obligations.O1]
+name = "Provide Written offer"
+sources = [ "LGPL-2.0-or-later", "EPL-2.0", "LGPL-2.0-only", "GPL-1.0-or-later", "GPL-3.0-or-later", "LGPL-2.1-only", "CDDL-1.0", "CDDL-1.1", "GPL-3.0-only", "LGPL-2.1-or-later", "GPL-2.0-only", "LGPL-3.0-only", "LGPL-3.0-or-later", "GPL-1.0-only", "AGPL-3.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "AGPL-3.0-or-later", "GPL-2.0-or-later",]
+
+[Obligations.O2]
+name = "Provide Source code"
+sources = [ "EPL-1.0", "GPL-3.0-or-later", "LGPL-2.1-only", "GPL-1.0-only", "NBPL-1.0", "GPL-2.0-only WITH Classpath-exception-2.0", "AGPL-3.0-or-later", "LGPL-2.0-or-later", "GPL-1.0-or-later", "Artistic-1.0", "GPL-3.0-only", "GPL-2.0-only", "AGPL-3.0-only", "Artistic-1.0-Perl", "GPL-2.0-or-later", "CPL-1.0", "LGPL-2.0-only", "MS-RL", "MPL-1.1", "LGPL-2.1-or-later", "LGPL-3.0-only", "LGPL-3.0-or-later", "IPL-1.0",]
+
+[Obligations.O3]
+name = "Display Copyright notices"
+sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "GPL-1.0-or-later", "LGPL-2.1-only", "LGPL-2.1-or-later", "GPL-2.0-only", "GPL-1.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later",]
+
+[Obligations.O4]
+name = "Display License announcement"
+sources = [ "GPL-1.0-or-later", "GPL-2.0-only", "GPL-1.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later",]
+
+[Obligations.O5]
+name = "Display Warranty disclaimer"
+sources = [ "GPL-1.0-or-later", "GPL-2.0-only", "GPL-1.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later",]
+
+[Obligations.O6]
+name = "Reference License text"
+sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "GPL-1.0-or-later", "MPL-2.0", "LGPL-2.1-only", "AFL-2.0", "LGPL-2.1-or-later", "AFL-2.1", "GPL-2.0-only", "BlueOak-1.0.0", "AFL-3.0", "GPL-1.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "MPL-2.0-no-copyleft-exception", "UPL-1.0", "GPL-2.0-or-later",]
+
+[Obligations.O7]
+name = "Grant License"
+sources = [ "EPL-1.0", "EUPL-1.2", "LGPL-2.1-only", "EUPL-1.1", "OFL-1.1", "GPL-1.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "LGPL-2.0-or-later", "GPL-1.0-or-later", "MPL-2.0", "Artistic-1.0", "CDDL-1.0", "CDDL-1.1", "GPL-2.0-only", "Artistic-1.0-Perl", "GPL-2.0-or-later", "CPL-1.0", "LGPL-2.0-only", "MPL-1.1", "LGPL-2.1-or-later", "OSL-3.0", "MPL-2.0-no-copyleft-exception", "EPL-2.0", "Ubuntu-font-1.0", "IPL-1.0",]
+
+[Obligations.O8]
+name = "Provide Modification date"
+sources = [ "OGC-1.0", "W3C-19980720", "LGPL-2.0-or-later", "LGPL-2.0-only", "GPL-1.0-or-later", "EUPL-1.2", "LGPL-2.1-only", "ZPL-2.0", "LGPL-2.1-or-later", "GPL-2.0-only", "EUPL-1.1", "ECL-1.0", "GPL-1.0-only", "NBPL-1.0", "W3C", "GPL-2.0-only WITH Classpath-exception-2.0", "Qhull", "GPL-2.0-or-later",]
+
+[Obligations.O9]
+name = "Provide Modification notice"
+sources = [ "EUPL-1.2", "Spencer-86", "LGPL-2.1-only", "AFL-2.0", "Libpng", "EUPL-1.1", "GPL-1.0-only", "NBPL-1.0", "GPL-2.0-only WITH Classpath-exception-2.0", "zlib-acknowledgement", "OGC-1.0", "LGPL-2.0-or-later", "GPL-1.0-or-later", "SSH-OpenSSH", "GPL-2.0-only", "ImageMagick", "ECL-1.0", "AFL-3.0", "CC-BY-2.5", "Apache-2.0", "GPL-2.0-or-later", "W3C-19980720", "LGPL-2.0-only", "ZPL-2.0", "MPL-1.1", "LGPL-2.1-or-later", "ECL-2.0", "OSL-3.0", "SSH-short", "Zlib", "CC-BY-3.0", "libpng-2.0", "AFL-2.1", "W3C",]
+
+[Obligations.O10]
+name = "Provide Copyright notices"
+sources = [ "EPL-1.0", "RSA-MD", "LGPL-2.1-only", "BSD-4.3TAHOE", "LicenseRef-scancode-bsla-no-advert", "IPL-1.0", "ICU", "OFL-1.1", "GPL-1.0-only", "NBPL-1.0", "libtiff", "GPL-2.0-only WITH Classpath-exception-2.0", "UPL-1.0", "LGPL-2.0-or-later", "GPL-1.0-or-later", "Artistic-1.0", "CDDL-1.0", "CDDL-1.1", "Unicode-DFS-2016", "GPL-2.0-only", "IJG", "HPND", "Artistic-1.0-Perl", "GPL-2.0-or-later", "CPL-1.0", "SGI-B-2.0", "Bitstream-Vera", "LGPL-2.0-only", "Python-2.0", "LGPL-2.1-or-later", "X11", "JasPer-2.0", "FSFAP", "PostgreSQL", "curl", "NTP", "ISC", "MIT-CMU", "MIT", "BSL-1.0", "EFL-2.0", "Unicode-DFS-2015", "Artistic-2.0",]
+
+[Obligations.O11]
+name = "Provide License text"
+sources = [ "EPL-1.0", "EUPL-1.2", "RSA-MD", "LGPL-2.1-only", "BSD-4.3TAHOE", "OLDAP-2.8", "LicenseRef-scancode-bsla-no-advert", "EUPL-1.1", "ICU", "IPL-1.0", "OFL-1.1", "GPL-1.0-only", "libtiff", "SunPro", "GPL-2.0-only WITH Classpath-exception-2.0", "UPL-1.0", "OGC-1.0", "LGPL-2.0-or-later", "FSFULLRWD", "GPL-1.0-or-later", "IBM-pibs", "CDDL-1.0", "CDDL-1.1", "Unicode-DFS-2016", "GPL-2.0-only", "ImageMagick", "ECL-1.0", "BlueOak-1.0.0", "IJG", "Apache-2.0", "W3C-20150513", "GPL-2.0-or-later", "LicenseRef-scancode-ppp", "SGI-B-2.0", "Bitstream-Vera", "LGPL-2.0-only", "W3C-19980720", "CPL-1.0", "Python-2.0", "MS-RL", "MPL-1.1", "LGPL-2.1-or-later", "X11", "ECL-2.0", "FSFAP", "PostgreSQL", "EPL-2.0", "curl", "FSFULLR", "MS-PL", "ISC", "MIT", "BSL-1.0", "EFL-2.0", "W3C", "Unicode-DFS-2015", "Qhull", "JasPer-2.0",]
+
+[Obligations.O12]
+name = "Provide Warranty disclaimer"
+sources = [ "RSA-MD", "LGPL-2.1-only", "BSD-4.3TAHOE", "LicenseRef-scancode-bsla-no-advert", "GPL-1.0-only", "NBPL-1.0", "GPL-2.0-only WITH Classpath-exception-2.0", "LGPL-2.0-or-later", "GPL-1.0-or-later", "Artistic-1.0", "GPL-2.0-only", "IJG", "OpenSSL", "Artistic-1.0-Perl", "GPL-2.0-or-later", "LicenseRef-scancode-ppp", "LGPL-2.0-only", "LGPL-2.1-or-later", "MIT", "BSL-1.0", "PostgreSQL", "Artistic-2.0",]
+
+[Obligations.O13]
+name = "Modify License notices"
+sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "GPL-1.0-or-later", "LGPL-2.1-only", "LGPL-2.1-or-later", "GPL-2.0-only", "GPL-1.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later",]
+
+[Obligations.O14]
+name = "Modify Warranty disclaimer"
+sources = [ "EUPL-1.2", "LGPL-2.0-or-later", "LGPL-2.0-only", "GPL-1.0-or-later", "LGPL-2.1-only", "LGPL-2.1-or-later", "GPL-2.0-only", "EUPL-1.1", "GPL-1.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later",]
+
+[Obligations.O15]
+name = "Restrict Granted rights"
+sources = [ "EUPL-1.2", "LGPL-2.1-only", "EUPL-1.1", "GPL-1.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "LGPL-2.0-or-later", "GPL-1.0-or-later", "MPL-2.0", "CDDL-1.0", "CDDL-1.1", "GPL-2.0-only", "CC-BY-2.5", "GPL-2.0-or-later", "LGPL-2.0-only", "MPL-1.1", "LGPL-2.1-or-later", "MPL-2.0-no-copyleft-exception", "EPL-2.0", "CC-BY-3.0",]
+
+[Obligations.O16]
+name = "Misrepresent Authorship"
+sources = [ "bzip2-1.0.5", "Spencer-86", "Artistic-1.0", "Zlib", "bzip2-1.0.6", "Libpng", "libpng-2.0", "ECL-1.0", "IJG", "Artistic-1.0-Perl", "zlib-acknowledgement",]
+
+[Obligations.O17]
+name = "Misrepresent Modified work"
+sources = [ "bzip2-1.0.5", "Spencer-86", "Zlib", "bzip2-1.0.6", "Libpng", "libpng-2.0", "zlib-acknowledgement",]
+
+[Obligations.O18]
+name = "Forward License text"
+sources = [ "BSD-2-Clause-Patent", "Libpng", "BSD-1-Clause", "zlib-acknowledgement", "FTL", "BSD-2-Clause", "bzip2-1.0.5", "Apache-1.1", "BSD-3-Clause", "MirOS", "PHP-3.01", "OpenSSL", "Info-ZIP", "BSD-Source-Code", "bzip2-1.0.6", "ZPL-2.0", "NCSA", "BSD-4-Clause", "LicenseRef-scancode-info-zip-2003-05", "Saxpath", "Zlib", "BSD-3-Clause-Open-MPI", "libpng-2.0", "Apache-1.0", "Sleepycat", "BSD-4-Clause-UC", "XFree86-1.1",]
+
+[Obligations.O19]
+name = "Modify Copyright notice"
+sources = [ "libpng-2.0",]
+
+[Obligations.O20]
+name = "Provide Copyright notices In Documentation OR Distribution material"
+sources = [ "BSD-2-Clause", "Saxpath", "BSD-4-Clause", "BSD-2-Clause-Patent", "Apache-1.1", "BSD-3-Clause", "ZPL-2.0", "OLDAP-2.8", "BSD-3-Clause-Open-MPI", "NCSA", "Apache-1.0", "Sleepycat", "BSD-4-Clause-UC", "PHP-3.01", "OpenSSL", "Info-ZIP", "XFree86-1.1", "LicenseRef-scancode-info-zip-2003-05",]
+
+[Obligations.O21]
+name = "Provide License text In Documentation OR Distribution material"
+sources = [ "BSD-2-Clause", "Saxpath", "BSD-4-Clause", "BSD-2-Clause-Patent", "Apache-1.1", "BSD-3-Clause", "ZPL-2.0", "OLDAP-2.8", "BSD-3-Clause-Open-MPI", "NCSA", "Apache-1.0", "Sleepycat", "BSD-4-Clause-UC", "PHP-3.01", "OpenSSL", "Info-ZIP", "XFree86-1.1", "LicenseRef-scancode-info-zip-2003-05",]
+
+[Obligations.O22]
+name = "Provide Warranty disclaimer In Documentation OR Distribution material"
+sources = [ "BSD-2-Clause", "Saxpath", "BSD-2-Clause-Patent", "Apache-1.1", "BSD-3-Clause", "ZPL-2.0", "OLDAP-2.8", "BSD-3-Clause-Open-MPI", "NCSA", "Apache-1.0", "Sleepycat", "BSD-4-Clause-UC", "PHP-3.01", "BSD-4-Clause", "Info-ZIP", "XFree86-1.1", "LicenseRef-scancode-info-zip-2003-05",]
+
+[Obligations.O23]
+name = "Promote"
+sources = [ "AFL-2.0", "BSD-4.3TAHOE", "OLDAP-2.8", "LicenseRef-scancode-bsla-no-advert", "ICU", "OFL-1.1", "SMLNJ", "NBPL-1.0", "libtiff", "FTL", "bzip2-1.0.5", "OGC-1.0", "Artistic-1.0", "BSD-3-Clause", "Unicode-DFS-2016", "ECL-1.0", "IJG", "AFL-3.0", "BSD-Source-Code", "HPND", "Artistic-1.0-Perl", "W3C-20150513", "SGI-B-2.0", "Bitstream-Vera", "W3C-19980720", "Python-2.0", "bzip2-1.0.6", "ZPL-2.0", "NCSA", "X11", "OSL-3.0", "BSD-4-Clause", "CC-BY-3.0", "curl", "BSD-3-Clause-Open-MPI", "NTP", "Ubuntu-font-1.0", "Sleepycat", "AFL-2.1", "BSD-4-Clause-UC", "MIT-CMU", "W3C", "Unicode-DFS-2015", "XFree86-1.1", "JasPer-2.0",]
+
+[Obligations.O24]
+name = "Forward Copyright notices"
+sources = [ "BSD-2-Clause-Patent", "AFL-2.0", "OLDAP-2.8", "BSD-1-Clause", "FTL", "BSD-2-Clause", "bzip2-1.0.5", "Apache-1.1", "BSD-3-Clause", "MirOS", "ImageMagick", "PHP-3.01", "OpenSSL", "Info-ZIP", "AFL-3.0", "Apache-2.0", "CC-BY-2.5", "BSD-Source-Code", "LicenseRef-scancode-ppp", "bzip2-1.0.6", "MS-RL", "ZPL-2.0", "NCSA", "ECL-2.0", "OSL-3.0", "BSD-4-Clause", "LicenseRef-scancode-info-zip-2003-05", "Qhull", "Saxpath", "BSD-3-Clause-Open-MPI", "AFL-2.1", "Apache-1.0", "Sleepycat", "MS-PL", "BSD-4-Clause-UC", "CC-BY-3.0", "XFree86-1.1",]
+
+[Obligations.O25]
+name = "Use \"ssh\" OR \"Secure Shell\" In Name"
+sources = [ "SSH-short", "SSH-OpenSSH",]
+
+[Obligations.O26]
+name = "Provide Copyright notices In Documentation"
+sources = [ "Python-2.0", "Unicode-DFS-2016", "NTP", "ICU", "MIT-CMU", "libtiff", "HPND", "Unicode-DFS-2015",]
+
+[Obligations.O27]
+name = "Provide License text In Documentation"
+sources = [ "Python-2.0", "Unicode-DFS-2016", "NTP", "ICU", "MIT-CMU", "SMLNJ", "libtiff", "HPND", "Unicode-DFS-2015",]
+
+[Obligations.O28]
+name = "Provide Copyright notices in Documentation"
+sources = [ "MirOS",]
+
+[Obligations.O29]
+name = "Provide License text in Documentation"
+sources = [ "MirOS",]
+
+[Obligations.O30]
+name = "Provide Warranty disclaimer in Documentation"
+sources = [ "MirOS",]
+
+[Obligations.O31]
+name = "Forward Warranty disclaimer"
+sources = [ "BSD-2-Clause-Patent", "BSD-1-Clause", "BSD-2-Clause", "bzip2-1.0.5", "Apache-1.1", "BSD-3-Clause", "MirOS", "PHP-3.01", "BSD-Source-Code", "OpenSSL", "Info-ZIP", "bzip2-1.0.6", "ZPL-2.0", "NCSA", "BSD-4-Clause", "LicenseRef-scancode-info-zip-2003-05", "Saxpath", "BSD-3-Clause-Open-MPI", "Apache-1.0", "Sleepycat", "BSD-4-Clause-UC", "XFree86-1.1",]
+
+[Obligations.O32]
+name = "Provide Copyright notice"
+sources = [ "IBM-pibs",]
+
+[Obligations.O33]
+name = "Mark Modification"
+sources = [ "Info-ZIP", "LicenseRef-scancode-info-zip-2003-05",]
+
+[Obligations.O34]
+name = "Rename Modified work"
+sources = [ "Artistic-1.0", "Ubuntu-font-1.0", "Info-ZIP", "Artistic-1.0-Perl", "Artistic-2.0", "LicenseRef-scancode-info-zip-2003-05",]
+
+[Obligations.O35]
+name = "Use \"Info-ZIP\", \"Zip\", \"UnZip\", \"UnZipSFX\", \"WiZ\", \"Pocket UnZip\", \"Pocket Zip\", \"MacZip\""
+sources = [ "Info-ZIP", "LicenseRef-scancode-info-zip-2003-05",]
+
+[Obligations.O36]
+name = "Provide Attribution notice In Documentation OR Distribution material"
+sources = [ "Info-ZIP", "LicenseRef-scancode-info-zip-2003-05",]
+
+[Obligations.O37]
+name = "Forward Attribution notice"
+sources = [ "Info-ZIP", "LicenseRef-scancode-info-zip-2003-05",]
+
+[Obligations.O38]
+name = "Credit Verbatim In Documentation \"This product includes software developed by the Apache Software Foundation.\""
+sources = [ "Apache-1.1",]
+
+[Obligations.O39]
+name = "Promote Using \"Apache\" OR \"Apache Software Foundation\""
+sources = [ "Apache-1.1",]
+
+[Obligations.O40]
+name = "Use \"Apache\" [ex. \"Jakarta,\" \"Apache,\" or \"Apache Commons,\"] In Product name"
+sources = [ "Apache-1.1",]
+
+[Obligations.O41]
+name = "Provide Legal notices"
+sources = [ "OGC-1.0", "W3C-19980720", "ECL-1.0", "W3C", "W3C-20150513",]
+
+[Obligations.O42]
+name = "Use \"Bitstream\" OR \"Vera\" In Font Name"
+sources = [ "Bitstream-Vera",]
+
+[Obligations.O43]
+name = "Provide Trademark notice"
+sources = [ "Bitstream-Vera",]
+
+[Obligations.O44]
+name = "Sell Font"
+sources = [ "OFL-1.1", "Bitstream-Vera",]
+
+[Obligations.O45]
+name = "Impede Installation Of Original work"
+sources = [ "Artistic-2.0",]
+
+[Obligations.O46]
+name = "Impede Running Original work"
+sources = [ "Artistic-2.0",]
+
+[Obligations.O47]
+name = "Use Strong copyleft license"
+sources = [ "Artistic-2.0",]
+
+[Obligations.O48]
+name = "Use Original license"
+sources = [ "MS-RL", "MS-PL", "Artistic-2.0",]
+
+[Obligations.O49]
+name = "Provide Source code Of Modified work"
+sources = [ "Artistic-1.0-Perl", "Artistic-2.0", "Artistic-1.0",]
+
+[Obligations.O50]
+name = "Provide Modification report"
+sources = [ "Python-2.0", "FTL", "Artistic-1.0", "MPL-1.1", "NBPL-1.0", "Artistic-1.0-Perl", "Artistic-2.0",]
+
+[Obligations.O51]
+name = "Provide Interface To Work"
+sources = [ "Artistic-2.0",]
+
+[Obligations.O52]
+name = "End Binary delivery"
+sources = [ "Artistic-2.0",]
+
+[Obligations.O53]
+name = "Provide Pointer On Request"
+sources = [ "Artistic-2.0",]
+
+[Obligations.O54]
+name = "Provide Pointer To Source code"
+sources = [ "Artistic-2.0",]
+
+[Obligations.O55]
+name = "Require License fee"
+sources = [ "Artistic-1.0-Perl", "Artistic-2.0", "Artistic-1.0",]
+
+[Obligations.O56]
+name = "Provide Copyright notice \"Copyright © [$date-of-document] Open Geospatial Consortium, Inc. All Rights Reserved. https://www.ogc.org/about-ogc/policies/copyright-notice-and-disclaimers/\""
+sources = [ "OGC-1.0",]
+
+[Obligations.O57]
+name = "Mark Modified work"
+sources = [ "bzip2-1.0.6", "bzip2-1.0.5",]
+
+[Obligations.O58]
+name = "Provide Copyright notice \"W3C Software Short Notice https://www.w3.org/Consortium/Legal/2002/copyright-software-short-notice-20021231.html\""
+sources = [ "W3C",]
+
+[Obligations.O59]
+name = "Provide Modification notice In Documentation"
+sources = [ "Unicode-DFS-2015",]
+
+[Obligations.O60]
+name = "Provide Modification notice In Files"
+sources = [ "Unicode-DFS-2015",]
+
+[Obligations.O61]
+name = "Provide Modification notice In Source code"
+sources = [ "Artistic-1.0-Perl", "Unicode-DFS-2015", "Artistic-1.0",]
+
+[Obligations.O62]
+name = "Ensure Functionality Without Linked work"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O63]
+name = "Ensure Modified work Is Library"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O64]
+name = "Enable Relinking With Modified library"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O65]
+name = "Provide Linkable work"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O66]
+name = "Provide Source code Of the Library"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O67]
+name = "Provide Linkable work Via Internet"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O68]
+name = "Provide Source code delivery Of the Library Via Internet"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O69]
+name = "Ensure Delivery Of Linkable work"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O70]
+name = "Ensure Source code delivery Of the Library"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O71]
+name = "Use Shared library"
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later",]
+
+[Obligations.O72]
+name = "Notify Library"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O73]
+name = "Permit Modification of Linked work"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O74]
+name = "Permit Reverse engineering of Linked work"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O75]
+name = "Provide License announcement"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O76]
+name = "Provide Source code Of Library AND Linked work"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O77]
+name = "Use GPL-2.0-or-later For Library AND Linked work"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O78]
+name = "Permit Binary delivery of Library"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O79]
+name = "Provide Library"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O80]
+name = "Provide License notices"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O81]
+name = "Reference Library"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Obligations.O82]
+name = "Credit Verbatim In Advertisement \"This product includes software developed by the Apache Group for use in the Apache HTTP server project.\""
+sources = [ "Apache-1.0",]
+
+[Obligations.O83]
+name = "Promote Using \"Apache Server\" OR \"Apache Group\""
+sources = [ "Apache-1.0",]
+
+[Obligations.O84]
+name = "Use \"Apache\" In Product name"
+sources = [ "Apache-1.0",]
+
+[Obligations.O85]
+name = "Credit Verbatim \"This product includes software developed by the Apache Group for use in the Apache HTTP server project.\""
+sources = [ "Apache-1.0",]
+
+[Obligations.O86]
+name = "Indemnify Other Contributors"
+sources = [ "MPL-1.1",]
+
+[Obligations.O87]
+name = "Use Compatible license"
+sources = [ "MS-RL", "CDDL-1.0", "CDDL-1.1", "MPL-1.1", "MS-PL", "AFL-3.0",]
+
+[Obligations.O88]
+name = "Disseminate Patent notice AND Trademark notice"
+sources = [ "MPL-1.1",]
+
+[Obligations.O89]
+name = "Update File \"LEGAL\""
+sources = [ "MPL-1.1",]
+
+[Obligations.O90]
+name = "Provide File \"LEGAL\""
+sources = [ "MPL-1.1",]
+
+[Obligations.O91]
+name = "Indemnify Other contributors"
+sources = [ "EPL-1.0", "EUPL-1.2", "EPL-2.0", "MPL-2.0", "CPL-1.0", "CDDL-1.0", "CDDL-1.1", "MPL-1.1", "ImageMagick", "EUPL-1.1", "ECL-2.0", "Apache-2.0", "IPL-1.0", "MPL-2.0-no-copyleft-exception",]
+
+[Obligations.O92]
+name = "Include Retrieval information of Source code in Notice"
+sources = [ "MPL-1.1",]
+
+[Obligations.O93]
+name = "Provide Standard license notice"
+sources = [ "MPL-1.1",]
+
+[Obligations.O94]
+name = "Reference Source code"
+sources = [ "EUPL-1.2", "GPL-3.0-or-later", "AFL-2.0", "MPL-1.1", "GPL-3.0-only", "AFL-2.1", "LGPL-3.0-only", "EUPL-1.1", "LGPL-3.0-or-later", "AGPL-3.0-only", "AGPL-3.0-or-later",]
+
+[Obligations.O95]
+name = "Include Notice"
+sources = [ "MPL-1.1",]
+
+[Obligations.O96]
+name = "Restrict Granted rights For Source code"
+sources = [ "MPL-2.0-no-copyleft-exception", "MPL-1.1", "MPL-2.0",]
+
+[Obligations.O97]
+name = "Provide Delayed source code delivery"
+sources = [ "EPL-1.0", "CPL-1.0", "EPL-2.0", "CDDL-1.0", "CDDL-1.1", "Sleepycat", "IPL-1.0",]
+
+[Obligations.O98]
+name = "Use Identical License obligations"
+sources = [ "CPL-1.0", "EPL-1.0", "EPL-2.0",]
+
+[Obligations.O99]
+name = "Use Liability disclaimer On behalf of Other contributors"
+sources = [ "CPL-1.0", "EPL-1.0", "EPL-2.0",]
+
+[Obligations.O100]
+name = "Use Warranty disclaimer On behalf of Other contributors"
+sources = [ "CPL-1.0", "EPL-1.0", "EPL-2.0",]
+
+[Obligations.O101]
+name = "Modify Copyright notices"
+sources = [ "EPL-1.0", "EUPL-1.2", "EPL-2.0", "CPL-1.0", "CDDL-1.0", "CDDL-1.1", "EUPL-1.1",]
+
+[Obligations.O102]
+name = "Inform Recipients"
+sources = [ "MPL-2.0-no-copyleft-exception", "MPL-2.0",]
+
+[Obligations.O103]
+name = "Provide License notice"
+sources = [ "MPL-2.0-no-copyleft-exception", "MPL-2.0",]
+
+[Obligations.O104]
+name = "Modify Legal notices"
+sources = [ "MPL-2.0-no-copyleft-exception", "MPL-2.0",]
+
+[Obligations.O105]
+name = "Include Source code"
+sources = [ "EUPL-1.2", "EUPL-1.1", "EPL-2.0", "Sleepycat",]
+
+[Obligations.O106]
+name = "Modify License notice"
+sources = [ "EUPL-1.2", "EUPL-1.1",]
+
+[Obligations.O107]
+name = "Modify Patent notices"
+sources = [ "EUPL-1.2", "EPL-2.0", "CDDL-1.0", "CDDL-1.1", "EUPL-1.1",]
+
+[Obligations.O108]
+name = "Modify Trademark notices"
+sources = [ "EUPL-1.2", "EPL-2.0", "CDDL-1.0", "CDDL-1.1", "EUPL-1.1",]
+
+[Obligations.O109]
+name = "Reference http://oss.sgi.com/projects/FreeB/"
+sources = [ "SGI-B-2.0",]
+
+[Obligations.O110]
+name = "Prepend \"PHP\" To Product name"
+sources = [ "PHP-3.01",]
+
+[Obligations.O111]
+name = "Promote Using \"PHP\""
+sources = [ "PHP-3.01",]
+
+[Obligations.O112]
+name = "Use \"PHP\" In Product name"
+sources = [ "PHP-3.01",]
+
+[Obligations.O113]
+name = "Credit Verbatim \"This product includes PHP software, freely available from &lt;http://www.php.net/software/&gt;\""
+sources = [ "PHP-3.01",]
+
+[Obligations.O114]
+name = "Forward Patent notices"
+sources = [ "MS-RL", "ImageMagick", "MS-PL", "ECL-2.0", "OSL-3.0", "Apache-2.0",]
+
+[Obligations.O115]
+name = "Forward Trademark notices"
+sources = [ "MS-RL", "ImageMagick", "MS-PL", "ECL-2.0", "OSL-3.0", "Apache-2.0",]
+
+[Obligations.O116]
+name = "Credit Verbatim \"This product includes software developed by The XFree86 Project, Inc and its contributors.\" In Binary delivery"
+sources = [ "XFree86-1.1",]
+
+[Obligations.O117]
+name = "Credit Verbatim \"This product includes software developed by The XFree86 Project, Inc and its contributors.\" In Documentation"
+sources = [ "XFree86-1.1",]
+
+[Obligations.O118]
+name = "Credit Verbatim \"This product includes software developed by The XFree86 Project, Inc and its contributors.\" In Source code delivery"
+sources = [ "XFree86-1.1",]
+
+[Obligations.O119]
+name = "Credit Verbatim \"This product includes cryptographic software written by Eric Young\" In Advertisement"
+sources = [ "OpenSSL",]
+
+[Obligations.O120]
+name = "Credit Verbatim \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit.\" In Advertisement"
+sources = [ "OpenSSL",]
+
+[Obligations.O121]
+name = "Credit Verbatim \"This product includes software written by Tim Hudson\""
+sources = [ "OpenSSL",]
+
+[Obligations.O122]
+name = "Promote Using \"OpenSSL Toolkit\" or \"OpenSSL Project\""
+sources = [ "OpenSSL",]
+
+[Obligations.O123]
+name = "Use \"OpenSSL\" In Product name"
+sources = [ "OpenSSL",]
+
+[Obligations.O124]
+name = "Credit Verbatim \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit.\""
+sources = [ "OpenSSL",]
+
+[Obligations.O125]
+name = "Modify License"
+sources = [ "OpenSSL",]
+
+[Obligations.O126]
+name = "Provide Delayed source code delivery Of Modified work"
+sources = [ "AFL-2.0", "AFL-2.1", "AFL-3.0",]
+
+[Obligations.O127]
+name = "Include Source code Of Modified work"
+sources = [ "AFL-2.0", "AFL-2.1", "AFL-3.0",]
+
+[Obligations.O128]
+name = "Forward License notice"
+sources = [ "CC-BY-2.5", "AFL-2.0", "AFL-2.1", "OSL-3.0", "AFL-3.0", "CC-BY-3.0",]
+
+[Obligations.O129]
+name = "Forward Patent notice"
+sources = [ "AFL-2.0", "AFL-2.1", "AFL-3.0",]
+
+[Obligations.O130]
+name = "Forward Trademark notice"
+sources = [ "AFL-2.0", "AFL-2.1", "AFL-3.0",]
+
+[Obligations.O131]
+name = "Search License acceptance"
+sources = [ "AFL-2.0", "OSL-3.0", "AFL-2.1", "AFL-3.0",]
+
+[Obligations.O132]
+name = "Rename Source code"
+sources = [ "NBPL-1.0",]
+
+[Obligations.O133]
+name = "Provide Retrieval information"
+sources = [ "NBPL-1.0",]
+
+[Obligations.O134]
+name = "Publish Source code"
+sources = [ "NBPL-1.0",]
+
+[Obligations.O135]
+name = "Credit Verbatim \"Portions Copyright 2000-2002 Philip A. Craig\""
+sources = [ "zlib-acknowledgement",]
+
+[Obligations.O136]
+name = "Provide Copyright notice \"Copyright © [$date-of-software] World Wide Web Consortium,. All Rights Reserved. http://www.w3.org/Consortium/Legal/\""
+sources = [ "W3C-19980720",]
+
+[Obligations.O137]
+name = "Credit FreeType Team"
+sources = [ "FTL",]
+
+[Obligations.O138]
+name = "Credit In Documentation FreeType Team"
+sources = [ "FTL",]
+
+[Obligations.O139]
+name = "Modify License text"
+sources = [ "FTL",]
+
+[Obligations.O140]
+name = "Provide Modification author"
+sources = [ "Qhull",]
+
+[Obligations.O141]
+name = "Provide Modification reason"
+sources = [ "Qhull",]
+
+[Obligations.O142]
+name = "Reference Original source code"
+sources = [ "Qhull",]
+
+[Obligations.O143]
+name = "Provide File \"NOTICE\" In Source code"
+sources = [ "Apache-2.0", "ImageMagick", "ECL-2.0",]
+
+[Obligations.O144]
+name = "Provide File \"NOTICE\" In Documentation"
+sources = [ "Apache-2.0", "ImageMagick", "ECL-2.0",]
+
+[Obligations.O145]
+name = "Display File \"NOTICE\""
+sources = [ "Apache-2.0", "ImageMagick", "ECL-2.0",]
+
+[Obligations.O146]
+name = "Provide File \"NOTICE\""
+sources = [ "Apache-2.0", "ImageMagick", "ECL-2.0",]
+
+[Obligations.O147]
+name = "Delete Irrelevant parts"
+sources = [ "Apache-2.0", "ImageMagick", "ECL-2.0",]
+
+[Obligations.O148]
+name = "Forward Attribution notices"
+sources = [ "Apache-2.0", "ImageMagick", "ECL-2.0",]
+
+[Obligations.O149]
+name = "Use Equivalent License obligations"
+sources = [ "IPL-1.0",]
+
+[Obligations.O150]
+name = "Use Liability disclaimer On behalf of Contributors"
+sources = [ "IPL-1.0",]
+
+[Obligations.O151]
+name = "Use Warranty disclaimer On behalf of Contributors"
+sources = [ "IPL-1.0",]
+
+[Obligations.O152]
+name = "Credit Verbatim \"Copyright 1996, 1999 International Business Machines Corporation and others. All Rights Reserved.\""
+sources = [ "IPL-1.0",]
+
+[Obligations.O153]
+name = "Use Original name"
+sources = [ "Ubuntu-font-1.0",]
+
+[Obligations.O154]
+name = "Append Name To Original name"
+sources = [ "Ubuntu-font-1.0",]
+
+[Obligations.O155]
+name = "Credit In Advertisement Verbatim \"derived from the RSA Data Security, Inc. MD5 Message-Digest Algorithm\""
+sources = [ "RSA-MD",]
+
+[Obligations.O156]
+name = "Credit In Advertisement Verbatim \"RSA Data Security, Inc. MD5 Message-Digest Algorithm\""
+sources = [ "RSA-MD",]
+
+[Obligations.O157]
+name = "Credit Verbatim \"This product includes software developed by the University of Chicago, as Operator of Argonne National Laboratory.\""
+sources = [ "Minpack",]
+
+[Obligations.O158]
+name = "Credit In Advertisement Verbatim \"This product includes software developed by the University of California, Berkeley and its contributors.\""
+sources = [ "BSD-4-Clause-UC",]
+
+[Obligations.O159]
+name = "Provide Copyright notice \"W3C Software and Document Short Notice https://www.w3.org/Consortium/Legal/2015/copyright-software-short-notice.html\""
+sources = [ "W3C-20150513",]
+
+[Obligations.O160]
+name = "Provide Copyright notice AND Modification notice"
+sources = [ "W3C-20150513",]
+
+[Obligations.O161]
+name = "Notify License"
+sources = [ "EPL-2.0",]
+
+[Obligations.O162]
+name = "Modify Attribution notices"
+sources = [ "EPL-2.0",]
+
+[Obligations.O163]
+name = "Modify Liability disclaimers"
+sources = [ "EPL-2.0",]
+
+[Obligations.O164]
+name = "Modify Warranty disclaimers"
+sources = [ "EPL-2.0",]
+
+[Obligations.O165]
+name = "Use Primary reserved font name"
+sources = [ "OFL-1.1",]
+
+[Obligations.O166]
+name = "Provide Delayed source code delivery Of Modification"
+sources = [ "OSL-3.0",]
+
+[Obligations.O167]
+name = "Include Source code Of Modification"
+sources = [ "OSL-3.0",]
+
+[Obligations.O168]
+name = "Reference License text OSL-3.0"
+sources = [ "OSL-3.0",]
+
+[Obligations.O169]
+name = "Provide Modification report In Distribution material"
+sources = [ "Artistic-1.0-Perl", "Artistic-1.0",]
+
+[Obligations.O170]
+name = "Provide Original work As Binary delivery"
+sources = [ "Artistic-1.0",]
+
+[Obligations.O171]
+name = "Reference Original work In Distribution material"
+sources = [ "Artistic-1.0-Perl", "Artistic-1.0",]
+
+[Obligations.O172]
+name = "Provide Original work"
+sources = [ "Artistic-1.0-Perl", "Artistic-1.0",]
+
+[Obligations.O173]
+name = "Rename Target binary"
+sources = [ "Artistic-1.0-Perl", "Artistic-1.0",]
+
+[Obligations.O174]
+name = "Publish Modification"
+sources = [ "Artistic-1.0-Perl", "Artistic-1.0",]
+
+[Obligations.O175]
+name = "Provide Modification date In Source code"
+sources = [ "Artistic-1.0-Perl", "Artistic-1.0",]
+
+[Obligations.O176]
+name = "Provide Modification report In Source code"
+sources = [ "Artistic-1.0-Perl", "Artistic-1.0",]
+
+[Obligations.O177]
+name = "Credit In Documentation AND Advertisement AND Distribution material University of California, Berkeley"
+sources = [ "BSD-4.3TAHOE",]
+
+[Obligations.O178]
+name = "Delete Attribution notice"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Obligations.O179]
+name = "Delete Copyright notices"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Obligations.O180]
+name = "Delete Third-party attribution notice"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Obligations.O181]
+name = "Provide Pointer"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Obligations.O182]
+name = "Provide Third-party attribution notice"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Obligations.O183]
+name = "Provide Title Of Work"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Obligations.O184]
+name = "Forward Pointer To Warranty disclaimer"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Obligations.O185]
+name = "Provide Attribution notice"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Obligations.O186]
+name = "Provide OR Reference License text"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Obligations.O187]
+name = "Sublicense"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Obligations.O188]
+name = "Use Technological measures"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Obligations.O189]
+name = "Credit Verbatim \"this software is based in part on the work of the Independent JPEG Group\""
+sources = [ "IJG",]
+
+[Obligations.O190]
+name = "Provide Modification report In Documentation"
+sources = [ "IJG",]
+
+[Obligations.O191]
+name = "Indemnify Original authors"
+sources = [ "IJG",]
+
+[Obligations.O192]
+name = "Credit In Documentation AND Distribution material University of California, Berkeley"
+sources = [ "LicenseRef-scancode-bsla-no-advert",]
+
+[Obligations.O193]
+name = "Credit In Advertisement Verbatim \"This product includes software developed by [the organization].\""
+sources = [ "BSD-4-Clause",]
+
+[Obligations.O194]
+name = "Provide Copyright notice In Documentation"
+sources = [ "SMLNJ",]
+
+[Obligations.O195]
+name = "Provide Copyright notice In Work"
+sources = [ "SMLNJ",]
+
+[Obligations.O196]
+name = "Provide Warranty disclaimer In Documentation"
+sources = [ "SMLNJ",]
+
+[Obligations.O197]
+name = "Use License For Modification"
+sources = [ "Sleepycat",]
+
+[Obligations.O198]
+name = "Provide Delayed source code delivery Of Combined work"
+sources = [ "Sleepycat",]
+
+[Obligations.O199]
+name = "Include Source code Of Combined work"
+sources = [ "Sleepycat",]
+
+[Obligations.O200]
+name = "Use License For Combined work"
+sources = [ "Sleepycat",]
+
+[Obligations.O201]
+name = "Forward Reference To Warranty disclaimer"
+sources = [ "CC-BY-3.0",]
+
+[Obligations.O202]
+name = "Use"
+sources = [ "CC-BY-3.0",]
+
+[Obligations.O203]
+name = "Promote Using \"SAXPath\""
+sources = [ "Saxpath",]
+
+[Obligations.O204]
+name = "Use \"SAXPath\" In Product name"
+sources = [ "Saxpath",]
+
+[Properties.P1]
+name = "Interactive"
+sources = [ "GPL-1.0-or-later", "GPL-1.0-only",]
+
+[Properties.P2]
+name = "Software modification"
+sources = [ "EPL-1.0", "EUPL-1.2", "Spencer-86", "RSA-MD", "LGPL-2.1-only", "AFL-2.0", "Libpng", "EUPL-1.1", "GPL-1.0-only", "NBPL-1.0", "GPL-2.0-only WITH Classpath-exception-2.0", "zlib-acknowledgement", "FTL", "bzip2-1.0.5", "OGC-1.0", "LGPL-2.0-or-later", "GPL-1.0-or-later", "MPL-2.0", "Artistic-1.0", "Apache-1.1", "CDDL-1.0", "CDDL-1.1", "SSH-OpenSSH", "GPL-2.0-only", "ImageMagick", "ECL-1.0", "IJG", "PHP-3.01", "OpenSSL", "AFL-3.0", "Info-ZIP", "Apache-2.0", "CC-BY-2.5", "Artistic-1.0-Perl", "W3C-20150513", "GPL-2.0-or-later", "CPL-1.0", "W3C-19980720", "Python-2.0", "LGPL-2.0-only", "bzip2-1.0.6", "MS-RL", "ZPL-2.0", "MPL-1.1", "LGPL-2.1-or-later", "ECL-2.0", "OSL-3.0", "MPL-2.0-no-copyleft-exception", "LicenseRef-scancode-info-zip-2003-05", "Saxpath", "SSH-short", "EPL-2.0", "Zlib", "CC-BY-3.0", "libpng-2.0", "Apache-1.0", "Sleepycat", "AFL-2.1", "W3C", "IPL-1.0", "Qhull", "Artistic-2.0",]
+
+[Properties.P3]
+name = "Binary delivery"
+sources = [ "EPL-1.0", "EUPL-1.2", "BSD-2-Clause-Patent", "LGPL-2.1-only", "OLDAP-2.8", "Libpng", "BSD-1-Clause", "EUPL-1.1", "GPL-1.0-only", "NBPL-1.0", "GPL-2.0-only WITH Classpath-exception-2.0", "zlib-acknowledgement", "FTL", "BSD-2-Clause", "bzip2-1.0.5", "LGPL-2.0-or-later", "GPL-1.0-or-later", "MPL-2.0", "Artistic-1.0", "Apache-1.1", "CDDL-1.0", "BSD-3-Clause", "CDDL-1.1", "GPL-2.0-only", "ImageMagick", "IJG", "PHP-3.01", "OpenSSL", "Info-ZIP", "Apache-2.0", "BSD-Source-Code", "Artistic-1.0-Perl", "GPL-2.0-or-later", "CPL-1.0", "LGPL-2.0-only", "bzip2-1.0.6", "MS-RL", "ZPL-2.0", "MPL-1.1", "LGPL-2.1-or-later", "NCSA", "ECL-2.0", "OSL-3.0", "BSD-4-Clause", "MPL-2.0-no-copyleft-exception", "LicenseRef-scancode-info-zip-2003-05", "Saxpath", "EPL-2.0", "Zlib", "BSD-3-Clause-Open-MPI", "libpng-2.0", "Apache-1.0", "Sleepycat", "MS-PL", "BSD-4-Clause-UC", "BSL-1.0", "IPL-1.0", "XFree86-1.1", "Artistic-2.0",]
+
+[Properties.P4]
+name = "Source code delivery"
+sources = [ "EPL-1.0", "EUPL-1.2", "BSD-2-Clause-Patent", "LGPL-2.1-only", "OLDAP-2.8", "Libpng", "BSD-1-Clause", "EUPL-1.1", "GPL-1.0-only", "NBPL-1.0", "GPL-2.0-only WITH Classpath-exception-2.0", "zlib-acknowledgement", "FTL", "BSD-2-Clause", "bzip2-1.0.5", "LGPL-2.0-or-later", "GPL-1.0-or-later", "MPL-2.0", "Artistic-1.0", "Apache-1.1", "CDDL-1.0", "BSD-3-Clause", "CDDL-1.1", "GPL-2.0-only", "ImageMagick", "IJG", "PHP-3.01", "OpenSSL", "Info-ZIP", "Apache-2.0", "BSD-Source-Code", "Artistic-1.0-Perl", "GPL-2.0-or-later", "CPL-1.0", "LGPL-2.0-only", "bzip2-1.0.6", "MS-RL", "ZPL-2.0", "MPL-1.1", "LGPL-2.1-or-later", "NCSA", "ECL-2.0", "OSL-3.0", "BSD-4-Clause", "MPL-2.0-no-copyleft-exception", "LicenseRef-scancode-info-zip-2003-05", "Saxpath", "EPL-2.0", "Zlib", "BSD-3-Clause-Open-MPI", "libpng-2.0", "Apache-1.0", "Sleepycat", "MS-PL", "BSD-4-Clause-UC", "BSL-1.0", "IPL-1.0", "XFree86-1.1", "Artistic-2.0",]
+
+[Properties.P5]
+name = "Modified work Is Protocol incompatible"
+sources = [ "SSH-short", "SSH-OpenSSH",]
+
+[Properties.P6]
+name = "Source code delivery OR Binary delivery"
+sources = [ "Spencer-86", "RSA-MD", "AFL-2.0", "BSD-4.3TAHOE", "LicenseRef-scancode-bsla-no-advert", "ICU", "MIT-0", "SMLNJ", "libtiff", "SunPro", "UPL-1.0", "OGC-1.0", "FSFULLRWD", "IBM-pibs", "SSH-OpenSSH", "Unicode-DFS-2016", "BlueOak-1.0.0", "ECL-1.0", "CC-BY-2.5", "HPND", "WTFPL", "blessing", "0BSD", "W3C-20150513", "LicenseRef-scancode-ppp", "SGI-B-2.0", "W3C-19980720", "Python-2.0", "X11", "Unlicense", "FSFAP", "PostgreSQL", "SSH-short", "CC-BY-3.0", "FSFUL", "curl", "NTP", "AFL-2.1", "FSFULLR", "ISC", "MIT-CMU", "MIT", "EFL-2.0", "W3C", "Unicode-DFS-2015", "Qhull", "JasPer-2.0",]
+
+[Properties.P7]
+name = "Work Delivery"
+sources = [ "MirOS",]
+
+[Properties.P8]
+name = "NOT Binary delivery of standard UnZipSFX binary as part of a self-extracting archive AND NOT Delete SFX banner AND NOT Disable SFX banner"
+sources = [ "Info-ZIP", "LicenseRef-scancode-info-zip-2003-05",]
+
+[Properties.P9]
+name = "Documentation"
+sources = [ "Apache-1.1", "MPL-1.1",]
+
+[Properties.P10]
+name = "Font Modification"
+sources = [ "OFL-1.1", "Bitstream-Vera",]
+
+[Properties.P11]
+name = "Font delivery"
+sources = [ "OFL-1.1", "Bitstream-Vera",]
+
+[Properties.P12]
+name = "Binary delivery Via Internet"
+sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-only", "LGPL-2.1-or-later", "GPL-2.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later",]
+
+[Properties.P13]
+name = "Interactive AND Displaying License announcement"
+sources = [ "GPL-2.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later",]
+
+[Properties.P14]
+name = "Provided By Copyright holder"
+sources = [ "Artistic-2.0",]
+
+[Properties.P15]
+name = "Linked work"
+sources = [ "Artistic-2.0",]
+
+[Properties.P16]
+name = "Pointer Expires"
+sources = [ "Artistic-2.0",]
+
+[Properties.P17]
+name = "NOT Legal notices"
+sources = [ "OGC-1.0", "W3C", "W3C-20150513",]
+
+[Properties.P18]
+name = "Modification Of Files"
+sources = [ "Unicode-DFS-2015",]
+
+[Properties.P19]
+name = "Source code modification"
+sources = [ "Unicode-DFS-2015",]
+
+[Properties.P20]
+name = "Software modification Uses Linked work"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Properties.P21]
+name = "Modified library NOT Interoperable"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Properties.P22]
+name = "Interactive AND Displaying Copyright notices"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Properties.P23]
+name = "Software modification Of Library"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Properties.P24]
+name = "More than 10 lines of code"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Properties.P25]
+name = "Binary delivery Of Combined work"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Properties.P26]
+name = "Binary delivery Of Linked work With Header files Of Library Included In Linked work"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Properties.P27]
+name = "Source code delivery Of Combined library OR Binary delivery Of Combined library"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Properties.P28]
+name = "Source code delivery Of Combined work"
+sources = [ "LGPL-2.1-only", "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later",]
+
+[Properties.P29]
+name = "Advertisement"
+sources = [ "OpenSSL", "RSA-MD", "Apache-1.0", "BSD-4-Clause-UC", "BSD-4-Clause",]
+
+[Properties.P30]
+name = "ATTRIBUTE Dynamic"
+sources = [ "MPL-1.1",]
+
+[Properties.P31]
+name = "Software modification Was Updated"
+sources = [ "MPL-1.1",]
+
+[Properties.P32]
+name = "Binary delivery Includes Copyright notices OR Documentation Includes Copyright notices"
+sources = [ "MPL-1.1",]
+
+[Properties.P33]
+name = "License change"
+sources = [ "EPL-1.0", "CPL-1.0", "EPL-2.0", "MPL-2.0", "CDDL-1.0", "CDDL-1.1", "MPL-1.1", "AFL-3.0", "IPL-1.0", "MPL-2.0-no-copyleft-exception",]
+
+[Properties.P34]
+name = "Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks"
+sources = [ "MPL-1.1",]
+
+[Properties.P35]
+name = "Service offerings"
+sources = [ "EPL-1.0", "EUPL-1.2", "CPL-1.0", "MPL-2.0", "MPL-1.1", "ImageMagick", "EUPL-1.1", "ECL-2.0", "Apache-2.0", "IPL-1.0", "MPL-2.0-no-copyleft-exception",]
+
+[Properties.P36]
+name = "Commercial distribution"
+sources = [ "CPL-1.0", "EPL-1.0", "IPL-1.0", "EPL-2.0",]
+
+[Properties.P37]
+name = "Including Windows code"
+sources = [ "OpenSSL",]
+
+[Properties.P38]
+name = "Modified work Under Original license"
+sources = [ "AFL-2.0", "AFL-2.1", "AFL-3.0",]
+
+[Properties.P39]
+name = "Source code delivery OR Binary delivery OR Network service"
+sources = [ "AFL-3.0",]
+
+[Properties.P40]
+name = "Use in Product"
+sources = [ "zlib-acknowledgement",]
+
+[Properties.P41]
+name = "No Legal notices"
+sources = [ "W3C-19980720",]
+
+[Properties.P42]
+name = "Interactive AND Reference Legal notices"
+sources = [ "Info-ZIP",]
+
+[Properties.P43]
+name = "Work Includes File \"NOTICE\""
+sources = [ "Apache-2.0", "ImageMagick", "ECL-2.0",]
+
+[Properties.P44]
+name = "Network services"
+sources = [ "OSL-3.0",]
+
+[Properties.P45]
+name = "Distributed With Other works"
+sources = [ "Artistic-1.0-Perl", "Artistic-1.0",]
+
+[Properties.P46]
+name = "Notice From Copyright holder"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Properties.P47]
+name = "Modification"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Properties.P48]
+name = "Pointer To Copyright notices OR License"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Properties.P49]
+name = "Third-party attribution notice In Copyright notices OR Terms of service OR By Reasonable means"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Properties.P50]
+name = "Title"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Properties.P51]
+name = "Image delivery OR Font delivery"
+sources = [ "CC-BY-3.0", "CC-BY-2.5",]
+
+[Properties.P52]
+name = "Combined work delivery"
+sources = [ "Sleepycat",]

@@ -1,0 +1,5 @@
+[[Rules]]
+key = "0BSD"
+require = "(implies (license \"0BSD\") (implies P6 None))"
+
+[Constraints.0BSD]

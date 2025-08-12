@@ -1,0 +1,5 @@
+[[Rules]]
+key = "OSL-3.0"
+require = "(implies (license \"OSL-3.0\") (and (implies P3 (and (implies P2 (and (and O166 O167) O7 !O23)) (and O168 O131))) (implies P44 (and (implies P2 (and O7 !O23)) (and O168 O131))) (implies P4 (and (implies P2 (and (and O24 O128 O114 O115 O7 O9) !O23)) (and O168 O131)))))"
+
+[Constraints."OSL-3.0"]

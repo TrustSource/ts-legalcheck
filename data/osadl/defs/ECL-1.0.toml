@@ -1,0 +1,5 @@
+[[Rules]]
+key = "ECL-1.0"
+require = "(implies (license \"ECL-1.0\") (implies P6 (and (implies P2 (and (and O8 O9) !O16)) (and O41 O11) !O23)))"
+
+[Constraints."ECL-1.0"]

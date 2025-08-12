@@ -1,0 +1,5 @@
+[[Rules]]
+key = "blessing"
+require = "(implies (license \"blessing\") (implies P6 None))"
+
+[Constraints.blessing]

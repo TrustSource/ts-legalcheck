@@ -1,0 +1,5 @@
+[[Rules]]
+key = "W3C-20150513"
+require = "(implies (license \"W3C-20150513\") (implies P6 (and (and (implies P17 O159) (implies P2 O160)) (and O41 O11) !O23)))"
+
+[Constraints.W3C-20150513]

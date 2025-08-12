@@ -1,0 +1,5 @@
+[[Rules]]
+key = "BSD-4.3TAHOE"
+require = "(implies (license \"BSD-4.3TAHOE\") (implies P6 (and (and O177 O10 O11 O12) !O23)))"
+
+[Constraints."BSD-4.3TAHOE"]

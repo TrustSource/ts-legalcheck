@@ -1,0 +1,5 @@
+[[Rules]]
+key = "MIT"
+require = "(implies (license \"MIT\") (implies P6 (and O10 O11 O12)))"
+
+[Constraints.MIT]

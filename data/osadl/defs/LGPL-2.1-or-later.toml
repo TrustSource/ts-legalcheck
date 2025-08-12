@@ -1,0 +1,5 @@
+[[Rules]]
+key = "LGPL-2.1-or-later"
+require = "(implies (license \"LGPL-2.1-or-later\") (and (implies P3 (and (implies P2 (and (implies P20 O62) (and O63 O7 O8 O9))) (and O10 O11 O2 O12) (and !O13 !O14 !O15))) (implies P25 (and (and (implies !P21 O64) (or (and (implies !P21 O64) (and O65 O66)) O1 (implies P12 (and (implies !P21 O64) (and O67 O68))) (and (implies !P21 O64) (and O69 O70))) (and O66 O71)) (and (implies P22 (and O3 O6)) (implies P23 (and (implies P20 O62) (and O63 O7 O8 O9)))) (and O72 O73 O74 O10 O75 O11 O12) (and !O13 !O14 !O15))) (implies P26 (implies P24 O77)) (implies P4 (and (implies P2 (and (implies P20 O62) (and O63 O7 O8 O9))) (and O10 O11 O12) (and !O13 !O14 !O15))) (implies P27 (and (and O78 O79 O80 O81) !O15)) (implies P28 (and (and (implies P22 (and O3 O6)) (implies P2 (and (implies P20 O62) (and O63 O7 O8 O9)))) (and O72 O73 O10 O75 O11 O12) (and !O13 !O14 !O15)))))"
+
+[Constraints."LGPL-2.1-or-later"]

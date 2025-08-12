@@ -1,0 +1,5 @@
+[[Rules]]
+key = "Info-ZIP"
+require = "(implies (license \"Info-ZIP\") (and (implies P3 (implies P8 (and (implies !P42 (and O36 O20 O21 O22)) (implies P2 (and (and O33 O34) !O35))))) (implies P4 (and (implies P2 (and (and O33 O34) !O35)) (and O37 O24 O18 O31)))))"
+
+[Constraints.Info-ZIP]

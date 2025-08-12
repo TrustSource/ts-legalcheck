@@ -1,0 +1,5 @@
+[[Rules]]
+key = "UPL-1.0"
+require = "(implies (license \"UPL-1.0\") (implies P6 (and (and O6 O11) O10)))"
+
+[Constraints."UPL-1.0"]

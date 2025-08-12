@@ -1,0 +1,5 @@
+[[Rules]]
+key = "Unicode-DFS-2016"
+require = "(implies (license \"Unicode-DFS-2016\") (implies P6 (and (and (and O26 O27) (and O10 O11)) !O23)))"
+
+[Constraints.Unicode-DFS-2016]

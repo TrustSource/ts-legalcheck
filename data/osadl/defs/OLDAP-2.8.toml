@@ -1,0 +1,5 @@
+[[Rules]]
+key = "OLDAP-2.8"
+require = "(implies (license \"OLDAP-2.8\") (and (implies P3 (and (and O20 O11 O21 O22) !O23)) (implies P4 (and (and O24 O11) !O23))))"
+
+[Constraints."OLDAP-2.8"]

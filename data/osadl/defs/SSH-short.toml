@@ -1,0 +1,5 @@
+[[Rules]]
+key = "SSH-short"
+require = "(implies (license \"SSH-short\") (implies P6 (implies P2 (and (implies P5 !O25) O9))))"
+
+[Constraints.SSH-short]

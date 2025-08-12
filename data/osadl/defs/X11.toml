@@ -1,0 +1,5 @@
+[[Rules]]
+key = "X11"
+require = "(implies (license \"X11\") (implies P6 (and (and O10 O11) !O23)))"
+
+[Constraints.X11]

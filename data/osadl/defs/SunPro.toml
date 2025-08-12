@@ -1,0 +1,5 @@
+[[Rules]]
+key = "SunPro"
+require = "(implies (license \"SunPro\") (implies P6 O11))"
+
+[Constraints.SunPro]

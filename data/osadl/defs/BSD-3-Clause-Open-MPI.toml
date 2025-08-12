@@ -1,0 +1,5 @@
+[[Rules]]
+key = "BSD-3-Clause-Open-MPI"
+require = "(implies (license \"BSD-3-Clause-Open-MPI\") (and (implies P3 (and (and O20 O21 O22) !O23)) (implies P4 (and (and O24 O18 O31) !O23))))"
+
+[Constraints.BSD-3-Clause-Open-MPI]

@@ -1,0 +1,5 @@
+[[Rules]]
+key = "Apache-2.0"
+require = "(implies (license \"Apache-2.0\") (and (implies P3 (and (and (implies P35 O91) (implies P2 (implies P43 (and (and (or O143 O144 O145) O146) O147)))) O11)) (implies P4 (and (and (implies P35 O91) (implies P2 (and (implies P43 (and (and (or O143 O144 O145) O146) O147)) (and O148 O24 O114 O115 O9)))) O11))))"
+
+[Constraints."Apache-2.0"]

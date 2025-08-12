@@ -1,0 +1,12 @@
+[module] # module properties
+
+
+[component] # component properties
+
+P1 = true # Work Includes File "NOTICE"
+P2 = false # Service offerings
+
+P3 = true # Software modification
+
+P4 = false # Binary delivery
+P5 = true # Source code delivery

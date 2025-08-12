@@ -1,0 +1,5 @@
+[[Rules]]
+key = "PostgreSQL"
+require = "(implies (license \"PostgreSQL\") (implies P6 (and O10 O11 O12)))"
+
+[Constraints.PostgreSQL]

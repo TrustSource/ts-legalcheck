@@ -1,0 +1,5 @@
+[[Rules]]
+key = "bzip2-1.0.6"
+require = "(implies (license \"bzip2-1.0.6\") (and (implies P3 (and (implies P2 !O23) !O16)) (implies P4 (and (implies P2 (and O57 (and !O17 !O23))) (and O24 O18 O31) !O16))))"
+
+[Constraints."bzip2-1.0.6"]

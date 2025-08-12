@@ -1,0 +1,5 @@
+[[Rules]]
+key = "AFL-2.1"
+require = "(implies (license \"AFL-2.1\") (implies P6 (and (implies P2 (and (implies P38 (and (and O126 O94) O127)) (and O24 O128 O129 O130 O9) !O23)) (and O6 O131))))"
+
+[Constraints."AFL-2.1"]

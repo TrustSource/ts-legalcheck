@@ -1,0 +1,5 @@
+[[Rules]]
+key = "CC-BY-3.0"
+require = "(implies (license \"CC-BY-3.0\") (and (implies P51 (and (and (implies P47 (and (implies P46 (and O178 O179 O180)) O9)) (implies P48 O181) (implies P49 O182) (implies P50 O183)) (and O24 O128 O201 O185 O186) (and !O23 !O15 !O187 !O202 !O188))) (implies P6 (and (and (implies P48 O181) (implies P2 (and (implies P46 (and O178 O179 O180)) O9)) (implies P49 O182) (implies P50 O183)) (and O24 O128 O184 O185 O186) (and !O23 !O15 !O187 !O202 !O188)))))"
+
+[Constraints."CC-BY-3.0"]

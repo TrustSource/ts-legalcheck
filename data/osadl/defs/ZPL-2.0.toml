@@ -1,0 +1,5 @@
+[[Rules]]
+key = "ZPL-2.0"
+require = "(implies (license \"ZPL-2.0\") (and (implies P3 (and (implies P2 (and O8 O9)) (and O20 O21 O22) !O23)) (implies P4 (and (implies P2 (and O8 O9)) (and O24 O18 O31) !O23))))"
+
+[Constraints."ZPL-2.0"]

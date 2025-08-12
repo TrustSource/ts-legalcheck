@@ -1,0 +1,5 @@
+[[Rules]]
+key = "ISC"
+require = "(implies (license \"ISC\") (implies P6 (and O10 O11)))"
+
+[Constraints.ISC]
