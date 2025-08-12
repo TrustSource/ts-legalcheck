@@ -1,20 +1,26 @@
-from typing import Any, Dict
+import typing as t
 
 from . import OSADLTransformer
 
 
 class ConstraintsExtractor(OSADLTransformer):
     def __init__(self):
-        self.__properties: Dict[str, Dict] = {}
-        self.__obligations: Dict[str, Dict] = {}        
+        self.__src: t.Optional[str] = None
+
+        self.__properties: t.Dict[str, t.Dict] = {}
+        self.__obligations: t.Dict[str, t.Dict] = {}        
 
     @property
-    def properties(self) -> Dict[str, Dict]:
+    def properties(self) -> t.Dict[str, t.Dict]:
         return self.__properties
 
     @property
-    def obligations(self) -> Dict[str, Dict]:
+    def obligations(self) -> t.Dict[str, t.Dict]:
         return self.__obligations
+
+    def transform_with_src(self, data: t.Any, src: str) -> t.Any:
+        self.__src = src
+        return super().transform(data)
 
     def _get_property(self, name: str) -> str:
         """
@@ -27,9 +33,13 @@ class ConstraintsExtractor(OSADLTransformer):
                 "key": key,
                 "name": name
             }
-            return key
-        else:
-            return self.__properties[name]["key"]
+
+        if src := self.__src:
+            sources = self.__properties[name].get("sources", set())
+            sources.add(src)
+            self.__properties[name]["sources"] = sources
+                
+        return self.__properties[name]["key"]
 
     def _get_obligation(self, name: str) -> str:
         """
@@ -42,21 +52,26 @@ class ConstraintsExtractor(OSADLTransformer):
                 "key": key,
                 "name": name
             }
-            return key
-        else:
-            return self.__obligations[name]["key"]
+
+        if src := self.__src:
+            sources = self.__obligations[name].get("sources", set())
+            sources.add(src)
+            self.__obligations[name]["sources"] = sources
+            
+        return self.__obligations[name]["key"]
+
 
     """Transform methods for each OSADL license language element."""
 
-    def IF(self, value: Any) -> Any:
+    def IF(self, value: t.Any) -> t.Any:
         return {self._get_property(key): val for key, val in value.items()}
 
-    def USE_CASE(self, value: Any) -> Any:
+    def USE_CASE(self, value: t.Any) -> t.Any:
         return {self._get_property(key): val for key, val in value.items()}
 
-    def YOU_MUST_NOT(self, value: Any) -> Any:
+    def YOU_MUST_NOT(self, value: t.Any) -> t.Any:
         return [self._get_obligation(key) for key in value.keys()]
 
-    def YOU_MUST(self, value: Any) -> Any:
+    def YOU_MUST(self, value: t.Any) -> t.Any:
         return [self._get_obligation(key) for key in value.keys()]
 

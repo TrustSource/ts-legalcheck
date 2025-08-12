@@ -28,7 +28,7 @@ class OSADLTransformer:
             if self._is_index_dict(data):
                 # Convert to actual list, sorted by numeric key
                 sorted_items = sorted(data.items(), key=lambda x: int(x[0]))
-                return [self.NO_OP(self.transform(value)) for _, value in sorted_items]
+                return [self.transform(value) for _, value in sorted_items]
             
             # Normal dictionary processing
             result = {}
