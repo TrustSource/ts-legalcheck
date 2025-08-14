@@ -27,38 +27,48 @@ class ConstraintsExtractor(OSADLTransformer):
         Get the property key for a given string.
         If the string is not already a property, create a new one.
         """
-        if name not in self.__properties:
+        _name = self._normalize_name(name)
+        if _name not in self.__properties:
             key = f"P{len(self.__properties) + 1}"
-            self.__properties[name] = {
+            self.__properties[_name] = {
                 "key": key,
                 "name": name
             }
 
         if src := self.__src:
-            sources = self.__properties[name].get("sources", set())
+            sources = self.__properties[_name].get("sources", set())
             sources.add(src)
-            self.__properties[name]["sources"] = sources
+            self.__properties[_name]["sources"] = sources
                 
-        return self.__properties[name]["key"]
+        return self.__properties[_name]["key"]
 
     def _get_obligation(self, name: str) -> str:
         """
         Get the obligation key for a given string.
         If the string is not already an obligation, create a new one.
         """
-        if name not in self.__obligations:
+        _name = self._normalize_name(name)
+        if _name not in self.__obligations:
             key = f"O{len(self.__obligations) + 1}"
-            self.__obligations[name] = {
+            self.__obligations[_name] = {
                 "key": key,
                 "name": name
             }
 
         if src := self.__src:
-            sources = self.__obligations[name].get("sources", set())
+            sources = self.__obligations[_name].get("sources", set())
             sources.add(src)
-            self.__obligations[name]["sources"] = sources
-            
-        return self.__obligations[name]["key"]
+            self.__obligations[_name]["sources"] = sources
+
+        return self.__obligations[_name]["key"]
+
+
+    def _normalize_name(self, name: str) -> str:
+        """
+        Normalize the name by removing leading/trailing whitespace and converting to lowercase.
+        """
+        return name.strip().lower() if name else ""
+
 
 
     """Transform methods for each OSADL license language element."""

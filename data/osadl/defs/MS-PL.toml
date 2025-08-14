@@ -1,5 +1,5 @@
 [[Rules]]
 key = "MS-PL"
-require = "(implies (license \"MS-PL\") (and (implies P3 (and O24 O114 O115 O87)) (implies P4 (and O24 O114 O115 O11 O48))))"
+require = "(implies (license \"MS-PL\") (and (implies P3 (and O24 O111 O112 O85)) (implies P4 (and O24 O111 O112 O11 O46))))"
 
 [Constraints.MS-PL]

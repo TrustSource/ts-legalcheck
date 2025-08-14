@@ -1,5 +1,5 @@
 [[Rules]]
 key = "GPL-1.0-or-later"
-require = "(implies (license \"GPL-1.0-or-later\") (and (implies P3 (and (and O1 O2) (implies P2 (and (implies P1 (and O3 O4 O5 O6)) (and O7 O8 O9))) (and O10 O11 O12) (and !O13 !O14 !O15))) (implies P4 (and (implies P2 (and (implies P1 (and O3 O4 O5 O6)) (and O7 O8 O9))) (and O10 O11 O12) (and !O13 !O14 !O15)))))"
+require = "(implies (license \"GPL-1.0-or-later\") (and (implies P3 (and (and O1 O2) (implies P2 (and (implies P1 (and O3 O4 O5 O6)) (and O7 O8 O9))) (and O10 O11 O12) (and O13 O14 O15))) (implies P4 (and (implies P2 (and (implies P1 (and O3 O4 O5 O6)) (and O7 O8 O9))) (and O10 O11 O12) (and O13 O14 O15)))))"
 
 [Constraints."GPL-1.0-or-later"]

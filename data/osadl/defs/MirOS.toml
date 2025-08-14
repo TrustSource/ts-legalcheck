@@ -1,5 +1,5 @@
 [[Rules]]
 key = "MirOS"
-require = "(implies (license \"MirOS\") (implies P7 (and (and O28 O29 O30) (and O24 O18 O31))))"
+require = "(implies (license \"MirOS\") (implies P7 (and (and O26 O27 O28) (and O24 O18 O29))))"
 
 [Constraints.MirOS]

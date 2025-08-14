@@ -1,5 +1,5 @@
 [[Rules]]
 key = "BSD-Source-Code"
-require = "(implies (license \"BSD-Source-Code\") (and (implies P3 !O23) (implies P4 (and (and O24 O18 O31) !O23))))"
+require = "(implies (license \"BSD-Source-Code\") (and (implies P3 O23) (implies P4 (and (and O24 O18 O29) O23))))"
 
 [Constraints.BSD-Source-Code]

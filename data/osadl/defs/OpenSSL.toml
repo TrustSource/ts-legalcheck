@@ -1,5 +1,5 @@
 [[Rules]]
 key = "OpenSSL"
-require = "(implies (license \"OpenSSL\") (and (implies P3 (and (and (implies P29 (and O119 O120)) (implies P37 O121) (implies P2 (and !O122 !O123))) (and O124 O20 O21 O12) !O125)) (implies P4 (and (and (implies P29 (and O119 O120)) (implies P37 O121) (implies P2 (and !O122 !O123))) (and O124 O24 O18 O31) !O125))))"
+require = "(implies (license \"OpenSSL\") (and (implies P3 (and (and (implies P29 (and O116 O117)) (implies P37 O118) (implies P2 (and O119 O120))) (and O121 O20 O21 O12) O122)) (implies P4 (and (and (implies P29 (and O116 O117)) (implies P37 O118) (implies P2 (and O119 O120))) (and O121 O24 O18 O29) O122))))"
 
 [Constraints.OpenSSL]

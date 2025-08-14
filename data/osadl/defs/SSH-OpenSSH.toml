@@ -1,5 +1,5 @@
 [[Rules]]
 key = "SSH-OpenSSH"
-require = "(implies (license \"SSH-OpenSSH\") (implies P6 (implies P2 (and (implies P5 !O25) O9))))"
+require = "(implies (license \"SSH-OpenSSH\") (implies P6 (implies P2 (and (implies P5 O25) O9))))"
 
 [Constraints.SSH-OpenSSH]

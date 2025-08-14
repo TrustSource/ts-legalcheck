@@ -1,5 +1,5 @@
 [[Rules]]
 key = "Spencer-86"
-require = "(implies (license \"Spencer-86\") (implies P6 (and (implies P2 (and O9 !O17)) !O16)))"
+require = "(implies (license \"Spencer-86\") (implies P6 (and (implies P2 (and O9 O17)) O16)))"
 
 [Constraints.Spencer-86]

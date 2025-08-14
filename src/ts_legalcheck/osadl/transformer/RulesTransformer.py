@@ -53,11 +53,11 @@ class RulesTransformer(ConstraintsExtractor):
         return self.IF(value)
 
     def YOU_MUST(self, value: Dict[str, Any]) -> Optional[str]:
-        obligations = [self._get_obligation(key) for key in value.keys()]
+        obligations = [self._get_obligation("YOU MUST: " + key) for key in value.keys()]
         return self._values_to_expr(obligations, 'and')
     
     def YOU_MUST_NOT(self, value: Any) -> Optional[str]:
-        obligations = [f"!{self._get_obligation(key)}" for key in value.keys()]
+        obligations = [self._get_obligation("YOU MUST NOT: " + key) for key in value.keys()]
         return self._values_to_expr(obligations, 'and')
 
 

@@ -1,5 +1,5 @@
 [[Rules]]
 key = "NCSA"
-require = "(implies (license \"NCSA\") (and (implies P3 (and (and O20 O21 O22) !O23)) (implies P4 (and (and O24 O18 O31) !O23))))"
+require = "(implies (license \"NCSA\") (and (implies P3 (and (and O20 O21 O22) O23)) (implies P4 (and (and O24 O18 O29) O23))))"
 
 [Constraints.NCSA]

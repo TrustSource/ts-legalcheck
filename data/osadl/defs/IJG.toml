@@ -1,5 +1,5 @@
 [[Rules]]
 key = "IJG"
-require = "(implies (license \"IJG\") (and (implies P3 O189) (implies P4 (and (implies P2 O190) (and O191 O10 O11 O12) (and !O16 !O23)))))"
+require = "(implies (license \"IJG\") (and (implies P3 O186) (implies P4 (and (implies P2 O187) (and O188 O10 O11 O12) (and O16 O23)))))"
 
 [Constraints.IJG]

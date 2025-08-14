@@ -1,5 +1,5 @@
 [[Rules]]
 key = "CDDL-1.0"
-require = "(implies (license \"CDDL-1.0\") (and (implies P3 (and (and (implies P33 (and O91 O87)) (implies P2 (and O7 O10))) (and O97 O11 O1) (and !O101 !O107 !O108 !O15))) (implies P4 (and (implies P2 (and O7 O10)) O11 (and !O101 !O107 !O108 !O15)))))"
+require = "(implies (license \"CDDL-1.0\") (and (implies P3 (and (and (implies P33 (and O84 O85)) (implies P2 (and O7 O10))) (and O94 O11 O1) (and O98 O104 O105 O15))) (implies P4 (and (implies P2 (and O7 O10)) O11 (and O98 O104 O105 O15)))))"
 
 [Constraints."CDDL-1.0"]

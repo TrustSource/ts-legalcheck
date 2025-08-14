@@ -1,5 +1,5 @@
 [[Rules]]
 key = "RSA-MD"
-require = "(implies (license \"RSA-MD\") (implies P6 (and (implies P29 (and (implies P2 O155) O156)) (and O10 O11 O12))))"
+require = "(implies (license \"RSA-MD\") (implies P6 (and (implies P29 (and (implies P2 O152) O153)) (and O10 O11 O12))))"
 
 [Constraints.RSA-MD]

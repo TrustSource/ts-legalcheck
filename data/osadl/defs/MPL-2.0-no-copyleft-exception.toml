@@ -1,5 +1,5 @@
 [[Rules]]
 key = "MPL-2.0-no-copyleft-exception"
-require = "(implies (license \"MPL-2.0-no-copyleft-exception\") (and (implies P3 (and (and (implies P33 !O96) (implies P35 O91)) O102)) (implies P4 (and (and (implies P35 O91) (implies P2 O7)) (and O103 O6) (and !O104 !O15)))))"
+require = "(implies (license \"MPL-2.0-no-copyleft-exception\") (and (implies P3 (and (and (implies P33 O93) (implies P35 O84)) O99)) (implies P4 (and (and (implies P35 O84) (implies P2 O7)) (and O100 O6) (and O101 O15)))))"
 
 [Constraints."MPL-2.0-no-copyleft-exception"]

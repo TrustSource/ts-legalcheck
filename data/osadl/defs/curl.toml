@@ -1,5 +1,5 @@
 [[Rules]]
 key = "curl"
-require = "(implies (license \"curl\") (implies P6 (and (and O10 O11) !O23)))"
+require = "(implies (license \"curl\") (implies P6 (and (and O10 O11) O23)))"
 
 [Constraints.curl]

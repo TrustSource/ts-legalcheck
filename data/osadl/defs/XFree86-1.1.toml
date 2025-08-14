@@ -1,5 +1,5 @@
 [[Rules]]
 key = "XFree86-1.1"
-require = "(implies (license \"XFree86-1.1\") (and (implies P3 (and (and O116 O117) (and O20 O21 O22) !O23)) (implies P4 (and (and O118 O117) (and O24 O18 O31) !O23))))"
+require = "(implies (license \"XFree86-1.1\") (and (implies P3 (and (and O113 O114) (and O20 O21 O22) O23)) (implies P4 (and (and O115 O114) (and O24 O18 O29) O23))))"
 
 [Constraints."XFree86-1.1"]

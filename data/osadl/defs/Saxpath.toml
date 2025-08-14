@@ -1,5 +1,5 @@
 [[Rules]]
 key = "Saxpath"
-require = "(implies (license \"Saxpath\") (and (implies P3 (and (implies P2 (and !O203 !O204)) (and O20 O21 O22))) (implies P4 (and (implies P2 (and !O203 !O204)) (and O24 O18 O31)))))"
+require = "(implies (license \"Saxpath\") (and (implies P3 (and (implies P2 (and O199 O200)) (and O20 O21 O22))) (implies P4 (and (implies P2 (and O199 O200)) (and O24 O18 O29)))))"
 
 [Constraints.Saxpath]

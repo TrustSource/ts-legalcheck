@@ -1,5 +1,5 @@
 [[Rules]]
 key = "FTL"
-require = "(implies (license \"FTL\") (and (implies P3 (and (and O137 O138) !O23)) (implies P4 (and (implies P2 O50) (and O137 O24 O18) (and !O139 !O23)))))"
+require = "(implies (license \"FTL\") (and (implies P3 (and (and O134 O135) O23)) (implies P4 (and (implies P2 O48) (and O134 O24 O18) (and O136 O23)))))"
 
 [Constraints.FTL]

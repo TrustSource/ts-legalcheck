@@ -1,5 +1,5 @@
 [[Rules]]
 key = "SGI-B-2.0"
-require = "(implies (license \"SGI-B-2.0\") (implies P6 (and (and O109 O11) O10 !O23)))"
+require = "(implies (license \"SGI-B-2.0\") (implies P6 (and (and O106 O11) O10 O23)))"
 
 [Constraints."SGI-B-2.0"]

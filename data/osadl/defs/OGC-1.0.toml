@@ -1,5 +1,5 @@
 [[Rules]]
 key = "OGC-1.0"
-require = "(implies (license \"OGC-1.0\") (implies P6 (and (and (implies P17 O56) (implies P2 (and O8 O9))) (and O41 O11) !O23)))"
+require = "(implies (license \"OGC-1.0\") (implies P6 (and (and (implies P17 O54) (implies P2 (and O8 O9))) (and O39 O11) O23)))"
 
 [Constraints."OGC-1.0"]

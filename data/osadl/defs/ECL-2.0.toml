@@ -1,5 +1,5 @@
 [[Rules]]
 key = "ECL-2.0"
-require = "(implies (license \"ECL-2.0\") (and (implies P3 (and (and (implies P35 O91) (implies P2 (implies P43 (and (and (or O143 O144 O145) O146) O147)))) O11)) (implies P4 (and (and (implies P35 O91) (implies P2 (and (implies P43 (and (and (or O143 O144 O145) O146) O147)) (and O148 O24 O114 O115 O9)))) O11))))"
+require = "(implies (license \"ECL-2.0\") (and (implies P3 (and (and (implies P35 O84) (implies P2 (implies P43 (and (and (or O140 O141 O142) O143) O144)))) O11)) (implies P4 (and (and (implies P35 O84) (implies P2 (and (implies P43 (and (and (or O140 O141 O142) O143) O144)) (and O145 O24 O111 O112 O9)))) O11))))"
 
 [Constraints."ECL-2.0"]

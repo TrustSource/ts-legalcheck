@@ -1,5 +1,5 @@
 [[Rules]]
 key = "Artistic-1.0"
-require = "(implies (license \"Artistic-1.0\") (and (implies P3 (and (and (implies P45 !O16) (implies P2 (and (and O169 O170 O171 O34) O2))) (and O172 O171) (and !O23 !O55))) (implies P4 (and (implies P2 (and (and (or O49 (and O50 O172 O173)) (and O7 O174)) (and O175 O61 O176))) (and O10 O12) (and !O23 !O55)))))"
+require = "(implies (license \"Artistic-1.0\") (and (implies P3 (and (and (implies P45 O16) (implies P2 (and (and O166 O167 O168 O32) O2))) (and O169 O168) (and O23 O53))) (implies P4 (and (implies P2 (and (and (or O47 (and O48 O169 O170)) (and O7 O171)) (and O172 O59 O173))) (and O10 O12) (and O23 O53)))))"
 
 [Constraints."Artistic-1.0"]

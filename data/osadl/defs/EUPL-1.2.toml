@@ -1,5 +1,5 @@
 [[Rules]]
 key = "EUPL-1.2"
-require = "(implies (license \"EUPL-1.2\") (and (implies P3 (and (and O94 (and O105 O11) (and !O101 !O106 !O107 !O108 !O14)) (and (implies P35 O91) (implies P2 (and O7 O8 O9))) !O15)) (implies P4 (and (and (implies P35 O91) (implies P2 (and O7 O8 O9))) O11 (and !O101 !O106 !O107 !O108 !O14 !O15)))))"
+require = "(implies (license \"EUPL-1.2\") (and (implies P3 (and (and O91 (and O102 O11) (and O98 O103 O104 O105 O14)) (and (implies P35 O84) (implies P2 (and O7 O8 O9))) O15)) (implies P4 (and (and (implies P35 O84) (implies P2 (and O7 O8 O9))) O11 (and O98 O103 O104 O105 O14 O15)))))"
 
 [Constraints."EUPL-1.2"]

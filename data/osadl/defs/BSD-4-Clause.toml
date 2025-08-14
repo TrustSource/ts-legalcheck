@@ -1,5 +1,5 @@
 [[Rules]]
 key = "BSD-4-Clause"
-require = "(implies (license \"BSD-4-Clause\") (and (implies P3 (and (implies P29 O193) (and O20 O21 O22) !O23)) (implies P4 (and (implies P29 O193) (and O24 O18 O31) !O23))))"
+require = "(implies (license \"BSD-4-Clause\") (and (implies P3 (and (implies P29 O190) (and O20 O21 O22) O23)) (implies P4 (and (implies P29 O190) (and O24 O18 O29) O23))))"
 
 [Constraints.BSD-4-Clause]

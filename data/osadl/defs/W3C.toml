@@ -1,5 +1,5 @@
 [[Rules]]
 key = "W3C"
-require = "(implies (license \"W3C\") (implies P6 (and (and (implies P17 O58) (implies P2 (and O8 O9))) (and O41 O11) !O23)))"
+require = "(implies (license \"W3C\") (implies P6 (and (and (implies P17 O56) (implies P2 (and O8 O9))) (and O39 O11) O23)))"
 
 [Constraints.W3C]

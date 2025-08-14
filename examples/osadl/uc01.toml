@@ -3,10 +3,13 @@
 
 [component] # component properties
 
-P1 = true # Work Includes File "NOTICE"
-P2 = false # Service offerings
+P2 = true # Software modification
+P3 = false # Binary delivery
+P4 = true # Source code delivery
 
-P3 = true # Software modification
+P35 = false # Service offerings
 
-P4 = false # Binary delivery
-P5 = true # Source code delivery
+P43 = false # Work Includes File "NOTICE"
+
+
+

@@ -1,5 +1,5 @@
 [[Rules]]
 key = "LicenseRef-scancode-bsla-no-advert"
-require = "(implies (license \"LicenseRef-scancode-bsla-no-advert\") (implies P6 (and (and O192 O10 O11 O12) !O23)))"
+require = "(implies (license \"LicenseRef-scancode-bsla-no-advert\") (implies P6 (and (and O189 O10 O11 O12) O23)))"
 
 [Constraints.LicenseRef-scancode-bsla-no-advert]
