@@ -320,7 +320,7 @@ class Engine(ConstraintsBuilder):
             self.__solver.pop()
 
 
-    def checkLicense(self, lic):
+    def checkLicense(self, lic: License, extended_results: bool = True):
         self.push(lic)
 
         def extractObligations():
@@ -329,7 +329,7 @@ class Engine(ConstraintsBuilder):
                 c_const = self.__compsStack[len(self.__compsStack) - 1]
                 for _key, _name in self.__obligations.items():
                     if self.__eval(self.makeComponentCnstrExpr(_key, c_const)):
-                        name = f"{_name if _name else 'Unknown'} ({_key})" 
+                        name = f"{_name if _name else 'Unknown'} ({_key})" if extended_results else _key
                         obligations.append(name)
 
             return obligations
@@ -373,11 +373,10 @@ class Engine(ConstraintsBuilder):
         return result
 
 
-    def checkComponent(self, comp, *args):
+    def checkComponent(self, comp: Component, extended_results: bool = True, lics: t.Optional[t.List[str]] = None):
         self.push(comp)
 
-        lics = utils.get_args(args)
-        if len(lics) == 0:
+        if not lics:
             lics = comp.licenses
 
         result = {}
@@ -391,29 +390,26 @@ class Engine(ConstraintsBuilder):
                     'reason': 'License could not be matched correctly'
                 }
             else:
-                result[l] = self.checkLicense(lic)
+                result[l] = self.checkLicense(lic, extended_results=extended_results)
 
         self.pop(Component)
         return result
 
 
-    def checkModule(self, mod, *args):
+    def checkModule(self, mod: Module, extended_results: bool = True, comps: t.Optional[t.List[Component]] = None):
         self.push(mod)
 
-        comps = utils.get_args(args)
-        if len(comps) == 0:
+        if not comps:
             comps = mod.components
 
-        result = {}
-        for c in comps:
-            result[c.key] = self.checkComponent(c)
+        result = {c.key: self.checkComponent(c, extended_results=extended_results) for c in comps}
 
         self.pop(Module)
         return result
 
 
-_package_definitions_path=Path(__file__).parent / 'definitions'
-
+_package_definitions_path=os.environ.get('TS_LEGALCHECK_DEFINITIONS_PATH', Path(__file__).parent / 'definitions')
+    
 def loadDefinitions(paths: t.List[Path]) -> t.Dict[str, t.Dict[str, t.Any]]:                
     def resolve_path(path: Path, parent: t.Optional[Path] = None) -> t.Optional[Path]:
         if path.exists():

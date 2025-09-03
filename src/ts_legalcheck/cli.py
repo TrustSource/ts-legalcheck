@@ -5,7 +5,7 @@ import typing as t
 
 
 from .engine import createEngineWithDefinitions, loadDefinitions
-from .engine.context import Component, Module, loadModule
+from .engine.context import Component, Module
 from .utils import setup_logging
 
 def _createEngine(paths: t.List[pathlib.Path]):
@@ -27,7 +27,7 @@ def check(defs, verbose, path):
     if verbose:
         setup_logging()
 
-    if mod := loadModule(path):
+    if mod := Module.load(path):
         engine = _createEngine(list(defs))
 
         result = engine.checkModule(mod)

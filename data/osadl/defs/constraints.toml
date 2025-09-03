@@ -1,74 +1,74 @@
 [Obligations.O1]
 name = "YOU MUST: Provide Written offer"
-sources = [ "GPL-3.0-or-later", "GPL-3.0-only", "AGPL-3.0-only", "LGPL-2.0-or-later", "EPL-2.0", "CDDL-1.1", "LGPL-3.0-or-later", "GPL-1.0-or-later", "CDDL-1.0", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-3.0-only", "GPL-2.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "LGPL-2.1-only", "AGPL-3.0-or-later", "GPL-2.0-or-later", "GPL-1.0-only",]
+sources = [ "LGPL-2.0-or-later", "AGPL-3.0-only", "LGPL-2.1-or-later", "GPL-1.0-or-later", "GPL-2.0-or-later", "EPL-2.0", "LGPL-2.1-only", "GPL-2.0-only", "LGPL-2.0-only", "GPL-1.0-only", "CDDL-1.0", "GPL-3.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "AGPL-3.0-or-later", "LGPL-3.0-or-later", "LGPL-3.0-only", "CDDL-1.1", "GPL-3.0-or-later",]
 
 [Obligations.O2]
 name = "YOU MUST: Provide Source code"
-sources = [ "GPL-3.0-or-later", "GPL-3.0-only", "LGPL-3.0-or-later", "NBPL-1.0", "LGPL-2.1-or-later", "LGPL-3.0-only", "GPL-2.0-only", "Artistic-1.0-Perl", "Artistic-1.0", "GPL-1.0-only", "IPL-1.0", "AGPL-3.0-only", "EPL-1.0", "LGPL-2.0-only", "LGPL-2.1-only", "MPL-1.1", "AGPL-3.0-or-later", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later", "LGPL-2.0-or-later", "GPL-1.0-or-later", "MS-RL", "CPL-1.0",]
+sources = [ "NBPL-1.0", "LGPL-2.0-or-later", "GPL-1.0-or-later", "GPL-2.0-only WITH Classpath-exception-2.0", "LGPL-2.1-only", "LGPL-3.0-or-later", "AGPL-3.0-only", "IPL-1.0", "EPL-1.0", "LGPL-2.0-only", "GPL-2.0-only", "Artistic-1.0", "GPL-3.0-or-later", "MPL-1.1", "LGPL-2.1-or-later", "CPL-1.0", "GPL-2.0-or-later", "Artistic-1.0-Perl", "GPL-3.0-only", "AGPL-3.0-or-later", "GPL-1.0-only", "MS-RL", "LGPL-3.0-only",]
 
 [Obligations.O3]
 name = "YOU MUST: Display Copyright notices"
-sources = [ "LGPL-2.0-or-later", "GPL-1.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "GPL-2.0-only", "LGPL-2.1-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later", "GPL-1.0-only",]
+sources = [ "LGPL-2.0-or-later", "LGPL-2.1-or-later", "GPL-1.0-or-later", "GPL-2.0-or-later", "GPL-2.0-only WITH Classpath-exception-2.0", "LGPL-2.1-only", "LGPL-2.0-only", "GPL-1.0-only", "GPL-2.0-only",]
 
 [Obligations.O4]
 name = "YOU MUST: Display License announcement"
-sources = [ "GPL-1.0-or-later", "GPL-2.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later", "GPL-1.0-only",]
+sources = [ "GPL-1.0-or-later", "GPL-2.0-or-later", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-1.0-only", "GPL-2.0-only",]
 
 [Obligations.O5]
 name = "YOU MUST: Display Warranty disclaimer"
-sources = [ "GPL-1.0-or-later", "GPL-2.0-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later", "GPL-1.0-only",]
+sources = [ "GPL-1.0-or-later", "GPL-2.0-or-later", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-1.0-only", "GPL-2.0-only",]
 
 [Obligations.O6]
 name = "YOU MUST: Reference License text"
-sources = [ "BlueOak-1.0.0", "LGPL-2.0-or-later", "UPL-1.0", "GPL-1.0-or-later", "MPL-2.0", "LGPL-2.0-only", "LGPL-2.1-or-later", "AFL-2.0", "GPL-2.0-only", "AFL-2.1", "AFL-3.0", "LGPL-2.1-only", "GPL-2.0-only WITH Classpath-exception-2.0", "MPL-2.0-no-copyleft-exception", "GPL-2.0-or-later", "GPL-1.0-only",]
+sources = [ "MPL-2.0-no-copyleft-exception", "UPL-1.0", "AFL-2.1", "LGPL-2.0-or-later", "MPL-2.0", "LGPL-2.1-or-later", "AFL-3.0", "GPL-2.0-or-later", "GPL-1.0-or-later", "GPL-2.0-only WITH Classpath-exception-2.0", "LGPL-2.1-only", "LGPL-2.0-only", "GPL-1.0-only", "BlueOak-1.0.0", "GPL-2.0-only", "AFL-2.0",]
 
 [Obligations.O7]
 name = "YOU MUST: Grant License"
-sources = [ "EUPL-1.1", "OSL-3.0", "EUPL-1.2", "LGPL-2.1-or-later", "OFL-1.1", "GPL-2.0-only", "Artistic-1.0-Perl", "Ubuntu-font-1.0", "CDDL-1.1", "CDDL-1.0", "MPL-2.0", "Artistic-1.0", "GPL-1.0-only", "IPL-1.0", "EPL-1.0", "LGPL-2.0-only", "LGPL-2.1-only", "MPL-1.1", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later", "LGPL-2.0-or-later", "EPL-2.0", "GPL-1.0-or-later", "CPL-1.0", "MPL-2.0-no-copyleft-exception",]
+sources = [ "OSL-3.0", "EUPL-1.2", "LGPL-2.0-or-later", "EUPL-1.1", "MPL-2.0", "GPL-1.0-or-later", "EPL-2.0", "LGPL-2.1-only", "GPL-2.0-only WITH Classpath-exception-2.0", "CDDL-1.1", "IPL-1.0", "EPL-1.0", "LGPL-2.0-only", "OFL-1.1", "Ubuntu-font-1.0", "GPL-2.0-only", "Artistic-1.0", "MPL-2.0-no-copyleft-exception", "MPL-1.1", "LGPL-2.1-or-later", "CPL-1.0", "GPL-2.0-or-later", "Artistic-1.0-Perl", "GPL-1.0-only", "CDDL-1.0",]
 
 [Obligations.O8]
 name = "YOU MUST: Provide Modification date"
-sources = [ "Qhull", "LGPL-2.0-or-later", "EUPL-1.1", "OGC-1.0", "GPL-1.0-or-later", "NBPL-1.0", "EUPL-1.2", "LGPL-2.0-only", "W3C", "LGPL-2.1-or-later", "ECL-1.0", "GPL-2.0-only", "LGPL-2.1-only", "GPL-2.0-only WITH Classpath-exception-2.0", "W3C-19980720", "ZPL-2.0", "GPL-2.0-or-later", "GPL-1.0-only",]
+sources = [ "Qhull", "ECL-1.0", "NBPL-1.0", "EUPL-1.2", "LGPL-2.0-or-later", "EUPL-1.1", "LGPL-2.1-or-later", "GPL-1.0-or-later", "GPL-2.0-or-later", "GPL-2.0-only WITH Classpath-exception-2.0", "LGPL-2.1-only", "LGPL-2.0-only", "GPL-1.0-only", "W3C-19980720", "ZPL-2.0", "GPL-2.0-only", "OGC-1.0", "W3C",]
 
 [Obligations.O9]
 name = "YOU MUST: Provide Modification notice"
-sources = [ "EUPL-1.1", "OSL-3.0", "EUPL-1.2", "NBPL-1.0", "LGPL-2.1-or-later", "GPL-2.0-only", "SSH-OpenSSH", "W3C-19980720", "ImageMagick", "SSH-short", "CC-BY-2.5", "OGC-1.0", "W3C", "AFL-3.0", "Apache-2.0", "GPL-1.0-only", "Spencer-86", "zlib-acknowledgement", "LGPL-2.0-only", "ECL-1.0", "AFL-2.0", "libpng-2.0", "ECL-2.0", "LGPL-2.1-only", "MPL-1.1", "GPL-2.0-only WITH Classpath-exception-2.0", "ZPL-2.0", "GPL-2.0-or-later", "LGPL-2.0-or-later", "Zlib", "GPL-1.0-or-later", "CC-BY-3.0", "Libpng", "AFL-2.1",]
+sources = [ "ECL-1.0", "NBPL-1.0", "OSL-3.0", "EUPL-1.2", "LGPL-2.0-or-later", "EUPL-1.1", "GPL-1.0-or-later", "W3C", "SSH-OpenSSH", "GPL-2.0-only WITH Classpath-exception-2.0", "LGPL-2.1-only", "CC-BY-3.0", "SSH-short", "Spencer-86", "LGPL-2.0-only", "Zlib", "GPL-2.0-only", "Libpng", "CC-BY-2.5", "Apache-2.0", "AFL-3.0", "W3C-19980720", "AFL-2.0", "libpng-2.0", "MPL-1.1", "AFL-2.1", "LGPL-2.1-or-later", "zlib-acknowledgement", "ECL-2.0", "GPL-2.0-or-later", "GPL-1.0-only", "ImageMagick", "OGC-1.0", "ZPL-2.0",]
 
 [Obligations.O10]
 name = "YOU MUST: Provide Copyright notices"
-sources = [ "EFL-2.0", "UPL-1.0", "NBPL-1.0", "LGPL-2.1-or-later", "MIT-CMU", "OFL-1.1", "Unicode-DFS-2016", "GPL-2.0-only", "NTP", "Artistic-1.0-Perl", "ICU", "FSFAP", "Python-2.0", "CDDL-1.1", "CDDL-1.0", "X11", "ISC", "JasPer-2.0", "LicenseRef-scancode-bsla-no-advert", "BSL-1.0", "SGI-B-2.0", "curl", "GPL-1.0-only", "Artistic-1.0", "IPL-1.0", "EPL-1.0", "LGPL-2.0-only", "BSD-4.3TAHOE", "PostgreSQL", "LGPL-2.1-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later", "Unicode-DFS-2015", "Artistic-2.0", "Bitstream-Vera", "LGPL-2.0-or-later", "GPL-1.0-or-later", "RSA-MD", "HPND", "CPL-1.0", "MIT", "IJG", "libtiff",]
+sources = [ "X11", "NBPL-1.0", "LGPL-2.0-or-later", "Python-2.0", "FSFAP", "GPL-1.0-or-later", "GPL-2.0-only WITH Classpath-exception-2.0", "LGPL-2.1-only", "LicenseRef-scancode-bsla-no-advert", "IJG", "CDDL-1.1", "ISC", "SGI-B-2.0", "MIT", "ICU", "Bitstream-Vera", "NTP", "IPL-1.0", "EPL-1.0", "LGPL-2.0-only", "OFL-1.1", "GPL-2.0-only", "BSD-4.3TAHOE", "Unicode-DFS-2016", "UPL-1.0", "curl", "BSL-1.0", "Artistic-1.0", "RSA-MD", "libtiff", "JasPer-2.0", "Artistic-2.0", "LGPL-2.1-or-later", "CPL-1.0", "GPL-2.0-or-later", "Artistic-1.0-Perl", "HPND", "GPL-1.0-only", "CDDL-1.0", "MIT-CMU", "PostgreSQL", "Unicode-DFS-2015", "EFL-2.0",]
 
 [Obligations.O11]
 name = "YOU MUST: Provide License text"
-sources = [ "EFL-2.0", "EUPL-1.1", "UPL-1.0", "EUPL-1.2", "LGPL-2.1-or-later", "OFL-1.1", "Unicode-DFS-2016", "GPL-2.0-only", "IBM-pibs", "ICU", "MS-PL", "LicenseRef-scancode-ppp", "ImageMagick", "FSFAP", "Python-2.0", "CDDL-1.1", "OGC-1.0", "CDDL-1.0", "X11", "W3C", "ISC", "JasPer-2.0", "Apache-2.0", "LicenseRef-scancode-bsla-no-advert", "BSL-1.0", "SGI-B-2.0", "curl", "GPL-1.0-only", "SunPro", "Qhull", "IPL-1.0", "BlueOak-1.0.0", "EPL-1.0", "LGPL-2.0-only", "ECL-1.0", "BSD-4.3TAHOE", "PostgreSQL", "FSFULLR", "ECL-2.0", "LGPL-2.1-only", "MPL-1.1", "GPL-2.0-only WITH Classpath-exception-2.0", "W3C-20150513", "GPL-2.0-or-later", "Unicode-DFS-2015", "Bitstream-Vera", "LGPL-2.0-or-later", "EPL-2.0", "GPL-1.0-or-later", "MS-RL", "RSA-MD", "CPL-1.0", "FSFULLRWD", "MIT", "W3C-19980720", "OLDAP-2.8", "IJG", "libtiff",]
+sources = [ "X11", "Qhull", "ECL-1.0", "EUPL-1.2", "LGPL-2.0-or-later", "EUPL-1.1", "Python-2.0", "FSFAP", "GPL-1.0-or-later", "EPL-2.0", "LGPL-2.1-only", "IBM-pibs", "LicenseRef-scancode-bsla-no-advert", "GPL-2.0-only WITH Classpath-exception-2.0", "IJG", "SunPro", "BlueOak-1.0.0", "CDDL-1.1", "ISC", "W3C-20150513", "FSFULLRWD", "SGI-B-2.0", "MIT", "ICU", "Bitstream-Vera", "IPL-1.0", "EPL-1.0", "LGPL-2.0-only", "OFL-1.1", "GPL-2.0-only", "BSD-4.3TAHOE", "MS-PL", "Unicode-DFS-2016", "UPL-1.0", "Apache-2.0", "curl", "W3C-19980720", "BSL-1.0", "MPL-1.1", "RSA-MD", "libtiff", "JasPer-2.0", "LGPL-2.1-or-later", "ECL-2.0", "CPL-1.0", "GPL-2.0-or-later", "FSFULLR", "GPL-1.0-only", "CDDL-1.0", "ImageMagick", "OLDAP-2.8", "MS-RL", "Unicode-DFS-2015", "PostgreSQL", "OGC-1.0", "W3C", "EFL-2.0", "LicenseRef-scancode-ppp",]
 
 [Obligations.O12]
 name = "YOU MUST: Provide Warranty disclaimer"
-sources = [ "NBPL-1.0", "LGPL-2.1-or-later", "GPL-2.0-only", "Artistic-1.0-Perl", "LicenseRef-scancode-ppp", "LicenseRef-scancode-bsla-no-advert", "BSL-1.0", "Artistic-1.0", "GPL-1.0-only", "LGPL-2.0-only", "BSD-4.3TAHOE", "PostgreSQL", "LGPL-2.1-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later", "OpenSSL", "Artistic-2.0", "LGPL-2.0-or-later", "GPL-1.0-or-later", "RSA-MD", "MIT", "IJG",]
+sources = [ "NBPL-1.0", "LGPL-2.0-or-later", "GPL-1.0-or-later", "GPL-2.0-only WITH Classpath-exception-2.0", "LGPL-2.1-only", "LicenseRef-scancode-bsla-no-advert", "IJG", "MIT", "LGPL-2.0-only", "GPL-2.0-only", "BSD-4.3TAHOE", "BSL-1.0", "OpenSSL", "Artistic-1.0", "RSA-MD", "Artistic-2.0", "LGPL-2.1-or-later", "GPL-2.0-or-later", "Artistic-1.0-Perl", "GPL-1.0-only", "PostgreSQL", "LicenseRef-scancode-ppp",]
 
 [Obligations.O13]
 name = "YOU MUST NOT: Modify License notices"
-sources = [ "LGPL-2.0-or-later", "GPL-1.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "GPL-2.0-only", "LGPL-2.1-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later", "GPL-1.0-only",]
+sources = [ "LGPL-2.0-or-later", "LGPL-2.1-or-later", "GPL-1.0-or-later", "GPL-2.0-or-later", "GPL-2.0-only WITH Classpath-exception-2.0", "LGPL-2.1-only", "LGPL-2.0-only", "GPL-1.0-only", "GPL-2.0-only",]
 
 [Obligations.O14]
 name = "YOU MUST NOT: Modify Warranty disclaimer"
-sources = [ "LGPL-2.0-or-later", "EUPL-1.1", "GPL-1.0-or-later", "EUPL-1.2", "LGPL-2.0-only", "LGPL-2.1-or-later", "GPL-2.0-only", "LGPL-2.1-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later", "GPL-1.0-only",]
+sources = [ "EUPL-1.2", "LGPL-2.0-or-later", "EUPL-1.1", "LGPL-2.1-or-later", "GPL-1.0-or-later", "GPL-2.0-or-later", "GPL-2.0-only WITH Classpath-exception-2.0", "LGPL-2.1-only", "LGPL-2.0-only", "GPL-1.0-only", "GPL-2.0-only",]
 
 [Obligations.O15]
 name = "YOU MUST NOT: Restrict Granted rights"
-sources = [ "EUPL-1.1", "EUPL-1.2", "LGPL-2.1-or-later", "GPL-2.0-only", "CDDL-1.1", "CC-BY-2.5", "CDDL-1.0", "MPL-2.0", "GPL-1.0-only", "LGPL-2.0-only", "LGPL-2.1-only", "GPL-2.0-only WITH Classpath-exception-2.0", "MPL-1.1", "GPL-2.0-or-later", "LGPL-2.0-or-later", "EPL-2.0", "GPL-1.0-or-later", "CC-BY-3.0", "MPL-2.0-no-copyleft-exception",]
+sources = [ "EUPL-1.2", "LGPL-2.0-or-later", "EUPL-1.1", "MPL-2.0", "GPL-1.0-or-later", "EPL-2.0", "LGPL-2.1-only", "GPL-2.0-only WITH Classpath-exception-2.0", "CDDL-1.1", "CC-BY-3.0", "LGPL-2.0-only", "GPL-2.0-only", "CC-BY-2.5", "MPL-2.0-no-copyleft-exception", "MPL-1.1", "LGPL-2.1-or-later", "GPL-2.0-or-later", "GPL-1.0-only", "CDDL-1.0",]
 
 [Obligations.O16]
 name = "YOU MUST NOT: Misrepresent Authorship"
-sources = [ "bzip2-1.0.5", "Libpng", "Artistic-1.0-Perl", "Zlib", "Spencer-86", "zlib-acknowledgement", "ECL-1.0", "libpng-2.0", "bzip2-1.0.6", "IJG", "Artistic-1.0",]
+sources = [ "Libpng", "libpng-2.0", "ECL-1.0", "bzip2-1.0.6", "zlib-acknowledgement", "Spencer-86", "bzip2-1.0.5", "Artistic-1.0-Perl", "IJG", "Artistic-1.0", "Zlib",]
 
 [Obligations.O17]
 name = "YOU MUST NOT: Misrepresent Modified work"
-sources = [ "bzip2-1.0.5", "Libpng", "Zlib", "Spencer-86", "zlib-acknowledgement", "libpng-2.0", "bzip2-1.0.6",]
+sources = [ "Libpng", "libpng-2.0", "bzip2-1.0.6", "zlib-acknowledgement", "Spencer-86", "bzip2-1.0.5", "Zlib",]
 
 [Obligations.O18]
 name = "YOU MUST: Forward License text"
-sources = [ "bzip2-1.0.5", "BSD-3-Clause", "LicenseRef-scancode-info-zip-2003-05", "NCSA", "Apache-1.1", "Libpng", "Saxpath", "Apache-1.0", "BSD-4-Clause-UC", "BSD-2-Clause", "Info-ZIP", "FTL", "zlib-acknowledgement", "libpng-2.0", "BSD-3-Clause-Open-MPI", "MirOS", "PHP-3.01", "BSD-4-Clause", "Sleepycat", "ZPL-2.0", "OpenSSL", "XFree86-1.1", "BSD-Source-Code", "BSD-2-Clause-Patent", "Zlib", "BSD-1-Clause", "bzip2-1.0.6",]
+sources = [ "Saxpath", "BSD-2-Clause", "bzip2-1.0.5", "BSD-2-Clause-Patent", "BSD-3-Clause", "bzip2-1.0.6", "PHP-3.01", "MirOS", "BSD-1-Clause", "Zlib", "Libpng", "BSD-4-Clause", "LicenseRef-scancode-info-zip-2003-05", "XFree86-1.1", "FTL", "OpenSSL", "BSD-Source-Code", "NCSA", "libpng-2.0", "BSD-3-Clause-Open-MPI", "Info-ZIP", "Apache-1.0", "BSD-4-Clause-UC", "Apache-1.1", "zlib-acknowledgement", "Sleepycat", "ZPL-2.0",]
 
 [Obligations.O19]
 name = "YOU MUST NOT: Modify Copyright notice"
@@ -76,35 +76,35 @@ sources = [ "libpng-2.0",]
 
 [Obligations.O20]
 name = "YOU MUST: Provide Copyright notices In Documentation OR Distribution material"
-sources = [ "XFree86-1.1", "Apache-1.1", "BSD-2-Clause-Patent", "BSD-3-Clause", "Saxpath", "Apache-1.0", "Info-ZIP", "BSD-4-Clause-UC", "BSD-2-Clause", "BSD-3-Clause-Open-MPI", "PHP-3.01", "Sleepycat", "BSD-4-Clause", "OLDAP-2.8", "LicenseRef-scancode-info-zip-2003-05", "ZPL-2.0", "NCSA", "OpenSSL",]
+sources = [ "Info-ZIP", "BSD-3-Clause-Open-MPI", "PHP-3.01", "Apache-1.0", "LicenseRef-scancode-info-zip-2003-05", "BSD-4-Clause", "BSD-4-Clause-UC", "Saxpath", "Apache-1.1", "BSD-2-Clause", "XFree86-1.1", "OLDAP-2.8", "OpenSSL", "Sleepycat", "BSD-2-Clause-Patent", "ZPL-2.0", "BSD-3-Clause", "NCSA",]
 
 [Obligations.O21]
 name = "YOU MUST: Provide License text In Documentation OR Distribution material"
-sources = [ "XFree86-1.1", "Apache-1.1", "BSD-2-Clause-Patent", "BSD-3-Clause", "Saxpath", "Apache-1.0", "Info-ZIP", "BSD-4-Clause-UC", "BSD-2-Clause", "BSD-3-Clause-Open-MPI", "PHP-3.01", "Sleepycat", "BSD-4-Clause", "OLDAP-2.8", "LicenseRef-scancode-info-zip-2003-05", "ZPL-2.0", "NCSA", "OpenSSL",]
+sources = [ "Info-ZIP", "BSD-3-Clause-Open-MPI", "PHP-3.01", "Apache-1.0", "LicenseRef-scancode-info-zip-2003-05", "BSD-4-Clause", "BSD-4-Clause-UC", "Saxpath", "Apache-1.1", "BSD-2-Clause", "XFree86-1.1", "OLDAP-2.8", "OpenSSL", "Sleepycat", "BSD-2-Clause-Patent", "ZPL-2.0", "BSD-3-Clause", "NCSA",]
 
 [Obligations.O22]
 name = "YOU MUST: Provide Warranty disclaimer In Documentation OR Distribution material"
-sources = [ "XFree86-1.1", "Apache-1.1", "BSD-2-Clause-Patent", "BSD-3-Clause", "Saxpath", "Apache-1.0", "Info-ZIP", "BSD-4-Clause-UC", "BSD-2-Clause", "BSD-3-Clause-Open-MPI", "PHP-3.01", "Sleepycat", "BSD-4-Clause", "OLDAP-2.8", "LicenseRef-scancode-info-zip-2003-05", "ZPL-2.0", "NCSA",]
+sources = [ "Info-ZIP", "BSD-3-Clause-Open-MPI", "PHP-3.01", "Apache-1.0", "LicenseRef-scancode-info-zip-2003-05", "BSD-4-Clause", "BSD-4-Clause-UC", "Saxpath", "Apache-1.1", "BSD-2-Clause", "XFree86-1.1", "OLDAP-2.8", "Sleepycat", "BSD-2-Clause-Patent", "ZPL-2.0", "BSD-3-Clause", "NCSA",]
 
 [Obligations.O23]
 name = "YOU MUST NOT: Promote"
-sources = [ "bzip2-1.0.5", "OSL-3.0", "BSD-3-Clause", "NBPL-1.0", "MIT-CMU", "OFL-1.1", "Unicode-DFS-2016", "AFL-2.1", "NTP", "Artistic-1.0-Perl", "ICU", "W3C-19980720", "NCSA", "Python-2.0", "Ubuntu-font-1.0", "OGC-1.0", "X11", "W3C", "BSD-4-Clause-UC", "AFL-3.0", "LicenseRef-scancode-bsla-no-advert", "JasPer-2.0", "SGI-B-2.0", "curl", "Artistic-1.0", "FTL", "ECL-1.0", "BSD-4.3TAHOE", "AFL-2.0", "Sleepycat", "BSD-3-Clause-Open-MPI", "BSD-4-Clause", "W3C-20150513", "ZPL-2.0", "Unicode-DFS-2015", "XFree86-1.1", "BSD-Source-Code", "SMLNJ", "Bitstream-Vera", "CC-BY-3.0", "HPND", "bzip2-1.0.6", "OLDAP-2.8", "IJG", "libtiff",]
+sources = [ "X11", "ECL-1.0", "NBPL-1.0", "OSL-3.0", "Python-2.0", "Sleepycat", "W3C", "bzip2-1.0.5", "LicenseRef-scancode-bsla-no-advert", "IJG", "BSD-3-Clause", "CC-BY-3.0", "bzip2-1.0.6", "W3C-20150513", "SGI-B-2.0", "ICU", "Bitstream-Vera", "NTP", "OFL-1.1", "Ubuntu-font-1.0", "BSD-4.3TAHOE", "BSD-4-Clause", "Unicode-DFS-2016", "curl", "AFL-3.0", "XFree86-1.1", "W3C-19980720", "FTL", "Artistic-1.0", "AFL-2.0", "BSD-Source-Code", "NCSA", "BSD-3-Clause-Open-MPI", "libtiff", "JasPer-2.0", "BSD-4-Clause-UC", "SMLNJ", "AFL-2.1", "Artistic-1.0-Perl", "HPND", "MIT-CMU", "OLDAP-2.8", "Unicode-DFS-2015", "OGC-1.0", "ZPL-2.0",]
 
 [Obligations.O24]
 name = "YOU MUST: Forward Copyright notices"
-sources = [ "bzip2-1.0.5", "OSL-3.0", "BSD-3-Clause", "LicenseRef-scancode-info-zip-2003-05", "MS-PL", "LicenseRef-scancode-ppp", "NCSA", "ImageMagick", "Apache-1.1", "CC-BY-2.5", "Saxpath", "Apache-1.0", "BSD-4-Clause-UC", "AFL-3.0", "Apache-2.0", "BSD-2-Clause", "Info-ZIP", "FTL", "Qhull", "AFL-2.0", "Sleepycat", "BSD-3-Clause-Open-MPI", "MirOS", "PHP-3.01", "ECL-2.0", "BSD-4-Clause", "ZPL-2.0", "OpenSSL", "XFree86-1.1", "BSD-Source-Code", "BSD-2-Clause-Patent", "CC-BY-3.0", "MS-RL", "BSD-1-Clause", "bzip2-1.0.6", "OLDAP-2.8", "AFL-2.1",]
+sources = [ "Qhull", "OSL-3.0", "Saxpath", "BSD-2-Clause", "bzip2-1.0.5", "BSD-2-Clause-Patent", "BSD-3-Clause", "CC-BY-3.0", "bzip2-1.0.6", "PHP-3.01", "MirOS", "BSD-1-Clause", "CC-BY-2.5", "MS-PL", "LicenseRef-scancode-info-zip-2003-05", "BSD-4-Clause", "Apache-2.0", "AFL-3.0", "XFree86-1.1", "FTL", "OpenSSL", "AFL-2.0", "BSD-Source-Code", "NCSA", "Info-ZIP", "BSD-3-Clause-Open-MPI", "Apache-1.0", "AFL-2.1", "BSD-4-Clause-UC", "ECL-2.0", "Apache-1.1", "ImageMagick", "OLDAP-2.8", "MS-RL", "Sleepycat", "ZPL-2.0", "LicenseRef-scancode-ppp",]
 
 [Obligations.O25]
 name = "YOU MUST NOT: Use \"ssh\" OR \"Secure Shell\" In Name"
-sources = [ "SSH-OpenSSH", "SSH-short",]
+sources = [ "SSH-short", "SSH-OpenSSH",]
 
 [Obligations.O26]
 name = "YOU MUST: Provide Copyright notices In Documentation"
-sources = [ "MIT-CMU", "Unicode-DFS-2016", "HPND", "NTP", "MirOS", "ICU", "Python-2.0", "Unicode-DFS-2015", "libtiff",]
+sources = [ "Unicode-DFS-2016", "libtiff", "MirOS", "Python-2.0", "ICU", "NTP", "HPND", "MIT-CMU", "Unicode-DFS-2015",]
 
 [Obligations.O27]
 name = "YOU MUST: Provide License text In Documentation"
-sources = [ "SMLNJ", "MIT-CMU", "Unicode-DFS-2016", "HPND", "NTP", "MirOS", "ICU", "Python-2.0", "Unicode-DFS-2015", "libtiff",]
+sources = [ "Unicode-DFS-2016", "libtiff", "MirOS", "Python-2.0", "ICU", "SMLNJ", "NTP", "HPND", "MIT-CMU", "Unicode-DFS-2015",]
 
 [Obligations.O28]
 name = "YOU MUST: Provide Warranty disclaimer in Documentation"
@@ -112,7 +112,7 @@ sources = [ "SMLNJ", "MirOS",]
 
 [Obligations.O29]
 name = "YOU MUST: Forward Warranty disclaimer"
-sources = [ "bzip2-1.0.5", "BSD-3-Clause", "LicenseRef-scancode-info-zip-2003-05", "NCSA", "Apache-1.1", "Saxpath", "Apache-1.0", "BSD-4-Clause-UC", "BSD-2-Clause", "Info-ZIP", "Sleepycat", "BSD-3-Clause-Open-MPI", "MirOS", "PHP-3.01", "BSD-4-Clause", "ZPL-2.0", "OpenSSL", "XFree86-1.1", "BSD-Source-Code", "BSD-2-Clause-Patent", "BSD-1-Clause", "bzip2-1.0.6",]
+sources = [ "Saxpath", "BSD-2-Clause", "bzip2-1.0.5", "BSD-2-Clause-Patent", "BSD-3-Clause", "bzip2-1.0.6", "PHP-3.01", "MirOS", "BSD-1-Clause", "BSD-4-Clause", "LicenseRef-scancode-info-zip-2003-05", "XFree86-1.1", "OpenSSL", "BSD-Source-Code", "NCSA", "Info-ZIP", "BSD-3-Clause-Open-MPI", "Apache-1.0", "BSD-4-Clause-UC", "Apache-1.1", "Sleepycat", "ZPL-2.0",]
 
 [Obligations.O30]
 name = "YOU MUST: Provide Copyright notice"
@@ -120,23 +120,23 @@ sources = [ "IBM-pibs",]
 
 [Obligations.O31]
 name = "YOU MUST: Mark Modification"
-sources = [ "LicenseRef-scancode-info-zip-2003-05", "Info-ZIP",]
+sources = [ "Info-ZIP", "LicenseRef-scancode-info-zip-2003-05",]
 
 [Obligations.O32]
 name = "YOU MUST: Rename Modified work"
-sources = [ "Artistic-2.0", "Ubuntu-font-1.0", "Artistic-1.0", "Artistic-1.0-Perl", "LicenseRef-scancode-info-zip-2003-05", "Info-ZIP",]
+sources = [ "Info-ZIP", "LicenseRef-scancode-info-zip-2003-05", "Artistic-2.0", "Artistic-1.0-Perl", "Artistic-1.0", "Ubuntu-font-1.0",]
 
 [Obligations.O33]
 name = "YOU MUST NOT: Use \"Info-ZIP\", \"Zip\", \"UnZip\", \"UnZipSFX\", \"WiZ\", \"Pocket UnZip\", \"Pocket Zip\", \"MacZip\""
-sources = [ "LicenseRef-scancode-info-zip-2003-05", "Info-ZIP",]
+sources = [ "Info-ZIP", "LicenseRef-scancode-info-zip-2003-05",]
 
 [Obligations.O34]
 name = "YOU MUST: Provide Attribution notice In Documentation OR Distribution material"
-sources = [ "LicenseRef-scancode-info-zip-2003-05", "Info-ZIP",]
+sources = [ "Info-ZIP", "LicenseRef-scancode-info-zip-2003-05",]
 
 [Obligations.O35]
 name = "YOU MUST: Forward Attribution notice"
-sources = [ "LicenseRef-scancode-info-zip-2003-05", "Info-ZIP",]
+sources = [ "Info-ZIP", "LicenseRef-scancode-info-zip-2003-05",]
 
 [Obligations.O36]
 name = "YOU MUST: Credit Verbatim In Documentation \"This product includes software developed by the Apache Software Foundation.\""
@@ -152,7 +152,7 @@ sources = [ "Apache-1.1",]
 
 [Obligations.O39]
 name = "YOU MUST: Provide Legal notices"
-sources = [ "OGC-1.0", "W3C", "ECL-1.0", "W3C-19980720", "W3C-20150513",]
+sources = [ "W3C-20150513", "ECL-1.0", "W3C-19980720", "OGC-1.0", "W3C",]
 
 [Obligations.O40]
 name = "YOU MUST NOT: Use \"Bitstream\" OR \"Vera\" In Font Name"
@@ -188,7 +188,7 @@ sources = [ "Artistic-2.0", "Artistic-1.0-Perl", "Artistic-1.0",]
 
 [Obligations.O48]
 name = "YOU MUST: Provide Modification report"
-sources = [ "Artistic-2.0", "NBPL-1.0", "MPL-1.1", "Artistic-1.0-Perl", "Artistic-1.0", "Python-2.0", "FTL",]
+sources = [ "NBPL-1.0", "MPL-1.1", "Python-2.0", "Artistic-2.0", "Artistic-1.0-Perl", "FTL", "Artistic-1.0",]
 
 [Obligations.O49]
 name = "YOU MUST NOT: Provide Interface To Work"
@@ -216,7 +216,7 @@ sources = [ "OGC-1.0",]
 
 [Obligations.O55]
 name = "YOU MUST: Mark Modified work"
-sources = [ "bzip2-1.0.5", "bzip2-1.0.6",]
+sources = [ "bzip2-1.0.6", "bzip2-1.0.5",]
 
 [Obligations.O56]
 name = "YOU MUST: Provide Copyright notice \"W3C Software Short Notice https://www.w3.org/Consortium/Legal/2002/copyright-software-short-notice-20021231.html\""
@@ -232,87 +232,87 @@ sources = [ "Unicode-DFS-2015",]
 
 [Obligations.O59]
 name = "YOU MUST: Provide Modification notice In Source code"
-sources = [ "Artistic-1.0-Perl", "Artistic-1.0", "Unicode-DFS-2015",]
+sources = [ "Unicode-DFS-2015", "Artistic-1.0-Perl", "Artistic-1.0",]
 
 [Obligations.O60]
 name = "YOU MUST: Ensure Functionality Without Linked work"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O61]
 name = "YOU MUST: Ensure Modified work Is Library"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O62]
 name = "YOU MUST: Enable Relinking With Modified library"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O63]
 name = "YOU MUST: Provide Linkable work"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O64]
 name = "YOU MUST: Provide Source code Of the Library"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O65]
 name = "YOU MUST: Provide Linkable work Via Internet"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O66]
 name = "YOU MUST: Provide Source code delivery Of the Library Via Internet"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O67]
 name = "YOU MUST: Ensure Delivery Of Linkable work"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O68]
 name = "YOU MUST: Ensure Source code delivery Of the Library"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O69]
 name = "YOU MUST: Use Shared library"
-sources = [ "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later",]
 
 [Obligations.O70]
 name = "YOU MUST: Notify Library"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O71]
 name = "YOU MUST: Permit Modification of Linked work"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O72]
 name = "YOU MUST: Permit Reverse engineering of Linked work"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O73]
 name = "YOU MUST: Provide License announcement"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O74]
 name = "YOU MUST: Provide Source code Of Library AND Linked work"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O75]
 name = "YOU MUST: Use GPL-2.0-or-later For Library AND Linked work"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O76]
 name = "YOU MUST: Permit Binary delivery of Library"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O77]
 name = "YOU MUST: Provide Library"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O78]
 name = "YOU MUST: Provide License notices"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O79]
 name = "YOU MUST: Reference Library"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Obligations.O80]
 name = "YOU MUST: Credit Verbatim In Advertisement \"This product includes software developed by the Apache Group for use in the Apache HTTP server project.\""
@@ -332,11 +332,11 @@ sources = [ "Apache-1.0",]
 
 [Obligations.O84]
 name = "YOU MUST: Indemnify Other Contributors"
-sources = [ "IPL-1.0", "EPL-2.0", "EUPL-1.1", "CDDL-1.1", "EUPL-1.2", "CDDL-1.0", "EPL-1.0", "MPL-2.0", "CPL-1.0", "ECL-2.0", "Apache-2.0", "MPL-1.1", "MPL-2.0-no-copyleft-exception", "ImageMagick",]
+sources = [ "MPL-2.0-no-copyleft-exception", "MPL-1.1", "EUPL-1.2", "EUPL-1.1", "MPL-2.0", "Apache-2.0", "ECL-2.0", "CPL-1.0", "IPL-1.0", "EPL-2.0", "EPL-1.0", "CDDL-1.0", "ImageMagick", "CDDL-1.1",]
 
 [Obligations.O85]
 name = "YOU MUST: Use Compatible license"
-sources = [ "CDDL-1.1", "CDDL-1.0", "MS-RL", "AFL-3.0", "MPL-1.1", "MS-PL",]
+sources = [ "MS-PL", "MPL-1.1", "AFL-3.0", "CDDL-1.0", "MS-RL", "CDDL-1.1",]
 
 [Obligations.O86]
 name = "YOU MUST: Disseminate Patent notice AND Trademark notice"
@@ -360,7 +360,7 @@ sources = [ "MPL-1.1",]
 
 [Obligations.O91]
 name = "YOU MUST: Reference Source code"
-sources = [ "GPL-3.0-or-later", "GPL-3.0-only", "AGPL-3.0-only", "EUPL-1.1", "LGPL-3.0-or-later", "EUPL-1.2", "LGPL-3.0-only", "AFL-2.0", "MPL-1.1", "AFL-2.1", "AGPL-3.0-or-later",]
+sources = [ "MPL-1.1", "EUPL-1.2", "AFL-2.1", "EUPL-1.1", "AGPL-3.0-only", "GPL-3.0-only", "LGPL-3.0-or-later", "AGPL-3.0-or-later", "LGPL-3.0-only", "AFL-2.0", "GPL-3.0-or-later",]
 
 [Obligations.O92]
 name = "YOU MUST: Include Notice"
@@ -368,55 +368,55 @@ sources = [ "MPL-1.1",]
 
 [Obligations.O93]
 name = "YOU MUST NOT: Restrict Granted rights For Source code"
-sources = [ "MPL-1.1", "MPL-2.0-no-copyleft-exception", "MPL-2.0",]
+sources = [ "MPL-2.0", "MPL-2.0-no-copyleft-exception", "MPL-1.1",]
 
 [Obligations.O94]
 name = "YOU MUST: Provide Delayed source code delivery"
-sources = [ "IPL-1.0", "EPL-2.0", "CDDL-1.1", "CDDL-1.0", "EPL-1.0", "CPL-1.0", "Sleepycat",]
+sources = [ "CPL-1.0", "EPL-2.0", "IPL-1.0", "EPL-1.0", "CDDL-1.0", "Sleepycat", "CDDL-1.1",]
 
 [Obligations.O95]
 name = "YOU MUST: Use Identical License obligations"
-sources = [ "CPL-1.0", "EPL-1.0", "EPL-2.0",]
+sources = [ "EPL-1.0", "CPL-1.0", "EPL-2.0",]
 
 [Obligations.O96]
 name = "YOU MUST: Use Liability disclaimer On behalf of Other contributors"
-sources = [ "CPL-1.0", "EPL-1.0", "EPL-2.0",]
+sources = [ "EPL-1.0", "CPL-1.0", "EPL-2.0",]
 
 [Obligations.O97]
 name = "YOU MUST: Use Warranty disclaimer On behalf of Other contributors"
-sources = [ "CPL-1.0", "EPL-1.0", "EPL-2.0",]
+sources = [ "EPL-1.0", "CPL-1.0", "EPL-2.0",]
 
 [Obligations.O98]
 name = "YOU MUST NOT: Modify Copyright notices"
-sources = [ "EPL-2.0", "EUPL-1.1", "CDDL-1.1", "EUPL-1.2", "CDDL-1.0", "EPL-1.0", "CPL-1.0",]
+sources = [ "EUPL-1.2", "EUPL-1.1", "CPL-1.0", "EPL-2.0", "EPL-1.0", "CDDL-1.0", "CDDL-1.1",]
 
 [Obligations.O99]
 name = "YOU MUST: Inform Recipients"
-sources = [ "MPL-2.0-no-copyleft-exception", "MPL-2.0",]
+sources = [ "MPL-2.0", "MPL-2.0-no-copyleft-exception",]
 
 [Obligations.O100]
 name = "YOU MUST: Provide License notice"
-sources = [ "MPL-2.0-no-copyleft-exception", "MPL-2.0",]
+sources = [ "MPL-2.0", "MPL-2.0-no-copyleft-exception",]
 
 [Obligations.O101]
 name = "YOU MUST NOT: Modify Legal notices"
-sources = [ "MPL-2.0-no-copyleft-exception", "MPL-2.0",]
+sources = [ "MPL-2.0", "MPL-2.0-no-copyleft-exception",]
 
 [Obligations.O102]
 name = "YOU MUST: Include Source code"
-sources = [ "EUPL-1.2", "Sleepycat", "EPL-2.0", "EUPL-1.1",]
+sources = [ "EUPL-1.1", "Sleepycat", "EUPL-1.2", "EPL-2.0",]
 
 [Obligations.O103]
 name = "YOU MUST NOT: Modify License notice"
-sources = [ "EUPL-1.2", "EUPL-1.1",]
+sources = [ "EUPL-1.1", "EUPL-1.2",]
 
 [Obligations.O104]
 name = "YOU MUST NOT: Modify Patent notices"
-sources = [ "EPL-2.0", "EUPL-1.1", "CDDL-1.1", "EUPL-1.2", "CDDL-1.0",]
+sources = [ "EUPL-1.2", "EUPL-1.1", "EPL-2.0", "CDDL-1.0", "CDDL-1.1",]
 
 [Obligations.O105]
 name = "YOU MUST NOT: Modify Trademark notices"
-sources = [ "EPL-2.0", "EUPL-1.1", "CDDL-1.1", "EUPL-1.2", "CDDL-1.0",]
+sources = [ "EUPL-1.2", "EUPL-1.1", "EPL-2.0", "CDDL-1.0", "CDDL-1.1",]
 
 [Obligations.O106]
 name = "YOU MUST: Reference http://oss.sgi.com/projects/FreeB/"
@@ -440,11 +440,11 @@ sources = [ "PHP-3.01",]
 
 [Obligations.O111]
 name = "YOU MUST: Forward Patent notices"
-sources = [ "OSL-3.0", "MS-RL", "ECL-2.0", "Apache-2.0", "MS-PL", "ImageMagick",]
+sources = [ "OSL-3.0", "MS-PL", "ECL-2.0", "Apache-2.0", "ImageMagick", "MS-RL",]
 
 [Obligations.O112]
 name = "YOU MUST: Forward Trademark notices"
-sources = [ "OSL-3.0", "MS-RL", "ECL-2.0", "Apache-2.0", "MS-PL", "ImageMagick",]
+sources = [ "OSL-3.0", "MS-PL", "ECL-2.0", "Apache-2.0", "ImageMagick", "MS-RL",]
 
 [Obligations.O113]
 name = "YOU MUST: Credit Verbatim \"This product includes software developed by The XFree86 Project, Inc and its contributors.\" In Binary delivery"
@@ -488,27 +488,27 @@ sources = [ "OpenSSL",]
 
 [Obligations.O123]
 name = "YOU MUST: Provide Delayed source code delivery Of Modified work"
-sources = [ "AFL-2.0", "AFL-2.1", "AFL-3.0",]
+sources = [ "AFL-3.0", "AFL-2.0", "AFL-2.1",]
 
 [Obligations.O124]
 name = "YOU MUST: Include Source code Of Modified work"
-sources = [ "AFL-2.0", "AFL-2.1", "AFL-3.0",]
+sources = [ "AFL-3.0", "AFL-2.0", "AFL-2.1",]
 
 [Obligations.O125]
 name = "YOU MUST: Forward License notice"
-sources = [ "OSL-3.0", "CC-BY-2.5", "CC-BY-3.0", "AFL-2.0", "AFL-3.0", "AFL-2.1",]
+sources = [ "CC-BY-2.5", "OSL-3.0", "AFL-2.1", "AFL-3.0", "AFL-2.0", "CC-BY-3.0",]
 
 [Obligations.O126]
 name = "YOU MUST: Forward Patent notice"
-sources = [ "AFL-2.0", "AFL-2.1", "AFL-3.0",]
+sources = [ "AFL-3.0", "AFL-2.0", "AFL-2.1",]
 
 [Obligations.O127]
 name = "YOU MUST: Forward Trademark notice"
-sources = [ "AFL-2.0", "AFL-2.1", "AFL-3.0",]
+sources = [ "AFL-3.0", "AFL-2.0", "AFL-2.1",]
 
 [Obligations.O128]
 name = "YOU MUST: Search License acceptance"
-sources = [ "OSL-3.0", "AFL-2.0", "AFL-2.1", "AFL-3.0",]
+sources = [ "OSL-3.0", "AFL-3.0", "AFL-2.0", "AFL-2.1",]
 
 [Obligations.O129]
 name = "YOU MUST: Rename Source code"
@@ -556,27 +556,27 @@ sources = [ "Qhull",]
 
 [Obligations.O140]
 name = "YOU MUST: Provide File \"NOTICE\" In Source code"
-sources = [ "Apache-2.0", "ImageMagick", "ECL-2.0",]
+sources = [ "ECL-2.0", "Apache-2.0", "ImageMagick",]
 
 [Obligations.O141]
 name = "YOU MUST: Provide File \"NOTICE\" In Documentation"
-sources = [ "Apache-2.0", "ImageMagick", "ECL-2.0",]
+sources = [ "ECL-2.0", "Apache-2.0", "ImageMagick",]
 
 [Obligations.O142]
 name = "YOU MUST: Display File \"NOTICE\""
-sources = [ "Apache-2.0", "ImageMagick", "ECL-2.0",]
+sources = [ "ECL-2.0", "Apache-2.0", "ImageMagick",]
 
 [Obligations.O143]
 name = "YOU MUST: Provide File \"NOTICE\""
-sources = [ "Apache-2.0", "ImageMagick", "ECL-2.0",]
+sources = [ "ECL-2.0", "Apache-2.0", "ImageMagick",]
 
 [Obligations.O144]
 name = "YOU MUST: Delete Irrelevant parts"
-sources = [ "Apache-2.0", "ImageMagick", "ECL-2.0",]
+sources = [ "ECL-2.0", "Apache-2.0", "ImageMagick",]
 
 [Obligations.O145]
 name = "YOU MUST: Forward Attribution notices"
-sources = [ "Apache-2.0", "ImageMagick", "ECL-2.0",]
+sources = [ "ECL-2.0", "Apache-2.0", "ImageMagick",]
 
 [Obligations.O146]
 name = "YOU MUST: Use Equivalent License obligations"
@@ -800,27 +800,27 @@ sources = [ "Saxpath",]
 
 [Properties.P1]
 name = "Interactive"
-sources = [ "GPL-1.0-or-later", "GPL-1.0-only",]
+sources = [ "GPL-1.0-only", "GPL-1.0-or-later",]
 
 [Properties.P2]
 name = "Software modification"
-sources = [ "bzip2-1.0.5", "EUPL-1.1", "OSL-3.0", "IJG", "EUPL-1.2", "NBPL-1.0", "LGPL-2.1-or-later", "GPL-2.0-only", "AFL-2.1", "SSH-OpenSSH", "LicenseRef-scancode-info-zip-2003-05", "W3C-19980720", "ImageMagick", "Artistic-1.0-Perl", "Python-2.0", "Apache-1.1", "Libpng", "SSH-short", "CDDL-1.1", "OGC-1.0", "CC-BY-2.5", "Apache-1.0", "CDDL-1.0", "MPL-2.0", "W3C", "Saxpath", "AFL-3.0", "Apache-2.0", "Info-ZIP", "Artistic-1.0", "GPL-1.0-only", "FTL", "Qhull", "IPL-1.0", "Spencer-86", "EPL-1.0", "zlib-acknowledgement", "LGPL-2.0-only", "ECL-1.0", "AFL-2.0", "libpng-2.0", "Sleepycat", "PHP-3.01", "ECL-2.0", "LGPL-2.1-only", "MPL-1.1", "GPL-2.0-only WITH Classpath-exception-2.0", "W3C-20150513", "ZPL-2.0", "GPL-2.0-or-later", "OpenSSL", "Artistic-2.0", "LGPL-2.0-or-later", "EPL-2.0", "Zlib", "GPL-1.0-or-later", "CC-BY-3.0", "MS-RL", "RSA-MD", "CPL-1.0", "bzip2-1.0.6", "MPL-2.0-no-copyleft-exception",]
+sources = [ "Qhull", "ECL-1.0", "NBPL-1.0", "OSL-3.0", "EUPL-1.2", "LGPL-2.0-or-later", "EUPL-1.1", "MPL-2.0", "Python-2.0", "Saxpath", "GPL-1.0-or-later", "W3C", "bzip2-1.0.5", "EPL-2.0", "LGPL-2.1-only", "GPL-2.0-only WITH Classpath-exception-2.0", "SSH-OpenSSH", "IJG", "CDDL-1.1", "CC-BY-3.0", "bzip2-1.0.6", "W3C-20150513", "PHP-3.01", "SSH-short", "Spencer-86", "IPL-1.0", "EPL-1.0", "LGPL-2.0-only", "Zlib", "GPL-2.0-only", "Libpng", "CC-BY-2.5", "LicenseRef-scancode-info-zip-2003-05", "Apache-2.0", "AFL-3.0", "W3C-19980720", "FTL", "OpenSSL", "Artistic-1.0", "AFL-2.0", "libpng-2.0", "Info-ZIP", "Apache-1.0", "MPL-1.1", "MPL-2.0-no-copyleft-exception", "RSA-MD", "AFL-2.1", "Artistic-2.0", "Apache-1.1", "zlib-acknowledgement", "LGPL-2.1-or-later", "GPL-2.0-or-later", "ECL-2.0", "CPL-1.0", "Artistic-1.0-Perl", "GPL-1.0-only", "CDDL-1.0", "ImageMagick", "MS-RL", "Sleepycat", "OGC-1.0", "ZPL-2.0",]
 
 [Properties.P3]
 name = "Binary delivery"
-sources = [ "bzip2-1.0.5", "EUPL-1.1", "OSL-3.0", "BSD-3-Clause", "EUPL-1.2", "NBPL-1.0", "IJG", "LGPL-2.1-or-later", "GPL-2.0-only", "LicenseRef-scancode-info-zip-2003-05", "Artistic-1.0-Perl", "MS-PL", "NCSA", "ImageMagick", "Apache-1.1", "Libpng", "CDDL-1.1", "Saxpath", "Apache-1.0", "CDDL-1.0", "MPL-2.0", "BSD-4-Clause-UC", "Apache-2.0", "BSD-2-Clause", "Info-ZIP", "BSL-1.0", "Artistic-1.0", "GPL-1.0-only", "FTL", "IPL-1.0", "EPL-1.0", "zlib-acknowledgement", "LGPL-2.0-only", "libpng-2.0", "BSD-3-Clause-Open-MPI", "PHP-3.01", "ECL-2.0", "LGPL-2.1-only", "BSD-4-Clause", "MPL-1.1", "Sleepycat", "GPL-2.0-only WITH Classpath-exception-2.0", "ZPL-2.0", "GPL-2.0-or-later", "OpenSSL", "XFree86-1.1", "Artistic-2.0", "BSD-Source-Code", "BSD-2-Clause-Patent", "LGPL-2.0-or-later", "EPL-2.0", "Zlib", "GPL-1.0-or-later", "MS-RL", "CPL-1.0", "BSD-1-Clause", "bzip2-1.0.6", "OLDAP-2.8", "MPL-2.0-no-copyleft-exception",]
+sources = [ "NBPL-1.0", "OSL-3.0", "EUPL-1.2", "LGPL-2.0-or-later", "EUPL-1.1", "MPL-2.0", "BSD-2-Clause", "Saxpath", "GPL-1.0-or-later", "bzip2-1.0.5", "EPL-2.0", "LGPL-2.1-only", "GPL-2.0-only WITH Classpath-exception-2.0", "IJG", "BSD-2-Clause-Patent", "CDDL-1.1", "BSD-3-Clause", "bzip2-1.0.6", "PHP-3.01", "IPL-1.0", "BSD-1-Clause", "EPL-1.0", "LGPL-2.0-only", "Zlib", "GPL-2.0-only", "Libpng", "MS-PL", "LicenseRef-scancode-info-zip-2003-05", "BSD-4-Clause", "Apache-2.0", "XFree86-1.1", "BSL-1.0", "FTL", "OpenSSL", "Artistic-1.0", "BSD-Source-Code", "NCSA", "libpng-2.0", "BSD-3-Clause-Open-MPI", "Info-ZIP", "Apache-1.0", "MPL-1.1", "MPL-2.0-no-copyleft-exception", "BSD-4-Clause-UC", "Artistic-2.0", "Apache-1.1", "zlib-acknowledgement", "LGPL-2.1-or-later", "GPL-2.0-or-later", "ECL-2.0", "CPL-1.0", "Artistic-1.0-Perl", "GPL-1.0-only", "CDDL-1.0", "ImageMagick", "OLDAP-2.8", "MS-RL", "Sleepycat", "ZPL-2.0",]
 
 [Properties.P4]
 name = "Source code delivery"
-sources = [ "bzip2-1.0.5", "EUPL-1.1", "OSL-3.0", "BSD-3-Clause", "EUPL-1.2", "NBPL-1.0", "IJG", "LGPL-2.1-or-later", "GPL-2.0-only", "LicenseRef-scancode-info-zip-2003-05", "Artistic-1.0-Perl", "MS-PL", "NCSA", "ImageMagick", "Apache-1.1", "Libpng", "CDDL-1.1", "Saxpath", "Apache-1.0", "CDDL-1.0", "MPL-2.0", "BSD-4-Clause-UC", "Apache-2.0", "BSD-2-Clause", "Info-ZIP", "BSL-1.0", "Artistic-1.0", "GPL-1.0-only", "FTL", "IPL-1.0", "EPL-1.0", "zlib-acknowledgement", "LGPL-2.0-only", "libpng-2.0", "BSD-3-Clause-Open-MPI", "PHP-3.01", "ECL-2.0", "LGPL-2.1-only", "BSD-4-Clause", "MPL-1.1", "Sleepycat", "GPL-2.0-only WITH Classpath-exception-2.0", "ZPL-2.0", "GPL-2.0-or-later", "OpenSSL", "XFree86-1.1", "Artistic-2.0", "BSD-Source-Code", "BSD-2-Clause-Patent", "LGPL-2.0-or-later", "EPL-2.0", "Zlib", "GPL-1.0-or-later", "MS-RL", "CPL-1.0", "BSD-1-Clause", "bzip2-1.0.6", "OLDAP-2.8", "MPL-2.0-no-copyleft-exception",]
+sources = [ "NBPL-1.0", "OSL-3.0", "EUPL-1.2", "LGPL-2.0-or-later", "EUPL-1.1", "MPL-2.0", "BSD-2-Clause", "Saxpath", "GPL-1.0-or-later", "bzip2-1.0.5", "EPL-2.0", "LGPL-2.1-only", "GPL-2.0-only WITH Classpath-exception-2.0", "IJG", "BSD-2-Clause-Patent", "CDDL-1.1", "BSD-3-Clause", "bzip2-1.0.6", "PHP-3.01", "IPL-1.0", "BSD-1-Clause", "EPL-1.0", "LGPL-2.0-only", "Zlib", "GPL-2.0-only", "Libpng", "MS-PL", "LicenseRef-scancode-info-zip-2003-05", "BSD-4-Clause", "Apache-2.0", "XFree86-1.1", "BSL-1.0", "FTL", "OpenSSL", "Artistic-1.0", "BSD-Source-Code", "NCSA", "libpng-2.0", "BSD-3-Clause-Open-MPI", "Info-ZIP", "Apache-1.0", "MPL-1.1", "MPL-2.0-no-copyleft-exception", "BSD-4-Clause-UC", "Artistic-2.0", "Apache-1.1", "zlib-acknowledgement", "LGPL-2.1-or-later", "GPL-2.0-or-later", "ECL-2.0", "CPL-1.0", "Artistic-1.0-Perl", "GPL-1.0-only", "CDDL-1.0", "ImageMagick", "OLDAP-2.8", "MS-RL", "Sleepycat", "ZPL-2.0",]
 
 [Properties.P5]
 name = "Modified work Is Protocol incompatible"
-sources = [ "SSH-OpenSSH", "SSH-short",]
+sources = [ "SSH-short", "SSH-OpenSSH",]
 
 [Properties.P6]
 name = "Source code delivery OR Binary delivery"
-sources = [ "EFL-2.0", "UPL-1.0", "MIT-CMU", "Unicode-DFS-2016", "Unlicense", "NTP", "IBM-pibs", "SSH-OpenSSH", "0BSD", "ICU", "LicenseRef-scancode-ppp", "FSFAP", "Python-2.0", "SSH-short", "CC-BY-2.5", "OGC-1.0", "X11", "W3C", "ISC", "JasPer-2.0", "LicenseRef-scancode-bsla-no-advert", "blessing", "SGI-B-2.0", "curl", "SunPro", "Qhull", "BlueOak-1.0.0", "Spencer-86", "WTFPL", "ECL-1.0", "BSD-4.3TAHOE", "AFL-2.0", "PostgreSQL", "FSFULLR", "W3C-20150513", "Unicode-DFS-2015", "SMLNJ", "CC-BY-3.0", "FSFUL", "RSA-MD", "HPND", "FSFULLRWD", "MIT", "W3C-19980720", "AFL-2.1", "MIT-0", "libtiff",]
+sources = [ "X11", "Qhull", "ECL-1.0", "FSFUL", "Python-2.0", "FSFAP", "SSH-OpenSSH", "LicenseRef-scancode-bsla-no-advert", "IBM-pibs", "SunPro", "BlueOak-1.0.0", "CC-BY-3.0", "ISC", "W3C-20150513", "WTFPL", "FSFULLRWD", "SGI-B-2.0", "MIT", "ICU", "SSH-short", "Spencer-86", "NTP", "blessing", "BSD-4.3TAHOE", "CC-BY-2.5", "Unicode-DFS-2016", "UPL-1.0", "curl", "W3C-19980720", "AFL-2.0", "Unlicense", "RSA-MD", "0BSD", "libtiff", "JasPer-2.0", "SMLNJ", "AFL-2.1", "FSFULLR", "HPND", "PostgreSQL", "MIT-CMU", "Unicode-DFS-2015", "MIT-0", "OGC-1.0", "W3C", "EFL-2.0", "LicenseRef-scancode-ppp",]
 
 [Properties.P7]
 name = "Work Delivery"
@@ -828,11 +828,11 @@ sources = [ "MirOS",]
 
 [Properties.P8]
 name = "NOT Binary delivery of standard UnZipSFX binary as part of a self-extracting archive AND NOT Delete SFX banner AND NOT Disable SFX banner"
-sources = [ "LicenseRef-scancode-info-zip-2003-05", "Info-ZIP",]
+sources = [ "Info-ZIP", "LicenseRef-scancode-info-zip-2003-05",]
 
 [Properties.P9]
 name = "Documentation"
-sources = [ "MPL-1.1", "Apache-1.1",]
+sources = [ "Apache-1.1", "MPL-1.1",]
 
 [Properties.P10]
 name = "Font Modification"
@@ -844,11 +844,11 @@ sources = [ "Bitstream-Vera", "OFL-1.1",]
 
 [Properties.P12]
 name = "Binary delivery Via Internet"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "GPL-2.0-only", "LGPL-2.1-only", "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-or-later",]
+sources = [ "LGPL-2.0-or-later", "LGPL-2.1-or-later", "GPL-2.0-or-later", "GPL-2.0-only WITH Classpath-exception-2.0", "LGPL-2.1-only", "LGPL-2.0-only", "GPL-2.0-only",]
 
 [Properties.P13]
 name = "Interactive AND Displaying License announcement"
-sources = [ "GPL-2.0-only WITH Classpath-exception-2.0", "GPL-2.0-only", "GPL-2.0-or-later",]
+sources = [ "GPL-2.0-only", "GPL-2.0-or-later", "GPL-2.0-only WITH Classpath-exception-2.0",]
 
 [Properties.P14]
 name = "Provided By Copyright holder"
@@ -864,7 +864,7 @@ sources = [ "Artistic-2.0",]
 
 [Properties.P17]
 name = "NOT Legal notices"
-sources = [ "OGC-1.0", "W3C-20150513", "W3C",]
+sources = [ "W3C-20150513", "OGC-1.0", "W3C",]
 
 [Properties.P18]
 name = "Modification Of Files"
@@ -876,43 +876,43 @@ sources = [ "Unicode-DFS-2015",]
 
 [Properties.P20]
 name = "Software modification Uses Linked work"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Properties.P21]
 name = "Modified library NOT Interoperable"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Properties.P22]
 name = "Interactive AND Displaying Copyright notices"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Properties.P23]
 name = "Software modification Of Library"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Properties.P24]
 name = "More than 10 lines of code"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Properties.P25]
 name = "Binary delivery Of Combined work"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Properties.P26]
 name = "Binary delivery Of Linked work With Header files Of Library Included In Linked work"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Properties.P27]
 name = "Source code delivery Of Combined library OR Binary delivery Of Combined library"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Properties.P28]
 name = "Source code delivery Of Combined work"
-sources = [ "LGPL-2.0-or-later", "LGPL-2.0-only", "LGPL-2.1-or-later", "LGPL-2.1-only",]
+sources = [ "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-2.0-only", "LGPL-2.0-or-later",]
 
 [Properties.P29]
 name = "Advertisement"
-sources = [ "Apache-1.0", "RSA-MD", "BSD-4-Clause-UC", "BSD-4-Clause", "OpenSSL",]
+sources = [ "BSD-4-Clause", "Apache-1.0", "RSA-MD", "BSD-4-Clause-UC", "OpenSSL",]
 
 [Properties.P30]
 name = "ATTRIBUTE Dynamic"
@@ -928,7 +928,7 @@ sources = [ "MPL-1.1",]
 
 [Properties.P33]
 name = "License change"
-sources = [ "IPL-1.0", "EPL-2.0", "CDDL-1.1", "CDDL-1.0", "EPL-1.0", "MPL-2.0", "CPL-1.0", "AFL-3.0", "MPL-1.1", "MPL-2.0-no-copyleft-exception",]
+sources = [ "MPL-2.0-no-copyleft-exception", "MPL-1.1", "MPL-2.0", "CPL-1.0", "AFL-3.0", "IPL-1.0", "EPL-2.0", "EPL-1.0", "CDDL-1.0", "CDDL-1.1",]
 
 [Properties.P34]
 name = "Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks"
@@ -936,11 +936,11 @@ sources = [ "MPL-1.1",]
 
 [Properties.P35]
 name = "Service offerings"
-sources = [ "IPL-1.0", "EUPL-1.1", "EUPL-1.2", "MPL-2.0", "EPL-1.0", "CPL-1.0", "ECL-2.0", "Apache-2.0", "MPL-1.1", "MPL-2.0-no-copyleft-exception", "ImageMagick",]
+sources = [ "MPL-2.0-no-copyleft-exception", "MPL-1.1", "EUPL-1.2", "EUPL-1.1", "MPL-2.0", "Apache-2.0", "ECL-2.0", "CPL-1.0", "IPL-1.0", "EPL-1.0", "ImageMagick",]
 
 [Properties.P36]
 name = "Commercial distribution"
-sources = [ "IPL-1.0", "CPL-1.0", "EPL-1.0", "EPL-2.0",]
+sources = [ "EPL-2.0", "EPL-1.0", "CPL-1.0", "IPL-1.0",]
 
 [Properties.P37]
 name = "Including Windows code"
@@ -948,7 +948,7 @@ sources = [ "OpenSSL",]
 
 [Properties.P38]
 name = "Modified work Under Original license"
-sources = [ "AFL-2.0", "AFL-2.1", "AFL-3.0",]
+sources = [ "AFL-3.0", "AFL-2.0", "AFL-2.1",]
 
 [Properties.P39]
 name = "Source code delivery OR Binary delivery OR Network service"
@@ -968,7 +968,7 @@ sources = [ "Info-ZIP",]
 
 [Properties.P43]
 name = "Work Includes File \"NOTICE\""
-sources = [ "Apache-2.0", "ImageMagick", "ECL-2.0",]
+sources = [ "ECL-2.0", "Apache-2.0", "ImageMagick",]
 
 [Properties.P44]
 name = "Network services"

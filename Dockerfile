@@ -1,19 +1,17 @@
 FROM python:3.12-alpine
 
-# Set workdir
-WORKDIR /app
+ENV TS_LEGALCHECK_DEFINITIONS_PATH=/data/definitions
 
-# Install build dependencies
 RUN apk add --no-cache build-base
 
-# Copy project files
-COPY . /app
-# Copy data folder separately to ensure it's available for CLI usage
-COPY data /app/data
+COPY data /data
+COPY src /app/src
+COPY pyproject.toml /app/
 
-# Install project (prefer editable if pyproject.toml exists)
 RUN pip install --upgrade pip && \
-    pip install .
+    pip install /app
+
+RUN rm -rf /app
 
 # Set entrypoint to the CLI tool
 ENTRYPOINT ["python", "-m", "ts_legalcheck.cli"]
