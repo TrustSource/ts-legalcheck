@@ -27,4 +27,4 @@ jobs:
           push: true
           tags: |
             trustsource/ts-legalcheck:latest
-            trustsource/ts-legalcheck:${{ github.ref }}
+            trustsource/ts-legalcheck:${{ github.ref_name }}

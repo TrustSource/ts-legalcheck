@@ -21,7 +21,7 @@ dependencies = [
 Homepage = 'https://github.com/trustsource/ts-legalcheck.git'
 
 [project.scripts]
-ts-scan = "ts_legalcheck.cli:start"
+ts-legalcheck = "ts_legalcheck.cli:cli"
 
 [build-system]
 requires = [
