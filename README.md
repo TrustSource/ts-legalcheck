@@ -6,7 +6,7 @@
 
 The following diagram represents the main functional principle of **ts-legalcheck**. The tool accepts as input a model consisting of data extracted from open-source licenses. It contains known *rights*, *obligations*, and *terms*, as well as different rules describing in which situations certain obligations apply and, for example, which conditions may violate license usage.
 
-![alt text](docs/TS-Legalcheck-Diag-5.svg)
+![alt text](docs/TS-Legalcheck-Diag.svg)
 
 Besides a model, the **ts-legalcheck** engine also expects user input describing the legal settings of a project, which define different aspects such as distribution model, distribution form, or modification of third-party components used in the project. We refer to such input as a use case or legal situation. Based on the model, legal settings, and the set of open-source licenses used in the project, the engine decides whether the usage of certain licenses is possible in the provided use case and, if so, provides a set of obligations that must be fulfilled.
 
