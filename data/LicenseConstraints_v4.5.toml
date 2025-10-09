@@ -1,8 +1,10 @@
 
 Includes = [
+  "definitions/common.toml",
+  
   # Definitions and rules for v4.5
   "definitions/v4.5/*.toml",
 
   # License constraints for v4.5
-  "licenses/v4.4/*.json"
+  "licenses/v4.4/*.json"    
 ]

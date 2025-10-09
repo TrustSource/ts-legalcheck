@@ -76,12 +76,6 @@
 
 
 
-
-    "O20" : {
-      "name" : "Obligations Distribution in Source Form",
-      "description" : "Obligations applying for the Distribution in Source Form must also be satisfied.",
-      "setting" : [["Component.dist_obj"]]
-    },
     "O21" : {
       "name" : "Reproduce Copyright Notice",
       "description" : "You must reproduce the Copyright Notice.",
@@ -141,5 +135,14 @@
        "name" : "EffectOfPatentLitigation",
        "description" : "Initiating a patent litigation will terminate all rights and/or - as the case may be - any patent rights granted unter the license."
      }
-  }
+  },
+
+
+  "Rules": [
+    {
+      "key"     : "020",
+      "setting" : [["License.O20"], ["Component.dist_obj"]],
+      "require" : [["O20"]]
+    }
+  ]
 }

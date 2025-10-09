@@ -1,6 +1,6 @@
 [project]
 name = "ts-legalcheck"
-version = "1.1.0"
+version = "1.1.1"
 description = "TrustSource Legal Check tool."
 authors = [
     { name="Grigory Markin", email="gmn@eacg.de" }
