@@ -1,0 +1,200 @@
+
+# Groups
+
+[[groups]]
+name = "CA"
+description = "Commercial Aspects"
+help = "Some licenses may restrict commercialization options, others require different obligations depending on the type of commercialization model you select. So please indicate the intended commercial use."
+
+[[groups]]
+name = "OM"
+description = "Operating Model"
+help = "Some licenses have specific SaaS requirements or trigger additional obligations in case you will include them with hardware or operate them for third parties. So please indicate the operational model."
+
+[[groups]]
+name = "IP"
+description = "Intellectual Property Aspects"
+help = "Some licenses come without explicit grants from all contributors, thus the license grants you a usage right but does not protect from additional claims from contributors. If you switch on this protection, it will flag corresponding licenses as violations"
+
+[[groups]]
+name = "TS"
+description = "Trade Secret Aspects"
+help = "Some licenses force you to open source or at least publish your derivative works. This might be a threat to your trade secrets or intellectual property. If you switch on Trade secret protection, licenses requiring you to release or publish your work will be flagged as violations, if switched off, the obligations will only shown as warnings unless satisfied by other means."
+
+[[groups]]
+name = "LS"
+description = "Licensing Strategy"
+help = "There are several licenses, which do not allow you to sublicense the components. Thus you must make sure, the OS components are named (e.g. Bill of materials) and provided aside your privately licensed code. However, in case you are planning to provide this module as open source or operate it as part of a service that is not licensed at all, you may skip these warnings."
+
+[[groups]]
+name = "D"
+description = "Distribution Model"
+help = "If you plan to distribute your solution, it might lead to different obligations. So please indicate below which is the intended purpose or application of this module. TrustSource will resolve the obligations accordingly:"
+
+# Variables
+
+# Commercial Aspects
+
+[[variables]]
+name = "License fee will be charged for the product (examples include royalties or other types of fees"
+variable = "CA_license"
+scope = "module"
+group = "CA"
+
+[[variables]]
+name = "Usage fee will be charged for the product/service (must be explicitly governed in the contract)"
+variable = "CA_usage"
+scope = "module"
+group = "CA"
+
+[[variables]]
+name = "Only a support fee will be charged for services provided in addition to the product or service"
+variable = "CA_support"
+scope = "module"
+group = "CA"
+
+[[variables]]
+name = "Another type of commercialisation is intended (e.g. maintenance or warranty)"
+variable = "CA_other"
+scope = "module"
+group = "CA"
+
+[[variables]]
+name = "Product is not commercial"
+variable = "CA_none"
+scope = "module"
+group = "CA"
+
+# Operating Model
+
+[[variables]]
+name = "Operated in a Software as a Service-Mode"
+variable = "OM_SaaS"
+scope = "module"
+group = "OM"
+
+[[variables]]
+name = "Operated on customer location(s) as a managed service"
+variable = "OM_mop"
+scope = "module"
+group = "OM"
+
+[[variables]]
+name = "Traditional Software distribution model"
+variable = "OM_sw"
+scope = "module"
+group = "OM"
+
+[[variables]]
+name = "Distributed as part of a device, appliance or hardware"
+variable = "OM_dis"
+scope = "module"
+group = "OM"
+
+[[variables]]
+name = "No operations / solution is for download only"
+variable = "OM_did"
+scope = "module"
+group = "OM"
+
+# Intellectual Property Aspects
+
+[[variables]]
+name = "Inbound IP protection"
+variable = "IP_protect_y"
+scope = "module"
+group = "IP"
+
+[[variables]]
+name = "Outbound IP protection"
+variable = "IP_enforce_1"
+scope = "module"
+group = "IP"
+
+[[variables]]
+name = "Outbound soft, meaning only a warning will be given, if termination of rights is due in case of legal action to enforce own rights."
+variable = "IP_enforce_2"
+scope = "module"
+group = "IP"
+
+[[variables]]
+name = "Outbound protection hard: A violation will be given, when a clause terminates the license when seeking justice in front of a court"
+variable = "IP_enforce_3"
+scope = "module"
+group = "IP"
+
+# Trade Secret Aspects
+
+[[variables]]
+name = "Trade Secret Protection"
+variable = "TS_y"
+scope = "module"
+group = "TS"
+
+[[variables]]
+name = "Open Source"
+variable = "LS_os"
+scope = "module"
+group = "LS"
+
+[[variables]]
+name = "Proprietary License"
+variable = "LS_pl"
+scope = "module"
+group = "LS"
+
+[[variables]]
+name = "Both"
+variable = "LS_both"
+scope = "module"
+group = "LS"
+
+# Distribution Model
+
+[[variables]]
+name = "Use on premise, distributed via separate installer, on physical media or via download"
+variable = "D_op"
+scope = "module"
+group = "D"
+
+[[variables]]
+name = "Solution is an itegral part of an appliance, device or software"
+variable = "D_ipoa"
+scope = "module"
+group = "D"
+
+[[variables]]
+name = "Exchangeable addon to an appliance, device or software"
+variable = "D_xa"
+scope = "module"
+group = "D"
+
+[[variables]]
+name = "Server side library in a web solution, not being distributed"
+variable = "D_sslib"
+scope = "module"
+group = "D"
+
+[[variables]]
+name = "Client side library in a web solution, provided to the user by a webserver"
+variable = "D_cslib"
+scope = "module"
+group = "D"
+
+[[variables]]
+name = "Applied just locally (e.g., private tool). Module will not be distributed at all"
+variable = "D_never"
+scope = "module"
+group = "D"
+
+# Other
+
+[[variables]]
+name = "Sources modified"
+variable = "modified"
+scope = "component"
+
+[[variables]]
+name = "Tightly coupled with other components"
+variable = "tightCoupled"
+scope = "component"

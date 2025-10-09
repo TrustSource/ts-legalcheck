@@ -1,0 +1,60 @@
+[module]
+
+# Licensing the software
+CA_license = true
+# Charging usage (e.g. subscription)
+CA_usage = false
+# Charging for support
+CA_support = false
+# Some other type of compensation
+CA_other = false
+# no commercial model or free of charge
+CA_none = false
+
+# SaaS
+OM_SaaS = false
+# managed on premise (at customer or 3rd party)
+OM_mop = false
+# traditional Software distribution
+OM_sw = true
+# distributed with device/machine, e.g. appliance
+OM_dis = false
+# no operations / solution is for download only
+OM_did = false
+
+# Inbound protection wanted? 
+IP_protect_y = true
+# Outbound (yes/no)
+IP_enforce_1 = false
+# Outbound soft, meaning only a warning will be given, if termination of rights is due in case of legal action to enforce own rights.
+IP_enforce_2 = true
+# Outbound protection hard: A violation will be given, when a clause terminates the license when seeking justice in front of a court
+IP_enforce_3 = false
+
+# if true, Trade Scret Protection is activated
+TS_y = true
+
+# open source 
+LS_os = false
+# proprietary license
+LS_pl = true
+# both
+LS_both = false
+
+# on premise
+D_op = true
+# Solution is an itegral part of an appliance
+D_ipoa = false
+# exchangeable addon (e.g. replaceable)
+D_xa = false
+# Server side library
+D_sslib = false
+# client side library
+D_cslib = false
+# no distribution
+D_never = false
+
+[component]
+# sources modified
+modified = true
+tightCoupled = false

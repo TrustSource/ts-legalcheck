@@ -184,19 +184,14 @@ class Engine(ConstraintsBuilder):
 
                     self.__addFact(ForAll([l, c], Implies(self.types.ComponentLicense(c, l), impl)))
             else:
+                oCnstr = [__makeSettingCnstr(o)]
+                if 'value' in o:
+                    oCnstr.append(__makeValueCnstr(o))
+                
                 cCnstr = self.makeComponentCnstrExpr(k)
                 lCnstr = self.makeLicenseCnstrExpr(k)
 
-                # Setting constraint
-                # Setting is defined in the DNF form as: [[c1, c2], [c3]] == (c1 && c2) || c3
-                sCnstr = []
-                for conj in o.get('setting', []):
-                    sCnstr.append(And([self.makeComponentCnstrExpr(k) for k in conj], self.context))
-
-                if len(sCnstr) == 0:
-                    impl = (cCnstr == lCnstr)
-                else:
-                    impl = (cCnstr == And(lCnstr, Or(sCnstr, self.context), self.context))
+                impl = (cCnstr == And(oCnstr, self.context))                    
 
                 self.__addFact(ForAll([l, c], Implies(self.types.ComponentLicense(c, l), impl)))
 
@@ -373,7 +368,7 @@ class Engine(ConstraintsBuilder):
         return result
 
 
-    def checkComponent(self, comp: Component, extended_results: bool = True, lics: t.Optional[t.List[str]] = None):
+    def checkComponent(self, comp: Component, extended_results: bool = True, lics: t.Optional[t.Iterable[str]] = None):
         self.push(comp)
 
         if not lics:
@@ -396,7 +391,7 @@ class Engine(ConstraintsBuilder):
         return result
 
 
-    def checkModule(self, mod: Module, extended_results: bool = True, comps: t.Optional[t.List[Component]] = None):
+    def checkModule(self, mod: Module, extended_results: bool = True, comps: t.Optional[t.Iterable[Component]] = None):
         self.push(mod)
 
         if not comps:
@@ -410,7 +405,7 @@ class Engine(ConstraintsBuilder):
 
 _package_definitions_path=os.environ.get('TS_LEGALCHECK_DEFINITIONS_PATH', Path(__file__).parent / 'definitions')
     
-def loadDefinitions(paths: t.List[Path]) -> t.Dict[str, t.Dict[str, t.Any]]:                
+def loadDefinitions(paths: t.Union[Path, t.Iterable[Path]]) -> t.Dict[str, t.Dict[str, t.Any]]:                
     def resolve_path(path: Path, parent: t.Optional[Path] = None) -> t.Optional[Path]:
         if path.exists():
             return path
@@ -430,8 +425,14 @@ def loadDefinitions(paths: t.List[Path]) -> t.Dict[str, t.Dict[str, t.Any]]:
 
     result = {}
     
-    _paths: t.List[t.Tuple[Path, t.Optional[Path]]] = [(p, None) for p in paths]
-    
+
+    if isinstance(paths, Path):
+        _paths = [(paths, None)]        
+    elif isinstance(paths, t.Iterable):
+        _paths: t.List[t.Tuple[Path, t.Optional[Path]]] = [(p, None) for p in paths]
+    else:
+        _paths = []
+        
     while len(_paths) > 0:
         if p := resolve_path(*_paths.pop()):
             logger.info(f'Loading definitions from {p}...')

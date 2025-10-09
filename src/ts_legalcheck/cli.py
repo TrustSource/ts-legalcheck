@@ -54,5 +54,13 @@ def test(defs, lic, verbose, path):
         print(json.dumps(result.to_dict(), indent=2))
 
 
+
+@cli.command()
+@click.option('--port', '-p', 'port', type=int, default=5000, envvar='TS_LEGALCHECK_WEBUI_PORT', required=False, help='Port to run the web server on')
+def start(port):
+    from .ui import run
+    run(port=port)
+
+
 if __name__ == '__main__':
     cli()

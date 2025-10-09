@@ -1,6 +1,6 @@
 [project]
 name = "ts-legalcheck"
-version = "1.0.0"
+version = "1.1.0"
 description = "TrustSource Legal Check tool."
 authors = [
     { name="Grigory Markin", email="gmn@eacg.de" }
@@ -14,7 +14,8 @@ dependencies = [
 	"toml~=0.10.2",
 	"pyyaml~=6.0.2",
 	"z3-solver==4.15.1.0",		
-	"lark~=1.2.2",	
+	"lark~=1.2.2",
+	"flask~=3.1.2"	
 ]
 
 [project.urls]
@@ -34,4 +35,8 @@ build-backend = "setuptools.build_meta"
 where = ['src']
 
 [tool.setuptools.package-data]
-"ts_legalcheck" = ["engine/constraints/parser/grammar.lark"]
+"ts_legalcheck" = [
+	"engine/constraints/parser/grammar.lark",
+	"ui/static/*",
+	"ui/templates/*"
+]

@@ -19,15 +19,19 @@ class Result:
     def to_dict(self):
         return asdict(self)
 
+
+def create_test_module(situation: dict, lics: t.Iterable[str]) -> Module:
+    c = Component('test', situation['component'], lics)
+    return Module('test', situation['module'], [c])
+
+
 def test_license(engine: Engine, lic: str, situation_file: Path) -> t.Optional[Result]:
     situation = load_file(situation_file)
 
     if not situation:
         return None
-        
-    c = Component('test', situation['component'], [lic])
-    m = Module('test', situation['module'], [c])
-    
+
+    m = create_test_module(situation, [lic])
     result = engine.checkModule(m)['test'][lic]
 
     warnings = []
@@ -39,8 +43,10 @@ def test_license(engine: Engine, lic: str, situation_file: Path) -> t.Optional[R
             violations.append(r)
         elif rule.type == 'warning':
             warnings.append(r)
-
+    
+    c = m.findComponent('test')
+    
     return Result(warnings=warnings,
                   violations=violations,
                   obligations=result.get('obligations', []),
-                  properties=c.properties)
+                  properties=c.properties if c else {})
