@@ -184,14 +184,16 @@ class Engine(ConstraintsBuilder):
 
                     self.__addFact(ForAll([l, c], Implies(self.types.ComponentLicense(c, l), impl)))
             else:
-                oCnstr = [__makeSettingCnstr(o)]
-                if 'value' in o:
-                    oCnstr.append(__makeValueCnstr(o))
-                
+                sCnstr = [__makeSettingCnstr(o)]
+                vCnstr = [__makeValueCnstr(o)] if 'value' in o else []
+                                
                 cCnstr = self.makeComponentCnstrExpr(k)
                 lCnstr = self.makeLicenseCnstrExpr(k)
-
-                impl = (cCnstr == And(oCnstr, self.context))                    
+                
+                sCnstr = And(sCnstr, self.context)
+                vCnstr = Or(lCnstr, And(vCnstr, self.context), self.context) if vCnstr else lCnstr
+                
+                impl = (cCnstr == And(sCnstr, vCnstr, self.context))                    
 
                 self.__addFact(ForAll([l, c], Implies(self.types.ComponentLicense(c, l), impl)))
 
