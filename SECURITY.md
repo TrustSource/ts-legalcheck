@@ -15,7 +15,7 @@ Acknowledgments: https://www.trustsource.io/hall-of-fame
 Preferred-Languages: en, de
 
 # Self reference
-Canonical: https://raw.githubusercontent.com/TrustSource/sbom2notice/refs/heads/main/SECURITY.txt
+Canonical: https://raw.githubusercontent.com/TrustSource/ts-legalcheck/refs/heads/main/SECURITY.txt
 
 # Our security policy
 Policy: https://www.trustsource.io/security-policy
@@ -24,4 +24,4 @@ Policy: https://www.trustsource.io/security-policy
 Hiring: https://www.trustsource.io/security-jobs
 
 # CSAF links
-CSAF: https://p-csaf.dev.trustsource.io/.well-known/csaf/provider-metadata.json
+CSAF: https://trustsource.csaf.trustsource.io/.well-known/csaf/provider-metadata.json
