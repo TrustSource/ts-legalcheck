@@ -1,11 +1,8 @@
-FROM python:3.12-alpine
+FROM python:3.12-slim
 
 ENV TS_LEGALCHECK_MODELS_PATH=/data
 ENV TS_LEGALCHECK_DEFINITIONS_PATH=/data/definitions
 ENV TS_LEGALCHECK_WEBUI_PORT=5000
-
-RUN apk add --no-cache build-base
-
 
 COPY src /app/src
 COPY pyproject.toml /app/
